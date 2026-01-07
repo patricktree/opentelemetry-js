@@ -16,8 +16,8 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { LocalStorageSessionStore } from '../src/LocalStorageSessionStore';
-import { Session } from '../src/types/Session';
+import { LocalStorageSessionStore } from '../src/LocalStorageSessionStore.js';
+import { Session } from '../src/types/Session.js';
 
 describe('LocalStorageSessionStore', () => {
   let store: LocalStorageSessionStore;

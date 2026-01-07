@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 import * as assert from 'assert';
-import { HttpInstrumentation } from '../../src/http';
+import { HttpInstrumentation } from '../../src/http.js';
 import { AddressInfo } from 'net';
 import * as nock from 'nock';
 import * as sinon from 'sinon';
-import { httpRequest } from '../utils/httpRequest';
+import { httpRequest } from '../utils/httpRequest.js';
 import { isWrapped } from '@opentelemetry/instrumentation';
 
 const instrumentation = new HttpInstrumentation();

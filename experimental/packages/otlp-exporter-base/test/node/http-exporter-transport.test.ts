@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { createHttpExporterTransport } from '../../src/transport/http-exporter-transport';
+import { createHttpExporterTransport } from '../../src/transport/http-exporter-transport.js';
 import * as http from 'http';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
@@ -23,7 +23,7 @@ import {
   ExportResponseFailure,
   ExportResponseSuccess,
   OTLPExporterError,
-} from '../../src';
+} from '../../src.js';
 import * as zlib from 'zlib';
 import { createConnection, TcpNetConnectOpts } from 'net';
 

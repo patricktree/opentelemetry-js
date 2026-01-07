@@ -22,12 +22,12 @@ import {
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 
-import { LoggerProvider } from '../../src';
-import { NoopLogRecordProcessor } from '../../src/export/NoopLogRecordProcessor';
-import { loadDefaultConfig } from '../../src/config';
-import { DEFAULT_LOGGER_NAME } from './../../src/LoggerProvider';
-import { MultiLogRecordProcessor } from '../../src/MultiLogRecordProcessor';
-import { Logger } from '../../src/Logger';
+import { LoggerProvider } from '../../src.js';
+import { NoopLogRecordProcessor } from '../../src/export/NoopLogRecordProcessor.js';
+import { loadDefaultConfig } from '../../src/config.js';
+import { DEFAULT_LOGGER_NAME } from './../../src/LoggerProvider.js';
+import { MultiLogRecordProcessor } from '../../src/MultiLogRecordProcessor.js';
+import { Logger } from '../../src/Logger.js';
 
 describe('LoggerProvider', () => {
   beforeEach(() => {

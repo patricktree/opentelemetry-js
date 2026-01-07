@@ -20,9 +20,9 @@ import {
   InMemorySpanExporter,
   ReadableSpan,
 } from '@opentelemetry/sdk-trace-base';
-import { assertPropagation, assertSpan } from './utils/assertionUtils';
+import { assertPropagation, assertSpan } from './utils/assertionUtils.js';
 
-import { ATTR_RPC_METHOD, ATTR_RPC_SERVICE } from '../src/semconv';
+import { ATTR_RPC_METHOD, ATTR_RPC_SERVICE } from '../src/semconv.js';
 
 export type SpanAssertionFunction = (
   exporter: InMemorySpanExporter,

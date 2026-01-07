@@ -21,17 +21,17 @@ export type {
   LogRecordLimits,
   BufferConfig,
   BatchLogRecordProcessorBrowserConfig,
-} from './types';
-export { LoggerProvider } from './LoggerProvider';
-export type { SdkLogRecord } from './export/SdkLogRecord';
-export type { LogRecordProcessor } from './LogRecordProcessor';
-export type { ReadableLogRecord } from './export/ReadableLogRecord';
-export { ConsoleLogRecordExporter } from './export/ConsoleLogRecordExporter';
-export type { LogRecordExporter } from './export/LogRecordExporter';
-export { SimpleLogRecordProcessor } from './export/SimpleLogRecordProcessor';
-export { InMemoryLogRecordExporter } from './export/InMemoryLogRecordExporter';
-export { BatchLogRecordProcessor } from './platform';
+} from './types.js';
+export { LoggerProvider } from './LoggerProvider.js';
+export type { SdkLogRecord } from './export/SdkLogRecord.js';
+export type { LogRecordProcessor } from './LogRecordProcessor.js';
+export type { ReadableLogRecord } from './export/ReadableLogRecord.js';
+export { ConsoleLogRecordExporter } from './export/ConsoleLogRecordExporter.js';
+export type { LogRecordExporter } from './export/LogRecordExporter.js';
+export { SimpleLogRecordProcessor } from './export/SimpleLogRecordProcessor.js';
+export { InMemoryLogRecordExporter } from './export/InMemoryLogRecordExporter.js';
+export { BatchLogRecordProcessor } from './platform.js';
 export {
   createLoggerConfigurator,
   type LoggerPattern,
-} from './config/LoggerConfigurators';
+} from './config/LoggerConfigurators.js';

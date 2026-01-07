@@ -21,10 +21,10 @@ import {
   TextMapSetter,
 } from '@opentelemetry/api';
 import { isTracingSuppressed } from '@opentelemetry/core';
-import { B3MultiPropagator } from './B3MultiPropagator';
-import { B3SinglePropagator } from './B3SinglePropagator';
-import { B3_CONTEXT_HEADER } from './constants';
-import { B3InjectEncoding, B3PropagatorConfig } from './types';
+import { B3MultiPropagator } from './B3MultiPropagator.js';
+import { B3SinglePropagator } from './B3SinglePropagator.js';
+import { B3_CONTEXT_HEADER } from './constants.js';
+import { B3InjectEncoding, B3PropagatorConfig } from './types.js';
 
 /**
  * Propagator that extracts B3 context in both single and multi-header variants,

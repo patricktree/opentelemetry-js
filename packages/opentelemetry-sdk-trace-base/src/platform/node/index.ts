@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export { BatchSpanProcessor } from './export/BatchSpanProcessor';
-export { RandomIdGenerator } from './RandomIdGenerator';
+export { BatchSpanProcessor } from './export/BatchSpanProcessor.js';
+export { RandomIdGenerator } from './RandomIdGenerator.js';

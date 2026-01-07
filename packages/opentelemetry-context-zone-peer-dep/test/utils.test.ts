@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import * as utils from '../src/util';
+import * as utils from '../src/util.js';
 
 describe('ZoneContextManager utils', () => {
   describe('isListenerObject', () => {

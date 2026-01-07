@@ -15,7 +15,7 @@
  */
 
 import { Context, HrTime, Attributes } from '@opentelemetry/api';
-import { FixedSizeExemplarReservoirBase } from './ExemplarReservoir';
+import { FixedSizeExemplarReservoirBase } from './ExemplarReservoir.js';
 
 /**
  * Fixed size reservoir that uses equivalent of naive reservoir sampling

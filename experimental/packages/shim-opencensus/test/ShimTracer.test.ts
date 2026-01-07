@@ -17,7 +17,7 @@
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 import * as oc from '@opencensus/core';
-import { ShimTracer, getRootSpan } from '../src/ShimTracer';
+import { ShimTracer, getRootSpan } from '../src/ShimTracer.js';
 import {
   INVALID_SPANID,
   INVALID_TRACEID,
@@ -26,7 +26,7 @@ import {
   createContextKey,
   Tracer,
 } from '@opentelemetry/api';
-import { withTestTracer, setupNodeContextManager } from './util';
+import { withTestTracer, setupNodeContextManager } from './util.js';
 
 function createStubTracer(): Tracer {
   return {

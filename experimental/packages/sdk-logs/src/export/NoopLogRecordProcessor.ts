@@ -15,8 +15,8 @@
  */
 
 import { Context } from '@opentelemetry/api';
-import { LogRecordProcessor } from '../LogRecordProcessor';
-import { ReadableLogRecord } from './ReadableLogRecord';
+import { LogRecordProcessor } from '../LogRecordProcessor.js';
+import { ReadableLogRecord } from './ReadableLogRecord.js';
 
 export class NoopLogRecordProcessor implements LogRecordProcessor {
   forceFlush(): Promise<void> {

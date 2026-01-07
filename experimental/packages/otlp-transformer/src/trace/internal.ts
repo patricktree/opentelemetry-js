@@ -16,12 +16,12 @@
 import type { Link } from '@opentelemetry/api';
 import { Resource } from '@opentelemetry/resources';
 import type { ReadableSpan, TimedEvent } from '@opentelemetry/sdk-trace-base';
-import type { Encoder } from '../common/utils';
+import type { Encoder } from '../common/utils.js';
 import {
   createInstrumentationScope,
   createResource,
   toAttributes,
-} from '../common/internal';
+} from '../common/internal.js';
 import {
   EStatusCode,
   IEvent,
@@ -30,9 +30,9 @@ import {
   IResourceSpans,
   IScopeSpans,
   ISpan,
-} from './internal-types';
-import { OtlpEncodingOptions } from '../common/internal-types';
-import { getOtlpEncoder } from '../common/utils';
+} from './internal-types.js';
+import { OtlpEncodingOptions } from '../common/internal-types.js';
+import { getOtlpEncoder } from '../common/utils.js';
 
 // Span flags constants matching the OTLP specification
 const SPAN_FLAGS_CONTEXT_HAS_IS_REMOTE_MASK = 0x100;

@@ -22,7 +22,7 @@ import {
   TraceFlags,
   Attributes,
 } from '@opentelemetry/api';
-import { ExemplarFilter } from './ExemplarFilter';
+import { ExemplarFilter } from './ExemplarFilter.js';
 
 export class WithTraceExemplarFilter implements ExemplarFilter {
   shouldSample(

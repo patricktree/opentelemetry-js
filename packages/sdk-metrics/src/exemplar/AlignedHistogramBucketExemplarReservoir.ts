@@ -15,7 +15,7 @@
  */
 
 import { Context, HrTime, Attributes } from '@opentelemetry/api';
-import { FixedSizeExemplarReservoirBase } from './ExemplarReservoir';
+import { FixedSizeExemplarReservoirBase } from './ExemplarReservoir.js';
 
 /**
  * AlignedHistogramBucketExemplarReservoir takes the same boundaries

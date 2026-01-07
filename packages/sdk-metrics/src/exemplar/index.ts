@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-export type { Exemplar } from './Exemplar';
-export type { ExemplarFilter } from './ExemplarFilter';
-export { AlwaysSampleExemplarFilter } from './AlwaysSampleExemplarFilter';
-export { NeverSampleExemplarFilter } from './NeverSampleExemplarFilter';
-export { WithTraceExemplarFilter } from './WithTraceExemplarFilter';
-export type { ExemplarReservoir } from './ExemplarReservoir';
-export { FixedSizeExemplarReservoirBase } from './ExemplarReservoir';
-export { AlignedHistogramBucketExemplarReservoir } from './AlignedHistogramBucketExemplarReservoir';
-export { SimpleFixedSizeExemplarReservoir } from './SimpleFixedSizeExemplarReservoir';
+export type { Exemplar } from './Exemplar.js';
+export type { ExemplarFilter } from './ExemplarFilter.js';
+export { AlwaysSampleExemplarFilter } from './AlwaysSampleExemplarFilter.js';
+export { NeverSampleExemplarFilter } from './NeverSampleExemplarFilter.js';
+export { WithTraceExemplarFilter } from './WithTraceExemplarFilter.js';
+export type { ExemplarReservoir } from './ExemplarReservoir.js';
+export { FixedSizeExemplarReservoirBase } from './ExemplarReservoir.js';
+export { AlignedHistogramBucketExemplarReservoir } from './AlignedHistogramBucketExemplarReservoir.js';
+export { SimpleFixedSizeExemplarReservoir } from './SimpleFixedSizeExemplarReservoir.js';

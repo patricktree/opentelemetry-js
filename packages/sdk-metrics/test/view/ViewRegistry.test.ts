@@ -15,13 +15,13 @@
  */
 
 import * as assert from 'assert';
-import { InstrumentType } from '../../src';
-import { ViewRegistry } from '../../src/view/ViewRegistry';
+import { InstrumentType } from '../../src.js';
+import { ViewRegistry } from '../../src/view/ViewRegistry.js';
 import {
   defaultInstrumentationScope,
   defaultInstrumentDescriptor,
-} from '../util';
-import { View } from '../../src/view/View';
+} from '../util.js';
+import { View } from '../../src/view/View.js';
 
 describe('ViewRegistry', () => {
   describe('findViews', () => {

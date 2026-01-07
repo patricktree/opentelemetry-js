@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { HeadersFactory } from './otlp-http-configuration';
+import { HeadersFactory } from './otlp-http-configuration.js';
 
 /**
  * Configuration shared across all OTLP exporters

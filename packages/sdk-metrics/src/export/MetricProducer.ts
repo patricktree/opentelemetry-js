@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { CollectionResult } from './MetricData';
+import { CollectionResult } from './MetricData.js';
 
 export interface MetricCollectOptions {
   /**

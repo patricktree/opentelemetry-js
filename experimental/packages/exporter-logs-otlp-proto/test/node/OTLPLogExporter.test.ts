@@ -18,7 +18,7 @@ import * as assert from 'assert';
 import * as http from 'http';
 import * as sinon from 'sinon';
 
-import { OTLPLogExporter } from '../../src/platform/node';
+import { OTLPLogExporter } from '../../src/platform/node.js';
 import {
   LoggerProvider,
   SimpleLogRecordProcessor,

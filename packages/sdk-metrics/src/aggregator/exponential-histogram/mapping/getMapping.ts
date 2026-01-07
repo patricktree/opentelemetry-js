@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ExponentMapping } from './ExponentMapping';
-import { LogarithmMapping } from './LogarithmMapping';
-import { MappingError, Mapping } from './types';
+import { ExponentMapping } from './ExponentMapping.js';
+import { LogarithmMapping } from './LogarithmMapping.js';
+import { MappingError, Mapping } from './types.js';
 
 const MIN_SCALE = -10;
 const MAX_SCALE = 20;

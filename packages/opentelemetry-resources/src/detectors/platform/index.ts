@@ -18,4 +18,4 @@ export {
   osDetector,
   processDetector,
   serviceInstanceIdDetector,
-} from './node';
+} from './node.js';

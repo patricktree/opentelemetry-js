@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { ExactPredicate, PatternPredicate, Predicate } from './Predicate';
-import { InstrumentType } from '../export/MetricData';
+import { ExactPredicate, PatternPredicate, Predicate } from './Predicate.js';
+import { InstrumentType } from '../export/MetricData.js';
 
 export interface InstrumentSelectorCriteria {
   name?: string;

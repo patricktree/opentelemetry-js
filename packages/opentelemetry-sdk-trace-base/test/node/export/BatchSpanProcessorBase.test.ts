@@ -15,8 +15,8 @@
  */
 
 import * as assert from 'assert';
-import { BufferConfig, InMemorySpanExporter } from '../../../src';
-import { BatchSpanProcessorBase } from '../../../src/export/BatchSpanProcessorBase';
+import { BufferConfig, InMemorySpanExporter } from '../../../src.js';
+import { BatchSpanProcessorBase } from '../../../src/export/BatchSpanProcessorBase.js';
 
 class BatchSpanProcessor extends BatchSpanProcessorBase<BufferConfig> {
   onShutdown() {}

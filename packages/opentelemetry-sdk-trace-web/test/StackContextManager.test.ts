@@ -16,7 +16,7 @@
 
 import { createContextKey, ROOT_CONTEXT } from '@opentelemetry/api';
 import * as assert from 'assert';
-import { StackContextManager } from '../src';
+import { StackContextManager } from '../src.js';
 
 describe('StackContextManager', function () {
   let contextManager: StackContextManager;

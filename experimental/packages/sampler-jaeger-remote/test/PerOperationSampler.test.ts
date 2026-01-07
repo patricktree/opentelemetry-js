@@ -17,7 +17,7 @@ import {
   AlwaysOnSampler,
   SamplingDecision,
 } from '@opentelemetry/sdk-trace-base';
-import { PerOperationSampler } from '../src/PerOperationSampler';
+import { PerOperationSampler } from '../src/PerOperationSampler.js';
 import * as sinon from 'sinon';
 import * as api from '@opentelemetry/api';
 

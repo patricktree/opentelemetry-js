@@ -16,9 +16,9 @@
 
 import { Context } from '@opentelemetry/api';
 import { globalErrorHandler } from '@opentelemetry/core';
-import { ReadableSpan } from './export/ReadableSpan';
-import { Span } from './Span';
-import { SpanProcessor } from './SpanProcessor';
+import { ReadableSpan } from './export/ReadableSpan.js';
+import { Span } from './Span.js';
+import { SpanProcessor } from './SpanProcessor.js';
 
 /**
  * Implementation of the {@link SpanProcessor} that simply forwards all

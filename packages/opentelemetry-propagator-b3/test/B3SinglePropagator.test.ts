@@ -26,9 +26,9 @@ import {
 } from '@opentelemetry/api';
 import { suppressTracing } from '@opentelemetry/core';
 import * as assert from 'assert';
-import { B3SinglePropagator } from '../src/B3SinglePropagator';
-import { B3_DEBUG_FLAG_KEY } from '../src/common';
-import { B3_CONTEXT_HEADER } from '../src/constants';
+import { B3SinglePropagator } from '../src/B3SinglePropagator.js';
+import { B3_DEBUG_FLAG_KEY } from '../src/common.js';
+import { B3_CONTEXT_HEADER } from '../src/constants.js';
 
 describe('B3SinglePropagator', () => {
   const propagator = new B3SinglePropagator();

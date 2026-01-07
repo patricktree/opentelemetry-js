@@ -22,8 +22,8 @@ import {
   MetricReader,
 } from '@opentelemetry/sdk-metrics';
 import { createServer, IncomingMessage, Server, ServerResponse } from 'http';
-import { ExporterConfig } from './export/types';
-import { PrometheusSerializer } from './PrometheusSerializer';
+import { ExporterConfig } from './export/types.js';
+import { PrometheusSerializer } from './PrometheusSerializer.js';
 /** Node.js v8.x compat */
 import { URL } from 'url';
 

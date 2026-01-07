@@ -31,7 +31,7 @@ import {
   ThriftReference,
   TagValue,
   ThriftReferenceType,
-} from './types';
+} from './types.js';
 
 const DEFAULT_FLAGS = 0x1;
 

@@ -18,7 +18,7 @@ import * as assert from 'assert';
 import {
   validateKey,
   validateValue,
-} from '../../../src/trace/internal/tracestate-validators';
+} from '../../../src/trace/internal/tracestate-validators.js';
 
 describe('validators', function () {
   describe('validateKey', function () {

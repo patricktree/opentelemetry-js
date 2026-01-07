@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-export { FetchInstrumentation } from './fetch';
+export { FetchInstrumentation } from './fetch.js';
 export type {
   FetchCustomAttributeFunction,
   FetchRequestHookFunction,
   FetchInstrumentationConfig,
-} from './fetch';
+} from './fetch.js';

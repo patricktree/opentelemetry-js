@@ -22,33 +22,33 @@ export type {
   BaggageEntry,
   BaggageEntryMetadata,
   Baggage,
-} from './baggage/types';
-export { baggageEntryMetadataFromString } from './baggage/utils';
-export type { Exception } from './common/Exception';
-export type { HrTime, TimeInput } from './common/Time';
-export type { Attributes, AttributeValue } from './common/Attributes';
+} from './baggage/types.js';
+export { baggageEntryMetadataFromString } from './baggage/utils.js';
+export type { Exception } from './common/Exception.js';
+export type { HrTime, TimeInput } from './common/Time.js';
+export type { Attributes, AttributeValue } from './common/Attributes.js';
 
 // Context APIs
-export { createContextKey, ROOT_CONTEXT } from './context/context';
-export type { Context, ContextManager } from './context/types';
-export type { ContextAPI } from './api/context';
+export { createContextKey, ROOT_CONTEXT } from './context/context.js';
+export type { Context, ContextManager } from './context/types.js';
+export type { ContextAPI } from './api/context.js';
 
 // Diag APIs
-export { DiagConsoleLogger } from './diag/consoleLogger';
-export { DiagLogLevel } from './diag/types';
+export { DiagConsoleLogger } from './diag/consoleLogger.js';
+export { DiagLogLevel } from './diag/types.js';
 export type {
   DiagLogFunction,
   DiagLogger,
   ComponentLoggerOptions,
   DiagLoggerOptions,
-} from './diag/types';
-export type { DiagAPI } from './api/diag';
+} from './diag/types.js';
+export type { DiagAPI } from './api/diag.js';
 
 // Metrics APIs
-export { createNoopMeter } from './metrics/NoopMeter';
-export type { MeterOptions, Meter } from './metrics/Meter';
-export type { MeterProvider } from './metrics/MeterProvider';
-export { ValueType } from './metrics/Metric';
+export { createNoopMeter } from './metrics/NoopMeter.js';
+export type { MeterOptions, Meter } from './metrics/Meter.js';
+export type { MeterProvider } from './metrics/MeterProvider.js';
+export { ValueType } from './metrics/Metric.js';
 export type {
   Counter,
   Gauge,
@@ -64,62 +64,65 @@ export type {
   MetricAttributes,
   MetricAttributeValue,
   ObservableCallback,
-} from './metrics/Metric';
+} from './metrics/Metric.js';
 export type {
   BatchObservableResult,
   ObservableResult,
-} from './metrics/ObservableResult';
-export type { MetricsAPI } from './api/metrics';
+} from './metrics/ObservableResult.js';
+export type { MetricsAPI } from './api/metrics.js';
 
 // Propagation APIs
 export {
   defaultTextMapGetter,
   defaultTextMapSetter,
-} from './propagation/TextMapPropagator';
+} from './propagation/TextMapPropagator.js';
 export type {
   TextMapPropagator,
   TextMapSetter,
   TextMapGetter,
-} from './propagation/TextMapPropagator';
-export type { PropagationAPI } from './api/propagation';
+} from './propagation/TextMapPropagator.js';
+export type { PropagationAPI } from './api/propagation.js';
 
 // Trace APIs
-export type { SpanAttributes, SpanAttributeValue } from './trace/attributes';
-export type { Link } from './trace/link';
-export { ProxyTracer, type TracerDelegator } from './trace/ProxyTracer';
-export { ProxyTracerProvider } from './trace/ProxyTracerProvider';
-export type { Sampler } from './trace/Sampler';
-export { SamplingDecision, type SamplingResult } from './trace/SamplingResult';
-export type { SpanContext } from './trace/span_context';
-export { SpanKind } from './trace/span_kind';
-export type { Span } from './trace/span';
-export type { SpanOptions } from './trace/SpanOptions';
-export { type SpanStatus, SpanStatusCode } from './trace/status';
-export { TraceFlags } from './trace/trace_flags';
-export type { TraceState } from './trace/trace_state';
-export { createTraceState } from './trace/internal/utils';
-export type { TracerProvider } from './trace/tracer_provider';
-export type { Tracer } from './trace/tracer';
-export type { TracerOptions } from './trace/tracer_options';
+export type { SpanAttributes, SpanAttributeValue } from './trace/attributes.js';
+export type { Link } from './trace/link.js';
+export { ProxyTracer, type TracerDelegator } from './trace/ProxyTracer.js';
+export { ProxyTracerProvider } from './trace/ProxyTracerProvider.js';
+export type { Sampler } from './trace/Sampler.js';
+export {
+  SamplingDecision,
+  type SamplingResult,
+} from './trace/SamplingResult.js';
+export type { SpanContext } from './trace/span_context.js';
+export { SpanKind } from './trace/span_kind.js';
+export type { Span } from './trace/span.js';
+export type { SpanOptions } from './trace/SpanOptions.js';
+export { type SpanStatus, SpanStatusCode } from './trace/status.js';
+export { TraceFlags } from './trace/trace_flags.js';
+export type { TraceState } from './trace/trace_state.js';
+export { createTraceState } from './trace/internal/utils.js';
+export type { TracerProvider } from './trace/tracer_provider.js';
+export type { Tracer } from './trace/tracer.js';
+export type { TracerOptions } from './trace/tracer_options.js';
 export {
   isSpanContextValid,
   isValidTraceId,
   isValidSpanId,
-} from './trace/spancontext-utils';
+} from './trace/spancontext-utils.js';
 export {
   INVALID_SPANID,
   INVALID_TRACEID,
   INVALID_SPAN_CONTEXT,
-} from './trace/invalid-span-constants';
-export type { TraceAPI } from './api/trace';
+} from './trace/invalid-span-constants.js';
+export type { TraceAPI } from './api/trace.js';
 
 // Split module-level variable definition into separate files to allow
 // tree-shaking on each api instance.
-import { context } from './context-api';
-import { diag } from './diag-api';
-import { metrics } from './metrics-api';
-import { propagation } from './propagation-api';
-import { trace } from './trace-api';
+import { context } from './context-api.js';
+import { diag } from './diag-api.js';
+import { metrics } from './metrics-api.js';
+import { propagation } from './propagation-api.js';
+import { trace } from './trace-api.js';
 
 // Named export.
 export { context, diag, metrics, propagation, trace };

@@ -15,21 +15,21 @@
  */
 
 import * as assert from 'assert';
-import { InstrumentType } from '../../src';
+import { InstrumentType } from '../../src.js';
 import {
   Aggregator,
   DropAggregator,
   HistogramAggregator,
   LastValueAggregator,
   SumAggregator,
-} from '../../src/aggregator';
-import { InstrumentDescriptor } from '../../src/InstrumentDescriptor';
+} from '../../src/aggregator.js';
+import { InstrumentDescriptor } from '../../src/InstrumentDescriptor.js';
 import {
   DefaultAggregation,
   ExplicitBucketHistogramAggregation,
   HistogramAggregation,
-} from '../../src/view/Aggregation';
-import { defaultInstrumentDescriptor } from '../util';
+} from '../../src/view/Aggregation.js';
+import { defaultInstrumentDescriptor } from '../util.js';
 
 interface AggregatorConstructor {
   new (...args: any[]): Aggregator<unknown>;

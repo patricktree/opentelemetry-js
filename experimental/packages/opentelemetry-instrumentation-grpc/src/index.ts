@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export { GrpcInstrumentation } from './instrumentation';
-export type { GrpcInstrumentationConfig } from './types';
+export { GrpcInstrumentation } from './instrumentation.js';
+export type { GrpcInstrumentationConfig } from './types.js';

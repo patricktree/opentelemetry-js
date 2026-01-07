@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Session } from './Session';
+import { Session } from './Session.js';
 
 export interface SessionObserver {
   onSessionStarted(newSession: Session, previousSession?: Session): void;

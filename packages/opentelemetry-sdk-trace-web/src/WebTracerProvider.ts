@@ -19,7 +19,7 @@ import {
   SDKRegistrationConfig,
   TracerConfig,
 } from '@opentelemetry/sdk-trace-base';
-import { StackContextManager } from './StackContextManager';
+import { StackContextManager } from './StackContextManager.js';
 import {
   trace,
   context,

@@ -15,7 +15,7 @@
  */
 
 import { Context, HrTime, Attributes } from '@opentelemetry/api';
-import { AttributeHashMap } from './HashMap';
+import { AttributeHashMap } from './HashMap.js';
 
 /**
  * Internal interface. Stores measurements and allows synchronous writes of

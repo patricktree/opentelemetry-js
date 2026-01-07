@@ -16,8 +16,8 @@
 
 /// <reference types="zone.js" />
 import { Context, ContextManager, ROOT_CONTEXT } from '@opentelemetry/api';
-import { TargetWithEvents } from './types';
-import { isListenerObject } from './util';
+import { TargetWithEvents } from './types.js';
+import { isListenerObject } from './util.js';
 
 /* Key name to be used to save a context reference in Zone */
 const ZONE_CONTEXT_KEY = 'OT_ZONE_CONTEXT';

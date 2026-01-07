@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { LoggerProvider } from './types/LoggerProvider';
-import { Logger } from './types/Logger';
-import { LoggerOptions } from './types/LoggerOptions';
-import { NOOP_LOGGER_PROVIDER } from './NoopLoggerProvider';
-import { ProxyLogger } from './ProxyLogger';
+import { LoggerProvider } from './types/LoggerProvider.js';
+import { Logger } from './types/Logger.js';
+import { LoggerOptions } from './types/LoggerOptions.js';
+import { NOOP_LOGGER_PROVIDER } from './NoopLoggerProvider.js';
+import { ProxyLogger } from './ProxyLogger.js';
 
 export class ProxyLoggerProvider implements LoggerProvider {
   private _delegate?: LoggerProvider;

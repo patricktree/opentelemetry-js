@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import type { OtlpEncodingOptions } from '../common/internal-types';
+import type { OtlpEncodingOptions } from '../common/internal-types.js';
 import { ValueType } from '@opentelemetry/api';
 import {
   AggregationTemporality,
@@ -34,13 +34,13 @@ import {
   INumberDataPoint,
   IResourceMetrics,
   IScopeMetrics,
-} from './internal-types';
-import { Encoder, getOtlpEncoder } from '../common/utils';
+} from './internal-types.js';
+import { Encoder, getOtlpEncoder } from '../common/utils.js';
 import {
   createInstrumentationScope,
   createResource,
   toAttributes,
-} from '../common/internal';
+} from '../common/internal.js';
 
 export function toResourceMetrics(
   resourceMetrics: ResourceMetrics,

@@ -16,24 +16,27 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { MeterProvider } from '../../src/MeterProvider';
-import { emptyResourceMetrics, TestMetricProducer } from './TestMetricProducer';
-import { TestMetricReader } from './TestMetricReader';
+import { MeterProvider } from '../../src/MeterProvider.js';
+import {
+  emptyResourceMetrics,
+  TestMetricProducer,
+} from './TestMetricProducer.js';
+import { TestMetricReader } from './TestMetricReader.js';
 import {
   AggregationTemporality,
   AggregationType,
   DataPointType,
   ScopeMetrics,
-} from '../../src';
+} from '../../src.js';
 import {
   DEFAULT_AGGREGATION_SELECTOR,
   DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR,
-} from '../../src/export/AggregationSelector';
+} from '../../src/export/AggregationSelector.js';
 import {
   assertAggregationSelector,
   assertAggregationTemporalitySelector,
-} from './utils';
-import { testResource } from '../util';
+} from './utils.js';
+import { testResource } from '../util.js';
 import { ValueType } from '@opentelemetry/api';
 import { resourceFromAttributes } from '@opentelemetry/resources';
 

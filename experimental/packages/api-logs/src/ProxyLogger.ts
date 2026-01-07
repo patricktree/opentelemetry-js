@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { NOOP_LOGGER } from './NoopLogger';
-import { Logger } from './types/Logger';
-import { LoggerOptions } from './types/LoggerOptions';
-import { LogRecord } from './types/LogRecord';
+import { NOOP_LOGGER } from './NoopLogger.js';
+import { Logger } from './types/Logger.js';
+import { LoggerOptions } from './types/LoggerOptions.js';
+import { LogRecord } from './types/LogRecord.js';
 
 export class ProxyLogger implements Logger {
   // When a real implementation is provided, this will be it

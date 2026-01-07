@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { UnresolvedOtlpGrpcConfiguration } from './otlp-grpc-configuration';
+import { UnresolvedOtlpGrpcConfiguration } from './otlp-grpc-configuration.js';
 import type { ChannelCredentials, Metadata } from '@grpc/grpc-js';
 import { parseKeyPairsIntoRecord } from '@opentelemetry/core';
 import {
   createEmptyMetadata,
   createInsecureCredentials,
   createSslCredentials,
-} from '../grpc-exporter-transport';
+} from '../grpc-exporter-transport.js';
 import { getSharedConfigurationFromEnvironment } from '@opentelemetry/otlp-exporter-base/node-http';
 import * as fs from 'fs';
 import * as path from 'path';

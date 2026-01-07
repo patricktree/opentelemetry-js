@@ -14,27 +14,27 @@
  * limitations under the License.
  */
 
-import * as types from '../../types';
+import * as types from '../../types.js';
 import * as path from 'path';
 import { types as utilTypes } from 'util';
-import { satisfies } from '../../semver';
-import { wrap, unwrap, massWrap, massUnwrap } from '../../shimmer';
-import { InstrumentationAbstract } from '../../instrumentation';
+import { satisfies } from '../../semver.js';
+import { wrap, unwrap, massWrap, massUnwrap } from '../../shimmer.js';
+import { InstrumentationAbstract } from '../../instrumentation.js';
 import {
   RequireInTheMiddleSingleton,
   Hooked,
-} from './RequireInTheMiddleSingleton';
+} from './RequireInTheMiddleSingleton.js';
 import type { HookFn } from 'import-in-the-middle';
 import { Hook as HookImport } from 'import-in-the-middle';
 import {
   InstrumentationConfig,
   InstrumentationModuleDefinition,
-} from '../../types';
+} from '../../types.js';
 import { diag } from '@opentelemetry/api';
 import type { OnRequireFn } from 'require-in-the-middle';
 import { Hook as HookRequire } from 'require-in-the-middle';
 import { readFileSync } from 'fs';
-import { isWrapped } from '../../utils';
+import { isWrapped } from '../../utils.js';
 
 /**
  * Base abstract class for instrumenting node plugins

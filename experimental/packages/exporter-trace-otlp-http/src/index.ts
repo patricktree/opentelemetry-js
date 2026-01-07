@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { OTLPTraceExporter } from './platform';
+export { OTLPTraceExporter } from './platform.js';

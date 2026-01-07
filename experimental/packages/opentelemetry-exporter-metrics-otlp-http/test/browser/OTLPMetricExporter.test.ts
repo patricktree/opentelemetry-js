@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { AggregationTemporalityPreference } from '../../src';
+import { AggregationTemporalityPreference } from '../../src.js';
 import {
   AggregationOption,
   AggregationTemporality,
@@ -25,7 +25,7 @@ import {
 } from '@opentelemetry/sdk-metrics';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { OTLPMetricExporter } from '../../src/platform/browser';
+import { OTLPMetricExporter } from '../../src/platform/browser.js';
 
 /*
  * NOTE: Tests here are not intended to test the underlying components directly. They are intended as a quick

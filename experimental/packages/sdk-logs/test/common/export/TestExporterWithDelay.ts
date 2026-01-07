@@ -15,7 +15,7 @@
  */
 
 import { ExportResult } from '@opentelemetry/core';
-import { InMemoryLogRecordExporter, ReadableLogRecord } from '../../../src';
+import { InMemoryLogRecordExporter, ReadableLogRecord } from '../../../src.js';
 
 /**
  * A test-only exporter that delays during export to mimic a real exporter.

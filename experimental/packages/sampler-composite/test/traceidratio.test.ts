@@ -21,10 +21,10 @@ import { SamplingDecision } from '@opentelemetry/sdk-trace-base';
 import {
   createCompositeSampler,
   createComposableTraceIDRatioBasedSampler,
-} from '../src';
-import { traceIdGenerator } from './util';
-import { parseOtelTraceState } from '../src/tracestate';
-import { INVALID_RANDOM_VALUE } from '../src/util';
+} from '../src.js';
+import { traceIdGenerator } from './util.js';
+import { parseOtelTraceState } from '../src/tracestate.js';
+import { INVALID_RANDOM_VALUE } from '../src/util.js';
 
 describe('ComposableTraceIDRatioBasedSampler', () => {
   [

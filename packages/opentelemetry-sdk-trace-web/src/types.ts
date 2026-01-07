@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { PerformanceTimingNames } from './enums/PerformanceTimingNames';
+import { PerformanceTimingNames } from './enums/PerformanceTimingNames.js';
 
 export type PerformanceEntries = {
   [PerformanceTimingNames.CONNECT_END]?: number;

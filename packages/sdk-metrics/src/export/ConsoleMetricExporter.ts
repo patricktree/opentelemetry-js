@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 import { ExportResult, ExportResultCode } from '@opentelemetry/core';
-import { AggregationTemporality } from './AggregationTemporality';
-import { ResourceMetrics, InstrumentType } from './MetricData';
-import { PushMetricExporter } from './MetricExporter';
+import { AggregationTemporality } from './AggregationTemporality.js';
+import { ResourceMetrics, InstrumentType } from './MetricData.js';
+import { PushMetricExporter } from './MetricExporter.js';
 import {
   AggregationTemporalitySelector,
   DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR,
-} from './AggregationSelector';
+} from './AggregationSelector.js';
 
 interface ConsoleMetricExporterOptions {
   temporalitySelector?: AggregationTemporalitySelector;

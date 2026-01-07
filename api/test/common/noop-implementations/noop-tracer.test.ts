@@ -24,9 +24,9 @@ import {
   SpanKind,
   trace,
   TraceFlags,
-} from '../../../src';
-import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan';
-import { NoopTracer } from '../../../src/trace/NoopTracer';
+} from '../../../src.js';
+import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan.js';
+import { NoopTracer } from '../../../src/trace/NoopTracer.js';
 
 describe('NoopTracer', function () {
   afterEach(() => {

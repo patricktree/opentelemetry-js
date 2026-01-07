@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ExponentMapping } from '../../../src/aggregator/exponential-histogram/mapping/ExponentMapping';
-import { LogarithmMapping } from '../../../src/aggregator/exponential-histogram/mapping/LogarithmMapping';
-import { getMapping } from '../../../src/aggregator/exponential-histogram/mapping/getMapping';
+import { ExponentMapping } from '../../../src/aggregator/exponential-histogram/mapping/ExponentMapping.js';
+import { LogarithmMapping } from '../../../src/aggregator/exponential-histogram/mapping/LogarithmMapping.js';
+import { getMapping } from '../../../src/aggregator/exponential-histogram/mapping/getMapping.js';
 import * as assert from 'assert';
 
 const MIN_SCALE = -10;

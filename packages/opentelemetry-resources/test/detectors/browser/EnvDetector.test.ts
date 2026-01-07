@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { envDetector } from '../../../src';
-import { describeBrowser } from '../../util';
-import { assertEmptyResource } from '../../util/resource-assertions';
+import { envDetector } from '../../../src.js';
+import { describeBrowser } from '../../util.js';
+import { assertEmptyResource } from '../../util/resource-assertions.js';
 
 describeBrowser('envDetector() on web browser', () => {
   it('should return empty resource', async () => {

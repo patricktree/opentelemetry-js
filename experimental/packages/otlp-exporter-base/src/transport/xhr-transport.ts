@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-import { IExporterTransport } from '../exporter-transport';
-import { ExportResponse } from '../export-response';
+import { IExporterTransport } from '../exporter-transport.js';
+import { ExportResponse } from '../export-response.js';
 import { diag } from '@opentelemetry/api';
 import {
   isExportHTTPErrorRetryable,
   parseRetryAfterToMills,
-} from '../is-export-retryable';
+} from '../is-export-retryable.js';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import type { createFetchTransport } from './fetch-transport';
-import { HeadersFactory } from '../configuration/otlp-http-configuration';
+import type { createFetchTransport } from './fetch-transport.js';
+import { HeadersFactory } from '../configuration/otlp-http-configuration.js';
 
 /**
  * @deprecated favor the fetch transport

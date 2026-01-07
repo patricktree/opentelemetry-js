@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Context } from './types';
+import { Context } from './types.js';
 
 /**
  * Get a key to uniquely identify a context value

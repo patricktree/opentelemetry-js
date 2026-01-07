@@ -19,5 +19,5 @@
  * @module @opentelemetry/api/experimental
  */
 
-export { wrapTracer, SugaredTracer } from './trace/SugaredTracer';
-export type { SugaredSpanOptions } from './trace/SugaredOptions';
+export { wrapTracer, SugaredTracer } from './trace/SugaredTracer.js';
+export type { SugaredSpanOptions } from './trace/SugaredOptions.js';

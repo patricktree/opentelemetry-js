@@ -20,8 +20,8 @@ import {
   Propagator,
   ConfigurationModel,
   initializeDefaultConfiguration,
-} from './models/configModel';
-import { ConfigFactory } from './IConfigFactory';
+} from './models/configModel.js';
+import { ConfigFactory } from './IConfigFactory.js';
 import * as fs from 'fs';
 import * as yaml from 'yaml';
 import {
@@ -31,21 +31,21 @@ import {
   getNumberListFromConfigFile,
   getStringFromConfigFile,
   getStringListFromConfigFile,
-} from './utils';
-import { NameStringValuePair, OtlpHttpEncoding } from './models/commonModel';
+} from './utils.js';
+import { NameStringValuePair, OtlpHttpEncoding } from './models/commonModel.js';
 import {
   initializeDefaultTracerProviderConfiguration,
   SpanExporter,
   SpanProcessor,
   TracerProvider,
-} from './models/tracerProviderModel';
+} from './models/tracerProviderModel.js';
 import {
   initializeDefaultLoggerProviderConfiguration,
   LoggerProvider,
   LogRecordExporter,
   LogRecordProcessor,
-} from './models/loggerProviderModel';
-import { AttributeNameValue } from './models/resourceModel';
+} from './models/loggerProviderModel.js';
+import { AttributeNameValue } from './models/resourceModel.js';
 import {
   Aggregation,
   CardinalityLimits,
@@ -62,7 +62,7 @@ import {
   View,
   ViewSelector,
   ViewStream,
-} from './models/meterProviderModel';
+} from './models/meterProviderModel.js';
 import { diag } from '@opentelemetry/api';
 
 export class FileConfigFactory implements ConfigFactory {

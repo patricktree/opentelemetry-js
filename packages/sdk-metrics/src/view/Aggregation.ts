@@ -22,11 +22,11 @@ import {
   LastValueAggregator,
   HistogramAggregator,
   ExponentialHistogramAggregator,
-} from '../aggregator';
-import { Accumulation } from '../aggregator/types';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
-import { Maybe } from '../utils';
-import { InstrumentType } from '../export/MetricData';
+} from '../aggregator.js';
+import { Accumulation } from '../aggregator/types.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
+import { Maybe } from '../utils.js';
+import { InstrumentType } from '../export/MetricData.js';
 
 /**
  * Configures how measurements are combined into metrics for views.

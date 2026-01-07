@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { OTLPGRPCExporterConfigNode } from '../types';
+import { OTLPGRPCExporterConfigNode } from '../types.js';
 import { diag } from '@opentelemetry/api';
 import {
   getOtlpGrpcDefaultConfiguration,
   mergeOtlpGrpcConfigurationWithDefaults,
   OtlpGrpcConfiguration,
-} from './otlp-grpc-configuration';
-import { createEmptyMetadata } from '../grpc-exporter-transport';
-import { getOtlpGrpcConfigurationFromEnv } from './otlp-grpc-env-configuration';
+} from './otlp-grpc-configuration.js';
+import { createEmptyMetadata } from '../grpc-exporter-transport.js';
+import { getOtlpGrpcConfigurationFromEnv } from './otlp-grpc-env-configuration.js';
 
 /**
  * @deprecated

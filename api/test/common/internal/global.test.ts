@@ -16,9 +16,9 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { getGlobal } from '../../../src/internal/global-utils';
-import { NoopContextManager } from '../../../src/context/NoopContextManager';
-import { DiagLogLevel } from '../../../src/diag/types';
+import { getGlobal } from '../../../src/internal/global-utils.js';
+import { NoopContextManager } from '../../../src/context/NoopContextManager.js';
+import { DiagLogLevel } from '../../../src/diag/types.js';
 
 const api1 = require('../../../src') as typeof import('../../../src');
 

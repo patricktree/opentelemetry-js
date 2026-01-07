@@ -21,7 +21,7 @@ import {
   ResourceDetectionConfig,
   emptyResource,
 } from '@opentelemetry/resources';
-import { BROWSER_ATTRIBUTES, UserAgentData } from './types';
+import { BROWSER_ATTRIBUTES, UserAgentData } from './types.js';
 
 /**
  * BrowserDetector will be used to detect the resources related to browser.

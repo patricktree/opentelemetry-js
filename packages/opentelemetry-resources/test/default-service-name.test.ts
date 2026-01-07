@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { defaultServiceName } from '../src/default-service-name';
+import { defaultServiceName } from '../src/default-service-name.js';
 
 const isNode = typeof process === 'object' && typeof process.argv0 === 'string';
 

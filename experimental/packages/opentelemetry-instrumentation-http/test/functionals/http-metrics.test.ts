@@ -39,11 +39,11 @@ import {
   ATTR_NET_HOST_PORT,
   ATTR_NET_PEER_NAME,
   ATTR_NET_PEER_PORT,
-} from '../../src/semconv';
+} from '../../src/semconv.js';
 import * as assert from 'assert';
-import { HttpInstrumentation } from '../../src/http';
-import { httpRequest } from '../utils/httpRequest';
-import { TestMetricReader } from '../utils/TestMetricReader';
+import { HttpInstrumentation } from '../../src/http.js';
+import { httpRequest } from '../utils/httpRequest.js';
+import { TestMetricReader } from '../utils/TestMetricReader.js';
 import { context, ContextManager } from '@opentelemetry/api';
 import { SemconvStability } from '@opentelemetry/instrumentation';
 

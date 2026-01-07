@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { TraceState } from '../trace_state';
-import { TraceStateImpl } from './tracestate-impl';
+import { TraceState } from '../trace_state.js';
+import { TraceStateImpl } from './tracestate-impl.js';
 
 /**
  * @since 1.1.0

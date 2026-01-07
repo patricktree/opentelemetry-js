@@ -16,11 +16,11 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { MeterProvider } from '../../src';
-import { TimeoutError } from '../../src/utils';
-import { DataPointType } from '../../src/export/MetricData';
-import { MeterProviderSharedState } from '../../src/state/MeterProviderSharedState';
-import { MetricCollector } from '../../src/state/MetricCollector';
+import { MeterProvider } from '../../src.js';
+import { TimeoutError } from '../../src/utils.js';
+import { DataPointType } from '../../src/export/MetricData.js';
+import { MeterProviderSharedState } from '../../src/state/MeterProviderSharedState.js';
+import { MetricCollector } from '../../src/state/MetricCollector.js';
 import {
   defaultInstrumentationScope,
   testResource,
@@ -28,11 +28,11 @@ import {
   assertDataPoint,
   ObservableCallbackDelegate,
   BatchObservableCallbackDelegate,
-} from '../util';
+} from '../util.js';
 import {
   TestDeltaMetricReader,
   TestMetricReader,
-} from '../export/TestMetricReader';
+} from '../export/TestMetricReader.js';
 
 describe('MetricCollector', () => {
   afterEach(() => {

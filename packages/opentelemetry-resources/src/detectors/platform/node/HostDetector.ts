@@ -14,16 +14,20 @@
  * limitations under the License.
  */
 
-import { ATTR_HOST_ARCH, ATTR_HOST_ID, ATTR_HOST_NAME } from '../../../semconv';
+import {
+  ATTR_HOST_ARCH,
+  ATTR_HOST_ID,
+  ATTR_HOST_NAME,
+} from '../../../semconv.js';
 import { arch, hostname } from 'os';
-import { ResourceDetectionConfig } from '../../../config';
+import { ResourceDetectionConfig } from '../../../config.js';
 import {
   DetectedResource,
   DetectedResourceAttributes,
   ResourceDetector,
-} from '../../../types';
-import { getMachineId } from './machine-id/getMachineId';
-import { normalizeArch } from './utils';
+} from '../../../types.js';
+import { getMachineId } from './machine-id/getMachineId.js';
+import { normalizeArch } from './utils.js';
 
 /**
  * HostDetector detects the resources related to the host current process is

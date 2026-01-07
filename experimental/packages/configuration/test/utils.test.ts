@@ -25,7 +25,7 @@ import {
   getNumberListFromConfigFile,
   getStringFromConfigFile,
   getStringListFromConfigFile,
-} from '../src/utils';
+} from '../src/utils.js';
 
 describe('config utils', function () {
   afterEach(function () {

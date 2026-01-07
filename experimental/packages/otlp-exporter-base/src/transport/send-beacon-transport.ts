@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { IExporterTransport } from '../exporter-transport';
-import { ExportResponse } from '../export-response';
+import { IExporterTransport } from '../exporter-transport.js';
+import { ExportResponse } from '../export-response.js';
 import { diag } from '@opentelemetry/api';
-import { HeadersFactory } from '../configuration/otlp-http-configuration';
+import { HeadersFactory } from '../configuration/otlp-http-configuration.js';
 
 export interface SendBeaconParameters {
   url: string;

@@ -21,12 +21,12 @@ import {
   InstrumentType,
   DataPointType,
   MetricData,
-} from '../../src';
+} from '../../src.js';
 import {
   HistogramAccumulation,
   HistogramAggregator,
-} from '../../src/aggregator';
-import { commonValues, defaultInstrumentDescriptor } from '../util';
+} from '../../src/aggregator.js';
+import { commonValues, defaultInstrumentDescriptor } from '../util.js';
 
 describe('HistogramAggregator', () => {
   describe('createAccumulation', () => {

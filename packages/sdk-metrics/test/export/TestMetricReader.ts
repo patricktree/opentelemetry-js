@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { AggregationTemporality, MetricReader } from '../../src';
-import { MetricCollector } from '../../src/state/MetricCollector';
-import { MetricReaderOptions } from '../../src/export/MetricReader';
+import { AggregationTemporality, MetricReader } from '../../src.js';
+import { MetricCollector } from '../../src/state/MetricCollector.js';
+import { MetricReaderOptions } from '../../src/export/MetricReader.js';
 
 /**
  * A test metric reader that implements no-op onForceFlush() and onShutdown() handlers.

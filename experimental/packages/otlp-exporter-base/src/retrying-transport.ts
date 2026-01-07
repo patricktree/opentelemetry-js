@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { IExporterTransport } from './exporter-transport';
-import { ExportResponse } from './export-response';
+import { IExporterTransport } from './exporter-transport.js';
+import { ExportResponse } from './export-response.js';
 import { diag } from '@opentelemetry/api';
 
 const MAX_ATTEMPTS = 5;

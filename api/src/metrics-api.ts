@@ -16,7 +16,7 @@
 
 // Split module-level variable definition into separate files to allow
 // tree-shaking on each api instance.
-import { MetricsAPI } from './api/metrics';
+import { MetricsAPI } from './api/metrics.js';
 /**
  * Entrypoint for metrics API
  *

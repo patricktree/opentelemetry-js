@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { VERSION } from '../../version';
+import { VERSION } from '../../version.js';
 import {
   ATTR_TELEMETRY_SDK_NAME,
   ATTR_TELEMETRY_SDK_LANGUAGE,
   TELEMETRY_SDK_LANGUAGE_VALUE_NODEJS,
   ATTR_TELEMETRY_SDK_VERSION,
 } from '@opentelemetry/semantic-conventions';
-import { ATTR_PROCESS_RUNTIME_NAME } from '../../semconv';
+import { ATTR_PROCESS_RUNTIME_NAME } from '../../semconv.js';
 
 /** Constants describing the SDK in use */
 export const SDK_INFO = {

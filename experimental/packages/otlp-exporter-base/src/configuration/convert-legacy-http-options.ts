@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { OTLPExporterConfigBase } from './legacy-base-configuration';
-import { wrapStaticHeadersInFunction } from './shared-configuration';
-import { HeadersFactory } from './otlp-http-configuration';
+import { OTLPExporterConfigBase } from './legacy-base-configuration.js';
+import { wrapStaticHeadersInFunction } from './shared-configuration.js';
+import { HeadersFactory } from './otlp-http-configuration.js';
 
 export function convertLegacyHeaders(
   config: OTLPExporterConfigBase

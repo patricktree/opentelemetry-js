@@ -17,14 +17,14 @@
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 
-import type { LogRecordProcessor, ReadableLogRecord } from '../../src';
+import type { LogRecordProcessor, ReadableLogRecord } from '../../src.js';
 import {
   LoggerProvider,
   InMemoryLogRecordExporter,
   SimpleLogRecordProcessor,
-} from './../../src';
-import { loadDefaultConfig } from '../../src/config';
-import { MultiLogRecordProcessor } from './../../src/MultiLogRecordProcessor';
+} from './../../src.js';
+import { loadDefaultConfig } from '../../src/config.js';
+import { MultiLogRecordProcessor } from './../../src/MultiLogRecordProcessor.js';
 
 class TestProcessor implements LogRecordProcessor {
   logRecords: ReadableLogRecord[] = [];

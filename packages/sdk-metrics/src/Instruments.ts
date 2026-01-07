@@ -31,12 +31,12 @@ import {
   ObservableUpDownCounter,
 } from '@opentelemetry/api';
 import { millisToHrTime } from '@opentelemetry/core';
-import { InstrumentDescriptor } from './InstrumentDescriptor';
-import { ObservableRegistry } from './state/ObservableRegistry';
+import { InstrumentDescriptor } from './InstrumentDescriptor.js';
+import { ObservableRegistry } from './state/ObservableRegistry.js';
 import {
   AsyncWritableMetricStorage,
   WritableMetricStorage,
-} from './state/WritableMetricStorage';
+} from './state/WritableMetricStorage.js';
 
 export class SyncInstrument {
   private _writableMetricStorage: WritableMetricStorage;

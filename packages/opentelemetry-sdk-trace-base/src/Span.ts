@@ -47,11 +47,11 @@ import {
   ATTR_EXCEPTION_STACKTRACE,
   ATTR_EXCEPTION_TYPE,
 } from '@opentelemetry/semantic-conventions';
-import { ReadableSpan } from './export/ReadableSpan';
-import { ExceptionEventName } from './enums';
-import { SpanProcessor } from './SpanProcessor';
-import { TimedEvent } from './TimedEvent';
-import { SpanLimits } from './types';
+import { ReadableSpan } from './export/ReadableSpan.js';
+import { ExceptionEventName } from './enums.js';
+import { SpanProcessor } from './SpanProcessor.js';
+import { TimedEvent } from './TimedEvent.js';
+import { SpanLimits } from './types.js';
 
 /**
  * This type provides the properties of @link{ReadableSpan} at the same time

@@ -38,7 +38,7 @@
 
 import * as assert from 'assert';
 
-import { satisfies, SatisfiesOptions } from '../../src/semver';
+import { satisfies, SatisfiesOptions } from '../../src/semver.js';
 
 const rangeInclude = require('./third-party/node-semver/range-include.js');
 const rangeExclude = require('./third-party/node-semver/range-exclude.js');

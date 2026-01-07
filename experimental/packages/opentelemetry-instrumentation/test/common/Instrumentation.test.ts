@@ -21,7 +21,7 @@ import {
   InstrumentationConfig,
   InstrumentationModuleDefinition,
   SpanCustomizationHook,
-} from '../../src';
+} from '../../src.js';
 
 import { MeterProvider } from '@opentelemetry/sdk-metrics';
 import { LoggerProvider } from '@opentelemetry/sdk-logs';

@@ -20,9 +20,9 @@ import {
   ValueType,
   diag,
 } from '@opentelemetry/api';
-import { View } from './view/View';
-import { equalsCaseInsensitive } from './utils';
-import { InstrumentType, MetricDescriptor } from './export/MetricData';
+import { View } from './view/View.js';
+import { equalsCaseInsensitive } from './utils.js';
+import { InstrumentType, MetricDescriptor } from './export/MetricData.js';
 
 /**
  * An internal interface describing the instrument.

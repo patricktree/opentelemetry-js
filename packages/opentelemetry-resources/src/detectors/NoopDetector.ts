@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { DetectedResource, ResourceDetector } from '../types';
+import { DetectedResource, ResourceDetector } from '../types.js';
 
 export class NoopDetector implements ResourceDetector {
   detect(): DetectedResource {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { ConfigurationModel } from './models/configModel';
+import { ConfigurationModel } from './models/configModel.js';
 
 export interface ConfigFactory {
   /**

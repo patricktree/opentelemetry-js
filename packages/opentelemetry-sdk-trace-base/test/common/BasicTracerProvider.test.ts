@@ -37,10 +37,10 @@ import {
   AlwaysOffSampler,
   ConsoleSpanExporter,
   SimpleSpanProcessor,
-} from '../../src';
-import { SpanImpl } from '../../src/Span';
-import { MultiSpanProcessor } from '../../src/MultiSpanProcessor';
-import { Tracer } from '../../src/Tracer';
+} from '../../src.js';
+import { SpanImpl } from '../../src/Span.js';
+import { MultiSpanProcessor } from '../../src/MultiSpanProcessor.js';
+import { Tracer } from '../../src/Tracer.js';
 
 describe('BasicTracerProvider', () => {
   beforeEach(() => {

@@ -17,8 +17,8 @@
 import { context, trace } from '@opentelemetry/api';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { BasicTracerProvider } from '../../src';
-import { Tracer } from '../../src/Tracer';
+import { BasicTracerProvider } from '../../src.js';
+import { Tracer } from '../../src/Tracer.js';
 
 describe('BasicTracerProvider - Node', () => {
   beforeEach(() => {

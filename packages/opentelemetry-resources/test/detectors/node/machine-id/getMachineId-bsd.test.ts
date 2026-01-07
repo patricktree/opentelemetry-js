@@ -18,8 +18,8 @@ import * as sinon from 'sinon';
 import * as assert from 'assert';
 import { promises as fs } from 'fs';
 import { PromiseWithChild } from 'child_process';
-import * as util from '../../../../src/detectors/platform/node/machine-id/execAsync';
-import { getMachineId } from '../../../../src/detectors/platform/node/machine-id/getMachineId-bsd';
+import * as util from '../../../../src/detectors/platform/node/machine-id/execAsync.js';
+import { getMachineId } from '../../../../src/detectors/platform/node/machine-id/getMachineId-bsd.js';
 
 describe('getMachineId on BSD', () => {
   const expectedMachineId = 'f2c668b579780554f70f72a063dc0864';

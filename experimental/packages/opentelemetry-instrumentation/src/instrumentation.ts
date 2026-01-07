@@ -26,13 +26,13 @@ import {
   Span,
 } from '@opentelemetry/api';
 import { Logger, LoggerProvider, logs } from '@opentelemetry/api-logs';
-import * as shimmer from './shimmer';
+import * as shimmer from './shimmer.js';
 import {
   InstrumentationModuleDefinition,
   Instrumentation,
   InstrumentationConfig,
   SpanCustomizationHook,
-} from './types';
+} from './types.js';
 
 /**
  * Base abstract internal class for instrumenting node and web plugins

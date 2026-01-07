@@ -16,11 +16,11 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { SessionManager, SessionManagerConfig } from '../src/SessionManager';
-import { SessionIdGenerator } from '../src/types/SessionIdGenerator';
-import { SessionStore } from '../src/types/SessionStore';
-import { SessionObserver } from '../src/types/SessionObserver';
-import { Session } from '../src/types/Session';
+import { SessionManager, SessionManagerConfig } from '../src/SessionManager.js';
+import { SessionIdGenerator } from '../src/types/SessionIdGenerator.js';
+import { SessionStore } from '../src/types/SessionStore.js';
+import { SessionObserver } from '../src/types/SessionObserver.js';
+import { Session } from '../src/types/Session.js';
 
 class MockSessionIdGenerator implements SessionIdGenerator {
   private _id = 0;

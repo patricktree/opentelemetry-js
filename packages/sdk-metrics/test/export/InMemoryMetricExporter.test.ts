@@ -16,12 +16,12 @@
 import { ExportResultCode } from '@opentelemetry/core';
 import * as metrics from '@opentelemetry/api';
 import * as assert from 'assert';
-import { AggregationTemporality } from '../../src/export/AggregationTemporality';
-import { InMemoryMetricExporter } from '../../src/export/InMemoryMetricExporter';
-import { ResourceMetrics } from '../../src/export/MetricData';
-import { PeriodicExportingMetricReader } from '../../src/export/PeriodicExportingMetricReader';
-import { MeterProvider } from '../../src/MeterProvider';
-import { testResource } from '../util';
+import { AggregationTemporality } from '../../src/export/AggregationTemporality.js';
+import { InMemoryMetricExporter } from '../../src/export/InMemoryMetricExporter.js';
+import { ResourceMetrics } from '../../src/export/MetricData.js';
+import { PeriodicExportingMetricReader } from '../../src/export/PeriodicExportingMetricReader.js';
+import { MeterProvider } from '../../src/MeterProvider.js';
+import { testResource } from '../util.js';
 import { resourceFromAttributes } from '@opentelemetry/resources';
 
 async function waitForNumberOfExports(

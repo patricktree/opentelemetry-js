@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { SpanExporter } from './SpanExporter';
-import { ReadableSpan } from './ReadableSpan';
+import { SpanExporter } from './SpanExporter.js';
+import { ReadableSpan } from './ReadableSpan.js';
 import {
   ExportResult,
   ExportResultCode,

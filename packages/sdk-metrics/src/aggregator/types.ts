@@ -15,10 +15,10 @@
  */
 
 import { HrTime, Attributes } from '@opentelemetry/api';
-import { AggregationTemporality } from '../export/AggregationTemporality';
-import { MetricData } from '../export/MetricData';
-import { Maybe } from '../utils';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
+import { AggregationTemporality } from '../export/AggregationTemporality.js';
+import { MetricData } from '../export/MetricData.js';
+import { Maybe } from '../utils.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
 
 /** The kind of aggregator. */
 export enum AggregatorKind {

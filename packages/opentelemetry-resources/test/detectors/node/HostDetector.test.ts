@@ -16,14 +16,14 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { hostDetector } from '../../../src';
-import { resourceFromDetectedResource } from '../../../src/ResourceImpl';
-import { describeNode } from '../../util';
+import { hostDetector } from '../../../src.js';
+import { resourceFromDetectedResource } from '../../../src/ResourceImpl.js';
+import { describeNode } from '../../util.js';
 import {
   ATTR_HOST_ARCH,
   ATTR_HOST_ID,
   ATTR_HOST_NAME,
-} from '../../../src/semconv';
+} from '../../../src/semconv.js';
 
 describeNode('hostDetector() on Node.js', () => {
   afterEach(() => {

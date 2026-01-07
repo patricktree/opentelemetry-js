@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { TracerShim } from './shim';
+export { TracerShim } from './shim.js';

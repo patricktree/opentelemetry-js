@@ -19,12 +19,12 @@ import {
   GLOBAL_LOGS_API_KEY,
   _global,
   makeGetter,
-} from '../internal/global-utils';
-import { LoggerProvider } from '../types/LoggerProvider';
-import { NOOP_LOGGER_PROVIDER } from '../NoopLoggerProvider';
-import { Logger } from '../types/Logger';
-import { LoggerOptions } from '../types/LoggerOptions';
-import { ProxyLoggerProvider } from '../ProxyLoggerProvider';
+} from '../internal/global-utils.js';
+import { LoggerProvider } from '../types/LoggerProvider.js';
+import { NOOP_LOGGER_PROVIDER } from '../NoopLoggerProvider.js';
+import { Logger } from '../types/Logger.js';
+import { LoggerOptions } from '../types/LoggerOptions.js';
+import { ProxyLoggerProvider } from '../ProxyLoggerProvider.js';
 
 export class LogsAPI {
   private static _instance?: LogsAPI;

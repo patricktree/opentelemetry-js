@@ -15,10 +15,10 @@
  */
 
 import * as assert from 'assert';
-import { JaegerExporter } from '../src';
+import { JaegerExporter } from '../src.js';
 import { ExportResult, ExportResultCode } from '@opentelemetry/core';
 import * as api from '@opentelemetry/api';
-import { ThriftProcess } from '../src/types';
+import { ThriftProcess } from '../src/types.js';
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
 import { TraceFlags } from '@opentelemetry/api';
 import { resourceFromAttributes } from '@opentelemetry/resources';

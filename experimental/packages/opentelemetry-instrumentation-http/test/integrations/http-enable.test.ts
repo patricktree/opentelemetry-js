@@ -21,12 +21,12 @@ import {
   ATTR_NET_TRANSPORT,
   HTTP_FLAVOR_VALUE_HTTP_1_1,
   NET_TRANSPORT_VALUE_IP_TCP,
-} from '../../src/semconv';
+} from '../../src/semconv.js';
 import * as assert from 'assert';
 import { urlToHttpOptions } from 'url';
-import { HttpInstrumentation } from '../../src/http';
-import { assertSpan } from '../utils/assertSpan';
-import * as utils from '../utils/utils';
+import { HttpInstrumentation } from '../../src/http.js';
+import { assertSpan } from '../utils/assertSpan.js';
+import * as utils from '../utils/utils.js';
 import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 import {
   InMemorySpanExporter,
@@ -39,10 +39,10 @@ instrumentation.enable();
 instrumentation.disable();
 
 import * as http from 'http';
-import { httpRequest } from '../utils/httpRequest';
-import { DummyPropagation } from '../utils/DummyPropagation';
+import { httpRequest } from '../utils/httpRequest.js';
+import { DummyPropagation } from '../utils/DummyPropagation.js';
 import { Socket } from 'net';
-import { sendRequestTwice } from '../utils/rawRequest';
+import { sendRequestTwice } from '../utils/rawRequest.js';
 
 const protocol = 'http';
 const hostname = 'localhost';

@@ -15,7 +15,7 @@
  */
 
 import { getNumberFromEnv } from '@opentelemetry/core';
-import { LogRecordLimits } from './types';
+import { LogRecordLimits } from './types.js';
 
 export function loadDefaultConfig() {
   return {

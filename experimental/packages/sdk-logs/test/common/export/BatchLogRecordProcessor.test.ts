@@ -29,16 +29,16 @@ import {
   SdkLogRecord,
   InMemoryLogRecordExporter,
   LogRecordExporter,
-} from '../../../src';
-import { BatchLogRecordProcessorBase } from '../../../src/export/BatchLogRecordProcessorBase';
-import { reconfigureLimits } from '../../../src/config';
-import { LoggerProviderSharedState } from '../../../src/internal/LoggerProviderSharedState';
+} from '../../../src.js';
+import { BatchLogRecordProcessorBase } from '../../../src/export/BatchLogRecordProcessorBase.js';
+import { reconfigureLimits } from '../../../src/config.js';
+import { LoggerProviderSharedState } from '../../../src/internal/LoggerProviderSharedState.js';
 import {
   defaultResource,
   Resource,
   resourceFromAttributes,
 } from '@opentelemetry/resources';
-import { LogRecordImpl } from '../../../src/LogRecordImpl';
+import { LogRecordImpl } from '../../../src/LogRecordImpl.js';
 
 class BatchLogRecordProcessor extends BatchLogRecordProcessorBase<BufferConfig> {
   onInit() {}

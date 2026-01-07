@@ -23,7 +23,7 @@ import {
   createEmptyMetadata,
   createInsecureCredentials,
   createSslCredentials,
-} from '../grpc-exporter-transport';
+} from '../grpc-exporter-transport.js';
 import { URL } from 'url';
 import { diag } from '@opentelemetry/api';
 

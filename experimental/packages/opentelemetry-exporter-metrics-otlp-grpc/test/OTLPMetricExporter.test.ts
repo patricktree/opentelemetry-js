@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { OTLPMetricExporter } from '../src';
-import { ServerTestContext, startServer } from './utils';
+import { OTLPMetricExporter } from '../src.js';
+import { ServerTestContext, startServer } from './utils.js';
 import * as assert from 'assert';
 import {
   MeterProvider,

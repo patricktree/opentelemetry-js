@@ -20,12 +20,12 @@ import {
   Aggregator,
   Accumulation,
   AccumulationRecord,
-} from './types';
+} from './types.js';
 import { HrTime } from '@opentelemetry/api';
-import { DataPointType, SumMetricData } from '../export/MetricData';
-import { Maybe } from '../utils';
-import { AggregationTemporality } from '../export/AggregationTemporality';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
+import { DataPointType, SumMetricData } from '../export/MetricData.js';
+import { Maybe } from '../utils.js';
+import { AggregationTemporality } from '../export/AggregationTemporality.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
 
 export class SumAccumulation implements Accumulation {
   public startTime;

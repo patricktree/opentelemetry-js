@@ -21,7 +21,7 @@ import {
   normalizeUrl,
   parseUrl,
   URLLike,
-} from '../../src/utils';
+} from '../../src/utils.js';
 
 const fixture = `
 <div>

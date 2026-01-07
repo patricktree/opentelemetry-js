@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import { diag } from '@opentelemetry/api';
-import { IOtlpResponseHandler } from './response-handler';
+import { IOtlpResponseHandler } from './response-handler.js';
 
 function isPartialSuccessResponse(
   response: unknown

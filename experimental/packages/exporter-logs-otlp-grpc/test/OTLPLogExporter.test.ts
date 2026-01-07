@@ -18,8 +18,8 @@ import {
   LoggerProvider,
   SimpleLogRecordProcessor,
 } from '@opentelemetry/sdk-logs';
-import { OTLPLogExporter } from '../src';
-import { ServerTestContext, startServer } from './utils';
+import { OTLPLogExporter } from '../src.js';
+import { ServerTestContext, startServer } from './utils.js';
 import * as assert from 'assert';
 
 const testServiceDefinition = {

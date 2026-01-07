@@ -16,13 +16,13 @@
 
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { createXhrTransport } from '../../src/transport/xhr-transport';
+import { createXhrTransport } from '../../src/transport/xhr-transport.js';
 import {
   ExportResponseRetryable,
   ExportResponseSuccess,
   ExportResponseFailure,
-} from '../../src';
-import { ensureHeadersContain } from '../testHelper';
+} from '../../src.js';
+import { ensureHeadersContain } from '../testHelper.js';
 
 const testTransportParameters = {
   url: 'http://example.test',

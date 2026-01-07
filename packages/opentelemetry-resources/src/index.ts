@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
-export type { ResourceDetectionConfig } from './config';
-export { detectResources } from './detect-resources';
+export type { ResourceDetectionConfig } from './config.js';
+export { detectResources } from './detect-resources.js';
 export {
   envDetector,
   hostDetector,
   osDetector,
   processDetector,
   serviceInstanceIdDetector,
-} from './detectors';
-export type { Resource } from './Resource';
+} from './detectors.js';
+export type { Resource } from './Resource.js';
 export {
   resourceFromAttributes,
   defaultResource,
   emptyResource,
-} from './ResourceImpl';
-export { defaultServiceName } from './default-service-name';
+} from './ResourceImpl.js';
+export { defaultServiceName } from './default-service-name.js';
 export type {
   ResourceDetector,
   DetectedResource,
   DetectedResourceAttributes,
   RawResourceAttribute,
   MaybePromise,
-} from './types';
+} from './types.js';

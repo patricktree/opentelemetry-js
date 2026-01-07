@@ -17,7 +17,7 @@
 import * as api from '@opentelemetry/api';
 import { ReadableSpan, TimedEvent } from '@opentelemetry/sdk-trace-base';
 import { hrTimeToMicroseconds } from '@opentelemetry/core';
-import * as zipkinTypes from './types';
+import * as zipkinTypes from './types.js';
 
 const ZIPKIN_SPAN_KIND_MAPPING = {
   [api.SpanKind.CLIENT]: zipkinTypes.SpanKind.CLIENT,

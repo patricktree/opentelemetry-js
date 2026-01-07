@@ -16,13 +16,13 @@
 
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { IExporterTransport } from '../../src';
+import { IExporterTransport } from '../../src.js';
 import { ExportResultCode } from '@opentelemetry/core';
-import { createOtlpExportDelegate } from '../../src/otlp-export-delegate';
-import { ExportResponse } from '../../src';
+import { createOtlpExportDelegate } from '../../src/otlp-export-delegate.js';
+import { ExportResponse } from '../../src.js';
 import { ISerializer } from '@opentelemetry/otlp-transformer';
-import { IExportPromiseHandler } from '../../src/bounded-queue-export-promise-handler';
-import { registerMockDiagLogger } from './test-utils';
+import { IExportPromiseHandler } from '../../src/bounded-queue-export-promise-handler.js';
+import { registerMockDiagLogger } from './test-utils.js';
 
 interface FakeInternalRepresentation {
   foo: string;

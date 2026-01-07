@@ -26,7 +26,7 @@ import * as assert from 'assert';
 import {
   SimpleFixedSizeExemplarReservoir,
   AlignedHistogramBucketExemplarReservoir,
-} from '../src/exemplar';
+} from '../src/exemplar.js';
 
 describe('ExemplarReservoir', () => {
   const TRACE_ID = 'd4cda95b652f4a1592b449d5929fda1b';

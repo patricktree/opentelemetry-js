@@ -15,7 +15,7 @@
  */
 
 import { Attributes } from '@opentelemetry/api';
-import { RawResourceAttribute } from './types';
+import { RawResourceAttribute } from './types.js';
 
 /**
  * An interface that represents a resource. A Resource describes the entity for which signals (metrics or trace) are

@@ -17,7 +17,7 @@
 import type { OnRequireFn } from 'require-in-the-middle';
 import { Hook } from 'require-in-the-middle';
 import * as path from 'path';
-import { ModuleNameTrie, ModuleNameSeparator } from './ModuleNameTrie';
+import { ModuleNameTrie, ModuleNameSeparator } from './ModuleNameTrie.js';
 
 export type Hooked = {
   moduleName: string;

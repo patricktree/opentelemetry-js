@@ -22,9 +22,9 @@ import {
   ExponentialHistogram,
   Histogram,
   MeterProvider,
-} from '../../src';
-import { TestMetricReader } from '../export/TestMetricReader';
-import { IMetricReader } from '../../src/export/MetricReader';
+} from '../../src.js';
+import { TestMetricReader } from '../export/TestMetricReader.js';
+import { IMetricReader } from '../../src/export/MetricReader.js';
 
 describe('histogram-recording-nan', () => {
   it('exponential histogram should not count NaN', async () => {

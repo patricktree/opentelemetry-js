@@ -38,8 +38,8 @@ import type {
   GrpcClientFunc,
   ClientRequestFunction,
   metadataCaptureType,
-} from './internal-types';
-import { type GrpcInstrumentationConfig } from './types';
+} from './internal-types.js';
+import { type GrpcInstrumentationConfig } from './types.js';
 
 import {
   context,
@@ -69,13 +69,13 @@ import {
   ATTR_RPC_METHOD,
   ATTR_RPC_SERVICE,
   ATTR_RPC_SYSTEM,
-} from './semconv';
+} from './semconv.js';
 
 import {
   shouldNotTraceServerCall,
   handleServerFunction,
   handleUntracedServerFunction,
-} from './serverUtils';
+} from './serverUtils.js';
 import {
   getMethodsToWrap,
   makeGrpcClientRemoteCall,
@@ -85,15 +85,15 @@ import {
   patchResponseStreamEvents,
   patchResponseMetadataEvent,
   extractMetadataOrSplice,
-} from './clientUtils';
+} from './clientUtils.js';
 import {
   _extractMethodAndService,
   metadataCapture,
   URI_REGEX,
   _methodIsIgnored,
-} from './utils';
-import { AttributeValues } from './enums/AttributeValues';
-import { VERSION } from './version';
+} from './utils.js';
+import { AttributeValues } from './enums/AttributeValues.js';
+import { VERSION } from './version.js';
 
 export class GrpcInstrumentation extends InstrumentationBase<GrpcInstrumentationConfig> {
   private _metadataCapture: metadataCaptureType;

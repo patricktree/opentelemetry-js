@@ -18,24 +18,24 @@ import type { EventEmitter } from 'events';
 import type { Span, SpanStatus } from '@opentelemetry/api';
 import type { Client, Metadata, ServiceError } from '@grpc/grpc-js';
 import type * as grpcJs from '@grpc/grpc-js';
-import type { GrpcInstrumentation } from './';
+import type { GrpcInstrumentation } from './.js.js';
 import type {
   GrpcClientFunc,
   SendUnaryDataCallback,
   metadataCaptureType,
-} from './internal-types';
+} from './internal-types.js';
 
 import { propagation, context } from '@opentelemetry/api';
-import { AttributeNames } from './enums/AttributeNames';
+import { AttributeNames } from './enums/AttributeNames.js';
 import {
   ATTR_RPC_GRPC_STATUS_CODE,
   RPC_GRPC_STATUS_CODE_VALUE_OK,
-} from './semconv';
+} from './semconv.js';
 import {
   _grpcStatusCodeToSpanStatus,
   _grpcStatusCodeToOpenTelemetryStatusCode,
   _methodIsIgnored,
-} from './utils';
+} from './utils.js';
 import { errorMonitor } from 'events';
 
 /**

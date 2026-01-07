@@ -20,7 +20,7 @@ import {
   ROOT_CONTEXT,
   propagation,
   baggageEntryMetadataFromString,
-} from '../../../src';
+} from '../../../src.js';
 
 describe('Baggage', function () {
   describe('create', function () {

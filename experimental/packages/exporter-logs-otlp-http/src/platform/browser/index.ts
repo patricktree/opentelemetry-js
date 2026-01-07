@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { OTLPLogExporter } from './OTLPLogExporter';
+export { OTLPLogExporter } from './OTLPLogExporter.js';

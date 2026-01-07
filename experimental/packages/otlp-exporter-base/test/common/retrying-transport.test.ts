@@ -16,9 +16,9 @@
 
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { IExporterTransport } from '../../src';
-import { createRetryingTransport } from '../../src/retrying-transport';
-import { ExportResponse } from '../../src';
+import { IExporterTransport } from '../../src.js';
+import { createRetryingTransport } from '../../src/retrying-transport.js';
+import { ExportResponse } from '../../src.js';
 
 const timeoutMillis = 1000000;
 

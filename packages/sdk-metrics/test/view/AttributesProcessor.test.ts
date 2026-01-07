@@ -22,7 +22,7 @@ import {
   createNoopAttributesProcessor,
   createAllowListAttributesProcessor,
   createDenyListAttributesProcessor,
-} from '../../src/view/AttributesProcessor';
+} from '../../src/view/AttributesProcessor.js';
 
 import * as sinon from 'sinon';
 

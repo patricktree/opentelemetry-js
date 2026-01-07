@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { Deferred } from '../../../src/utils/promise';
+import { Deferred } from '../../../src/utils/promise.js';
 
 describe('promise', () => {
   describe('Deferred', () => {

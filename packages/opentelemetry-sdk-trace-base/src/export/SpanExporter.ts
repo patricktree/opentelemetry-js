@@ -15,7 +15,7 @@
  */
 
 import { ExportResult } from '@opentelemetry/core';
-import { ReadableSpan } from './ReadableSpan';
+import { ReadableSpan } from './ReadableSpan.js';
 
 /**
  * An interface that allows different tracing services to export recorded data

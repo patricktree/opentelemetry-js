@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { AnchoredClock, otperformance } from '../../src';
+import { AnchoredClock, otperformance } from '../../src.js';
 
 describe('AnchoredClock', () => {
   it('should keep time', done => {

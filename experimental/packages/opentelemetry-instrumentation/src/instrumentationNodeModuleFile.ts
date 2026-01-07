@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { InstrumentationModuleFile } from './types';
-import { normalize } from './platform/index';
+import { InstrumentationModuleFile } from './types.js';
+import { normalize } from './platform/index.js';
 
 export class InstrumentationNodeModuleFile
   implements InstrumentationModuleFile

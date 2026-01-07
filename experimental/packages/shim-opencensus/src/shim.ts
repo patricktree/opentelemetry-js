@@ -18,8 +18,8 @@ import { diag, trace, Tracer } from '@opentelemetry/api';
 import { Hook } from 'require-in-the-middle';
 import * as oc from '@opencensus/core';
 
-import { ShimTracer } from './ShimTracer';
-import { VERSION } from './version';
+import { ShimTracer } from './ShimTracer.js';
+import { VERSION } from './version.js';
 
 type CoreTracerConstructor = new (
   ...args: ConstructorParameters<typeof oc.CoreTracer>

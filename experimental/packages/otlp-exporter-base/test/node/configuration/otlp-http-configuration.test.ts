@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 import * as assert from 'assert';
-import { mergeOtlpNodeHttpConfigurationWithDefaults } from '../../../src/configuration/otlp-node-http-configuration';
-import { OtlpNodeHttpConfiguration } from '../../../src/configuration/otlp-node-http-configuration';
-import { VERSION } from '../../../src/version';
+import { mergeOtlpNodeHttpConfigurationWithDefaults } from '../../../src/configuration/otlp-node-http-configuration.js';
+import { OtlpNodeHttpConfiguration } from '../../../src/configuration/otlp-node-http-configuration.js';
+import { VERSION } from '../../../src/version.js';
 
 describe('mergeOtlpNodeHttpConfigurationWithDefaults', function () {
   const testDefaults: OtlpNodeHttpConfiguration = {

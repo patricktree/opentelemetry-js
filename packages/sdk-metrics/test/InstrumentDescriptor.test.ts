@@ -20,9 +20,9 @@ import {
   InstrumentDescriptor,
   isValidName,
   isDescriptorCompatibleWith,
-} from '../src/InstrumentDescriptor';
-import { InstrumentType } from '../src';
-import { invalidNames, validNames } from './util';
+} from '../src/InstrumentDescriptor.js';
+import { InstrumentType } from '../src.js';
+import { invalidNames, validNames } from './util.js';
 import { ValueType } from '@opentelemetry/api';
 
 describe('InstrumentDescriptor', () => {

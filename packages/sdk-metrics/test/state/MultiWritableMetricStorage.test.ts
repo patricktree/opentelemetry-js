@@ -18,14 +18,14 @@ import * as api from '@opentelemetry/api';
 import { Attributes } from '@opentelemetry/api';
 import { hrTime } from '@opentelemetry/core';
 import * as assert from 'assert';
-import { MultiMetricStorage } from '../../src/state/MultiWritableMetricStorage';
-import { WritableMetricStorage } from '../../src/state/WritableMetricStorage';
+import { MultiMetricStorage } from '../../src/state/MultiWritableMetricStorage.js';
+import { WritableMetricStorage } from '../../src/state/WritableMetricStorage.js';
 import {
   assertMeasurementEqual,
   commonAttributes,
   commonValues,
   Measurement,
-} from '../util';
+} from '../util.js';
 
 describe('MultiMetricStorage', () => {
   describe('record', () => {

@@ -15,10 +15,10 @@
  */
 
 import { HrTime } from '@opentelemetry/api';
-import { AggregationTemporality } from '../export/AggregationTemporality';
-import { MetricData, MetricDescriptor } from '../export/MetricData';
-import { Maybe } from '../utils';
-import { AggregatorKind, Aggregator, AccumulationRecord } from './types';
+import { AggregationTemporality } from '../export/AggregationTemporality.js';
+import { MetricData, MetricDescriptor } from '../export/MetricData.js';
+import { Maybe } from '../utils.js';
+import { AggregatorKind, Aggregator, AccumulationRecord } from './types.js';
 
 /** Basic aggregator for None which keeps no recorded value. */
 export class DropAggregator implements Aggregator<undefined> {

@@ -18,7 +18,7 @@ import {
   getNumberFromEnv,
   getStringListFromEnv,
   getBooleanFromEnv,
-} from '../../src';
+} from '../../src.js';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 import { diag } from '@opentelemetry/api';

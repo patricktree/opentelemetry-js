@@ -18,7 +18,7 @@ import {
   getPropagatorFromEnv,
   getKeyListFromObjectArray,
   getPropagatorFromConfiguration,
-} from '../src/utils';
+} from '../src/utils.js';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 import { diag } from '@opentelemetry/api';

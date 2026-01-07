@@ -16,7 +16,7 @@
 
 import * as assert from 'assert';
 import { BasicTracerProvider, Span } from '@opentelemetry/sdk-trace-base';
-import { SessionSpanProcessor } from '../src/SessionSpanProcessor';
+import { SessionSpanProcessor } from '../src/SessionSpanProcessor.js';
 import { ROOT_CONTEXT } from '@opentelemetry/api';
 
 describe('SessionSpanProcessor', function () {

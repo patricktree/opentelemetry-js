@@ -22,11 +22,11 @@ import {
   globalErrorHandler,
   suppressTracing,
 } from '@opentelemetry/core';
-import { Span } from '../Span';
-import { SpanProcessor } from '../SpanProcessor';
-import { BufferConfig } from '../types';
-import { ReadableSpan } from './ReadableSpan';
-import { SpanExporter } from './SpanExporter';
+import { Span } from '../Span.js';
+import { SpanProcessor } from '../SpanProcessor.js';
+import { BufferConfig } from '../types.js';
+import { ReadableSpan } from './ReadableSpan.js';
+import { SpanExporter } from './SpanExporter.js';
 
 /**
  * Implementation of the {@link SpanProcessor} that batches spans exported by

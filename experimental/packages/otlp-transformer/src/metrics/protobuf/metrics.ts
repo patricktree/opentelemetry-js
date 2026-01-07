@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import * as root from '../../generated/root';
-import { ISerializer } from '../../i-serializer';
-import { IExportMetricsServiceRequest } from '../internal-types';
-import { ExportType } from '../../common/protobuf/protobuf-export-type';
-import { createExportMetricsServiceRequest } from '../internal';
+import * as root from '../../generated/root.js';
+import { ISerializer } from '../../i-serializer.js';
+import { IExportMetricsServiceRequest } from '../internal-types.js';
+import { ExportType } from '../../common/protobuf/protobuf-export-type.js';
+import { createExportMetricsServiceRequest } from '../internal.js';
 import { ResourceMetrics } from '@opentelemetry/sdk-metrics';
-import { IExportMetricsServiceResponse } from '../export-response';
+import { IExportMetricsServiceResponse } from '../export-response.js';
 
 const metricsResponseType = root.opentelemetry.proto.collector.metrics.v1
   .ExportMetricsServiceResponse as ExportType<IExportMetricsServiceResponse>;

@@ -15,7 +15,7 @@
  */
 
 import { Context, HrTime, Attributes } from '@opentelemetry/api';
-import { WritableMetricStorage } from './WritableMetricStorage';
+import { WritableMetricStorage } from './WritableMetricStorage.js';
 
 /**
  * Internal interface.

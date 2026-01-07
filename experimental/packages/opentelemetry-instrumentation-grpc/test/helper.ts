@@ -47,9 +47,9 @@ import {
   loadPackageDefinition,
   ServerCredentials,
 } from '@grpc/grpc-js';
-import { assertPropagation, assertSpan } from './utils/assertionUtils';
+import { assertPropagation, assertSpan } from './utils/assertionUtils.js';
 import { promisify } from 'util';
-import type { GrpcInstrumentation } from '../src';
+import type { GrpcInstrumentation } from '../src.js';
 import { SemconvStability } from '@opentelemetry/instrumentation';
 import * as path from 'path';
 

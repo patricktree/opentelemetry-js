@@ -15,14 +15,14 @@
  */
 
 import * as assert from 'assert';
-import { spanToThrift } from '../src/transform';
+import { spanToThrift } from '../src/transform.js';
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
 import {
   emptyResource,
   resourceFromAttributes,
 } from '@opentelemetry/resources';
 import * as api from '@opentelemetry/api';
-import { ThriftUtils, Utils, ThriftReferenceType } from '../src/types';
+import { ThriftUtils, Utils, ThriftReferenceType } from '../src/types.js';
 import { hrTimeToMicroseconds } from '@opentelemetry/core';
 import { SpanStatusCode, TraceFlags } from '@opentelemetry/api';
 

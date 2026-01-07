@@ -23,20 +23,20 @@ import {
   InstrumentType,
   AggregationType,
   ViewOptions,
-} from '../../src';
+} from '../../src.js';
 import {
   assertMetricData,
   defaultInstrumentationScope,
   testResource,
   sleep,
-} from '../util';
+} from '../util.js';
 import {
   TestDeltaMetricReader,
   TestMetricReader,
-} from '../export/TestMetricReader';
-import { MeterSharedState } from '../../src/state/MeterSharedState';
-import { CollectionResult } from '../../src/export/MetricData';
-import { Meter } from '../../src/Meter';
+} from '../export/TestMetricReader.js';
+import { MeterSharedState } from '../../src/state/MeterSharedState.js';
+import { CollectionResult } from '../../src/export/MetricData.js';
+import { Meter } from '../../src/Meter.js';
 
 describe('MeterSharedState', () => {
   afterEach(() => {

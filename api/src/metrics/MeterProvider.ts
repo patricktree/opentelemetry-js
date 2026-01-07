@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Meter, MeterOptions } from './Meter';
+import { Meter, MeterOptions } from './Meter.js';
 
 /**
  * A registry for creating named {@link Meter}s.

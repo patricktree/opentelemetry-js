@@ -15,9 +15,9 @@
  */
 
 import * as assert from 'assert';
-import { SeverityNumber } from '../../src';
-import { NoopLogger } from '../../src/NoopLogger';
-import { NoopLoggerProvider } from '../../src/NoopLoggerProvider';
+import { SeverityNumber } from '../../src.js';
+import { NoopLogger } from '../../src/NoopLogger.js';
+import { NoopLoggerProvider } from '../../src/NoopLoggerProvider.js';
 
 describe('NoopLogger', () => {
   it('constructor should not crash', () => {

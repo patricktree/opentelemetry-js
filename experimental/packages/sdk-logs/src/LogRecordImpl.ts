@@ -23,9 +23,9 @@ import {
 } from '@opentelemetry/core';
 import type { Resource } from '@opentelemetry/resources';
 
-import type { ReadableLogRecord } from './export/ReadableLogRecord';
-import type { LogRecordLimits } from './types';
-import { LoggerProviderSharedState } from './internal/LoggerProviderSharedState';
+import type { ReadableLogRecord } from './export/ReadableLogRecord.js';
+import type { LogRecordLimits } from './types.js';
+import { LoggerProviderSharedState } from './internal/LoggerProviderSharedState.js';
 
 export class LogRecordImpl implements ReadableLogRecord {
   readonly hrTime: api.HrTime;

@@ -17,7 +17,7 @@
 import * as assert from 'assert';
 import * as opentracing from 'opentracing';
 import { BasicTracerProvider, Span } from '@opentelemetry/sdk-trace-base';
-import { SpanContextShim, SpanShim, TracerShim } from '../src/shim';
+import { SpanContextShim, SpanShim, TracerShim } from '../src/shim.js';
 import {
   CompositePropagator,
   W3CBaggagePropagator,

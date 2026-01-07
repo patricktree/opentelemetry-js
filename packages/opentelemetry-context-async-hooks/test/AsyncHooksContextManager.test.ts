@@ -18,7 +18,7 @@ import * as assert from 'assert';
 import {
   AsyncHooksContextManager,
   AsyncLocalStorageContextManager,
-} from '../src';
+} from '../src.js';
 import { EventEmitter } from 'events';
 import { createContextKey, ROOT_CONTEXT } from '@opentelemetry/api';
 

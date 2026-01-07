@@ -15,8 +15,8 @@
  */
 
 import * as assert from 'assert';
-import { NoopTracer } from '../../../src/trace/NoopTracer';
-import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider';
+import { NoopTracer } from '../../../src/trace/NoopTracer.js';
+import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider.js';
 
 describe('NoopTracerProvider', function () {
   it('should not crash', function () {

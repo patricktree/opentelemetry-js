@@ -15,12 +15,12 @@
  */
 
 import { ExportResult, ExportResultCode } from '@opentelemetry/core';
-import { IExporterTransport } from './exporter-transport';
-import { IExportPromiseHandler } from './bounded-queue-export-promise-handler';
+import { IExporterTransport } from './exporter-transport.js';
+import { IExportPromiseHandler } from './bounded-queue-export-promise-handler.js';
 import { ISerializer } from '@opentelemetry/otlp-transformer';
-import { OTLPExporterError } from './types';
-import { IOtlpResponseHandler } from './response-handler';
-import { createLoggingPartialSuccessResponseHandler } from './logging-response-handler';
+import { OTLPExporterError } from './types.js';
+import { IOtlpResponseHandler } from './response-handler.js';
+import { createLoggingPartialSuccessResponseHandler } from './logging-response-handler.js';
 import { diag, DiagLogger } from '@opentelemetry/api';
 
 /**

@@ -21,7 +21,7 @@ import {
   isValidRandomValue,
   isValidThreshold,
   MAX_THRESHOLD,
-} from './util';
+} from './util.js';
 
 export type OtelTraceState = {
   /** The random value for sampling decisions in the trace. */

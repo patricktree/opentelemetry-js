@@ -15,9 +15,9 @@
  */
 import { context, TraceFlags } from '@opentelemetry/api';
 import * as assert from 'assert';
-import { BasicTracerProvider } from '../../src';
-import { TestStackContextManager } from '../common/export/TestStackContextManager';
-import { Tracer } from '../../src/Tracer';
+import { BasicTracerProvider } from '../../src.js';
+import { TestStackContextManager } from '../common/export/TestStackContextManager.js';
+import { Tracer } from '../../src/Tracer.js';
 
 describe('Tracer', () => {
   const tracerProvider = new BasicTracerProvider();

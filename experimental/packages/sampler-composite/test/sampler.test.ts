@@ -31,13 +31,13 @@ import {
   createComposableAlwaysOnSampler,
   createComposableParentThresholdSampler,
   createComposableTraceIDRatioBasedSampler,
-} from '../src';
-import { INVALID_RANDOM_VALUE, INVALID_THRESHOLD } from '../src/util';
+} from '../src.js';
+import { INVALID_RANDOM_VALUE, INVALID_THRESHOLD } from '../src/util.js';
 import {
   INVALID_TRACE_STATE,
   parseOtelTraceState,
   serializeTraceState,
-} from '../src/tracestate';
+} from '../src/tracestate.js';
 import { TraceState } from '@opentelemetry/core';
 
 describe('ConsistentSampler', () => {

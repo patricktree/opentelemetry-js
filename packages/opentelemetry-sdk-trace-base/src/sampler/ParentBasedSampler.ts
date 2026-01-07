@@ -24,9 +24,9 @@ import {
   trace,
 } from '@opentelemetry/api';
 import { globalErrorHandler } from '@opentelemetry/core';
-import { AlwaysOffSampler } from './AlwaysOffSampler';
-import { AlwaysOnSampler } from './AlwaysOnSampler';
-import { Sampler, SamplingResult } from '../Sampler';
+import { AlwaysOffSampler } from './AlwaysOffSampler.js';
+import { AlwaysOnSampler } from './AlwaysOnSampler.js';
+import { Sampler, SamplingResult } from '../Sampler.js';
 
 /**
  * A composite sampler that either respects the parent span's sampling decision

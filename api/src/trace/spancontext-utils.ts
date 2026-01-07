@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { INVALID_SPANID, INVALID_TRACEID } from './invalid-span-constants';
-import { NonRecordingSpan } from './NonRecordingSpan';
-import { Span } from './span';
-import { SpanContext } from './span_context';
+import { INVALID_SPANID, INVALID_TRACEID } from './invalid-span-constants.js';
+import { NonRecordingSpan } from './NonRecordingSpan.js';
+import { Span } from './span.js';
+import { SpanContext } from './span_context.js';
 
 // Valid characters (0-9, a-f, A-F) are marked as 1.
 const isHex = new Uint8Array([

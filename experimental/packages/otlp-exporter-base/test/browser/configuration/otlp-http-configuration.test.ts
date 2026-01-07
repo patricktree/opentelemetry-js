@@ -17,7 +17,7 @@ import * as assert from 'assert';
 import {
   mergeOtlpHttpConfigurationWithDefaults,
   type OtlpHttpConfiguration,
-} from '../../../src/configuration/otlp-http-configuration';
+} from '../../../src/configuration/otlp-http-configuration.js';
 
 describe('mergeOtlpHttpConfigurationWithDefaults (browser)', function () {
   const testDefaults: OtlpHttpConfiguration = {

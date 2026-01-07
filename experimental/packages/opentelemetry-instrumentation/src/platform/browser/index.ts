@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export { InstrumentationBase } from './instrumentation';
-export { normalize } from './noop-normalize';
+export { InstrumentationBase } from './instrumentation.js';
+export { normalize } from './noop-normalize.js';

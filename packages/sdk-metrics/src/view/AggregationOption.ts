@@ -22,7 +22,7 @@ import {
   HISTOGRAM_AGGREGATION,
   LAST_VALUE_AGGREGATION,
   SUM_AGGREGATION,
-} from './Aggregation';
+} from './Aggregation.js';
 
 export enum AggregationType {
   DEFAULT = 0,

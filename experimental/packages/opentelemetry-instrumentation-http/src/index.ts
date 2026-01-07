@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export { HttpInstrumentation } from './http';
+export { HttpInstrumentation } from './http.js';
 export type {
   HttpCustomAttributeFunction,
   HttpInstrumentationConfig,
@@ -24,4 +24,4 @@ export type {
   IgnoreOutgoingRequestFunction,
   StartIncomingSpanCustomAttributeFunction,
   StartOutgoingSpanCustomAttributeFunction,
-} from './types';
+} from './types.js';

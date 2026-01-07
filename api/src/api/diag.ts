@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-import { DiagComponentLogger } from '../diag/ComponentLogger';
-import { createLogLevelDiagLogger } from '../diag/internal/logLevelLogger';
+import { DiagComponentLogger } from '../diag/ComponentLogger.js';
+import { createLogLevelDiagLogger } from '../diag/internal/logLevelLogger.js';
 import {
   ComponentLoggerOptions,
   DiagLogFunction,
   DiagLogger,
   DiagLoggerApi,
   DiagLogLevel,
-} from '../diag/types';
+} from '../diag/types.js';
 import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
+} from '../internal/global-utils.js';
 
 const API_NAME = 'diag';
 

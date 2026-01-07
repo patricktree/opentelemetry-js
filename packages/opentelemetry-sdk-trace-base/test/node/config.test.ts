@@ -20,8 +20,8 @@ import {
   AlwaysOnSampler,
   ParentBasedSampler,
   TraceIdRatioBasedSampler,
-} from '../../src';
-import { buildSamplerFromEnv } from '../../src/config';
+} from '../../src.js';
+import { buildSamplerFromEnv } from '../../src/config.js';
 
 describe('config', () => {
   describe('buildSamplerFromEnv()', () => {

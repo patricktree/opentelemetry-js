@@ -30,7 +30,7 @@ export * as resources from '@opentelemetry/resources';
 export * as tracing from '@opentelemetry/sdk-trace-base';
 /* eslint-enable no-restricted-syntax */
 
-export { NodeSDK } from './sdk';
-export type { LoggerProviderConfig, MeterProviderConfig } from './sdk';
-export type { NodeSDKConfiguration } from './types';
-export { startNodeSDK } from './start';
+export { NodeSDK } from './sdk.js';
+export type { LoggerProviderConfig, MeterProviderConfig } from './sdk.js';
+export type { NodeSDKConfiguration } from './types.js';
+export { startNodeSDK } from './start.js';

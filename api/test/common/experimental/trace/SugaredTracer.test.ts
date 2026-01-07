@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { wrapTracer } from '../../../../src/experimental';
+import { wrapTracer } from '../../../../src/experimental.js';
 import * as assert from 'assert';
-import { NoopTracerProvider } from '../../../../src/trace/NoopTracerProvider';
-import { NoopTracer } from '../../../../src/trace/NoopTracer';
-import { Span } from '../../../../src';
-import { Context, context, SpanOptions } from '../../../../src';
+import { NoopTracerProvider } from '../../../../src/trace/NoopTracerProvider.js';
+import { NoopTracer } from '../../../../src/trace/NoopTracer.js';
+import { Span } from '../../../../src.js';
+import { Context, context, SpanOptions } from '../../../../src.js';
 
 describe('SugaredTracer', function () {
   class TestTracer extends NoopTracer {

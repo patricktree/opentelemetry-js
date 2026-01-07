@@ -16,7 +16,7 @@
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 
-import { OTLPLogExporter } from '../../src/platform/browser';
+import { OTLPLogExporter } from '../../src/platform/browser.js';
 import {
   LoggerProvider,
   SimpleLogRecordProcessor,

@@ -16,9 +16,9 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { diag, DiagLogLevel } from '../../../src';
-import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger';
-import { DiagLogger } from '../../../src/diag/types';
+import { diag, DiagLogLevel } from '../../../src.js';
+import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger.js';
+import { DiagLogger } from '../../../src/diag/types.js';
 
 export const diagLoggerFunctions = [
   'verbose',

@@ -18,8 +18,8 @@ import * as assert from 'assert';
 import {
   compressAndSend,
   sendWithHttp,
-} from '../../src/transport/http-transport-utils';
-import { VERSION } from '../../src/version';
+} from '../../src/transport/http-transport-utils.js';
+import { VERSION } from '../../src/version.js';
 
 describe('compressAndSend', function () {
   it('compressAndSend on destroyed request should handle error', function (done) {

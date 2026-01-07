@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { diagLogLevelFromString } from '../../../src';
+import { diagLogLevelFromString } from '../../../src.js';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 import { diag, DiagLogLevel } from '@opentelemetry/api';

@@ -58,8 +58,8 @@ import {
   ATTR_WEBENGINE_DESCRIPTION,
   ATTR_WEBENGINE_NAME,
   ATTR_WEBENGINE_VERSION,
-} from '../../src/semconv';
-import { DetectedResource } from '../../src/types';
+} from '../../src/semconv.js';
+import { DetectedResource } from '../../src/types.js';
 
 /**
  * Test utility method to validate a cloud resource

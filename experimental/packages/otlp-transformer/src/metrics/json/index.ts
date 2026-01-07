@@ -15,4 +15,4 @@
  */
 
 // IMPORTANT: exports added here are public
-export { JsonMetricsSerializer } from './metrics';
+export { JsonMetricsSerializer } from './metrics.js';

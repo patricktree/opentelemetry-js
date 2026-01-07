@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { LogarithmMapping } from '../../../src/aggregator/exponential-histogram/mapping/LogarithmMapping';
-import * as ieee754 from '../../../src/aggregator/exponential-histogram/mapping/ieee754';
+import { LogarithmMapping } from '../../../src/aggregator/exponential-histogram/mapping/LogarithmMapping.js';
+import * as ieee754 from '../../../src/aggregator/exponential-histogram/mapping/ieee754.js';
 import * as assert from 'assert';
-import { assertInEpsilon } from './helpers';
+import { assertInEpsilon } from './helpers.js';
 
 const MIN_SCALE = 1;
 const MAX_SCALE = 20;

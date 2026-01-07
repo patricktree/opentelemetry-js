@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import * as root from '../src/generated/root';
+import * as root from '../src/generated/root.js';
 import { SpanKind, SpanStatusCode, TraceFlags } from '@opentelemetry/api';
 import { TraceState } from '@opentelemetry/core';
 import { Resource, resourceFromAttributes } from '@opentelemetry/resources';
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
 import * as assert from 'assert';
-import { toBase64 } from './utils';
-import { OtlpEncodingOptions } from '../src/common/internal-types';
-import { ESpanKind, EStatusCode } from '../src/trace/internal-types';
-import { createExportTraceServiceRequest } from '../src/trace/internal';
-import { ProtobufTraceSerializer } from '../src/trace/protobuf';
-import { JsonTraceSerializer } from '../src/trace/json';
-import { hexToBinary } from '../src/common/hex-to-binary';
-import { ISpan } from '../src/trace/internal-types';
+import { toBase64 } from './utils.js';
+import { OtlpEncodingOptions } from '../src/common/internal-types.js';
+import { ESpanKind, EStatusCode } from '../src/trace/internal-types.js';
+import { createExportTraceServiceRequest } from '../src/trace/internal.js';
+import { ProtobufTraceSerializer } from '../src/trace/protobuf.js';
+import { JsonTraceSerializer } from '../src/trace/json.js';
+import { hexToBinary } from '../src/common/hex-to-binary.js';
+import { ISpan } from '../src/trace/internal-types.js';
 
 function createExpectedSpanJson(options: OtlpEncodingOptions) {
   const useHex = options.useHex ?? false;

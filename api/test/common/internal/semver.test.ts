@@ -18,8 +18,8 @@ import * as assert from 'assert';
 import {
   isCompatible,
   _makeCompatibilityCheck,
-} from '../../../src/internal/semver';
-import { VERSION } from '../../../src/version';
+} from '../../../src/internal/semver.js';
+import { VERSION } from '../../../src/version.js';
 
 describe('semver', function () {
   it('should be compatible if versions are equal', function () {

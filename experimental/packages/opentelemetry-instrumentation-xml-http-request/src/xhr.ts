@@ -49,21 +49,21 @@ import {
   ATTR_HTTP_USER_AGENT,
   ATTR_HTTP_REQUEST_BODY_SIZE,
   ATTR_HTTP_REQUEST_CONTENT_LENGTH_UNCOMPRESSED,
-} from './semconv';
-import { EventNames } from './enums/EventNames';
+} from './semconv.js';
+import { EventNames } from './enums/EventNames.js';
 import {
   OpenFunction,
   PropagateTraceHeaderCorsUrls,
   SendFunction,
   XhrMem,
-} from './types';
+} from './types.js';
 import {
   normalizeHttpRequestMethod,
   serverPortFromUrl,
   getXHRBodyLength,
-} from './utils';
-import { VERSION } from './version';
-import { AttributeNames } from './enums/AttributeNames';
+} from './utils.js';
+import { VERSION } from './version.js';
+import { AttributeNames } from './enums/AttributeNames.js';
 
 // how long to wait for observer to collect information about resources
 // this is needed as event "load" is called before observer

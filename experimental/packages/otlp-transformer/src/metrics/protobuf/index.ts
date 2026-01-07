@@ -15,4 +15,4 @@
  */
 
 // IMPORTANT: exports added here are public
-export { ProtobufMetricsSerializer } from './metrics';
+export { ProtobufMetricsSerializer } from './metrics.js';

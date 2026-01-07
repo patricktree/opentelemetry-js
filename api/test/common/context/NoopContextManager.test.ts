@@ -15,8 +15,11 @@
  */
 
 import * as assert from 'assert';
-import { createContextKey, ROOT_CONTEXT } from '../../../src/context/context';
-import { NoopContextManager } from '../../../src/context/NoopContextManager';
+import {
+  createContextKey,
+  ROOT_CONTEXT,
+} from '../../../src/context/context.js';
+import { NoopContextManager } from '../../../src/context/NoopContextManager.js';
 
 describe('NoopContextManager', function () {
   let contextManager: NoopContextManager;

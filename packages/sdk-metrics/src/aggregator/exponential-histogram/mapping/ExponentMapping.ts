@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import * as ieee754 from './ieee754';
-import * as util from '../util';
-import { Mapping, MappingError } from './types';
+import * as ieee754 from './ieee754.js';
+import * as util from '../util.js';
+import { Mapping, MappingError } from './types.js';
 
 /**
  * ExponentMapping implements exponential mapping functions for

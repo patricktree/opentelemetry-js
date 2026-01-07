@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { OTLPMetricExporterOptions } from '../../OTLPMetricExporterOptions';
-import { OTLPMetricExporterBase } from '../../OTLPMetricExporterBase';
+import { OTLPMetricExporterOptions } from '../../OTLPMetricExporterOptions.js';
+import { OTLPMetricExporterBase } from '../../OTLPMetricExporterBase.js';
 import { OTLPExporterNodeConfigBase } from '@opentelemetry/otlp-exporter-base';
 import { JsonMetricsSerializer } from '@opentelemetry/otlp-transformer';
 import {

@@ -17,9 +17,9 @@
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 
-import { LogRecordExporter } from '../../../src';
-import { BatchLogRecordProcessor } from '../../../src/platform/browser/export/BatchLogRecordProcessor';
-import { InMemoryLogRecordExporter } from './../../../src/export/InMemoryLogRecordExporter';
+import { LogRecordExporter } from '../../../src.js';
+import { BatchLogRecordProcessor } from '../../../src/platform/browser/export/BatchLogRecordProcessor.js';
+import { InMemoryLogRecordExporter } from './../../../src/export/InMemoryLogRecordExporter.js';
 
 const describeDocument =
   typeof document === 'object' ? describe : describe.skip;

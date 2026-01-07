@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { ComposableSampler, SamplingIntent } from './types';
-import { INVALID_THRESHOLD, MAX_THRESHOLD } from './util';
-import { serializeTh } from './tracestate';
+import { ComposableSampler, SamplingIntent } from './types.js';
+import { INVALID_THRESHOLD, MAX_THRESHOLD } from './util.js';
+import { serializeTh } from './tracestate.js';
 
 class ComposableTraceIDRatioBasedSampler implements ComposableSampler {
   private readonly intent: SamplingIntent;

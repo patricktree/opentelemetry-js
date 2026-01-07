@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-export { BasicTracerProvider } from './BasicTracerProvider';
-export { BatchSpanProcessor, RandomIdGenerator } from './platform';
-export { ConsoleSpanExporter } from './export/ConsoleSpanExporter';
-export { InMemorySpanExporter } from './export/InMemorySpanExporter';
-export type { ReadableSpan } from './export/ReadableSpan';
-export { SimpleSpanProcessor } from './export/SimpleSpanProcessor';
-export type { SpanExporter } from './export/SpanExporter';
-export { NoopSpanProcessor } from './export/NoopSpanProcessor';
-export { AlwaysOffSampler } from './sampler/AlwaysOffSampler';
-export { AlwaysOnSampler } from './sampler/AlwaysOnSampler';
-export { ParentBasedSampler } from './sampler/ParentBasedSampler';
-export { TraceIdRatioBasedSampler } from './sampler/TraceIdRatioBasedSampler';
-export { SamplingDecision } from './Sampler';
-export type { Sampler, SamplingResult } from './Sampler';
-export type { Span } from './Span';
-export type { SpanProcessor } from './SpanProcessor';
-export type { TimedEvent } from './TimedEvent';
+export { BasicTracerProvider } from './BasicTracerProvider.js';
+export { BatchSpanProcessor, RandomIdGenerator } from './platform.js';
+export { ConsoleSpanExporter } from './export/ConsoleSpanExporter.js';
+export { InMemorySpanExporter } from './export/InMemorySpanExporter.js';
+export type { ReadableSpan } from './export/ReadableSpan.js';
+export { SimpleSpanProcessor } from './export/SimpleSpanProcessor.js';
+export type { SpanExporter } from './export/SpanExporter.js';
+export { NoopSpanProcessor } from './export/NoopSpanProcessor.js';
+export { AlwaysOffSampler } from './sampler/AlwaysOffSampler.js';
+export { AlwaysOnSampler } from './sampler/AlwaysOnSampler.js';
+export { ParentBasedSampler } from './sampler/ParentBasedSampler.js';
+export { TraceIdRatioBasedSampler } from './sampler/TraceIdRatioBasedSampler.js';
+export { SamplingDecision } from './Sampler.js';
+export type { Sampler, SamplingResult } from './Sampler.js';
+export type { Span } from './Span.js';
+export type { SpanProcessor } from './SpanProcessor.js';
+export type { TimedEvent } from './TimedEvent.js';
 export type {
   BatchSpanProcessorBrowserConfig,
   BufferConfig,
@@ -38,5 +38,5 @@ export type {
   SDKRegistrationConfig,
   SpanLimits,
   TracerConfig,
-} from './types';
-export type { IdGenerator } from './IdGenerator';
+} from './types.js';
+export type { IdGenerator } from './IdGenerator.js';

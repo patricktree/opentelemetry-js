@@ -23,8 +23,8 @@ import {
   MetricProducer,
   ScopeMetrics,
 } from '@opentelemetry/sdk-metrics';
-import { mapOcMetric } from './metric-transform';
-import { VERSION } from './version';
+import { mapOcMetric } from './metric-transform.js';
+import { VERSION } from './version.js';
 
 const SCOPE = {
   name: '@opentelemetry/shim-opencensus',

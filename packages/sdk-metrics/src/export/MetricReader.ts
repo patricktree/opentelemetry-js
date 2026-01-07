@@ -15,23 +15,23 @@
  */
 
 import * as api from '@opentelemetry/api';
-import { AggregationTemporality } from './AggregationTemporality';
-import { MetricProducer } from './MetricProducer';
-import { CollectionResult, InstrumentType } from './MetricData';
-import { callWithTimeout } from '../utils';
+import { AggregationTemporality } from './AggregationTemporality.js';
+import { MetricProducer } from './MetricProducer.js';
+import { CollectionResult, InstrumentType } from './MetricData.js';
+import { callWithTimeout } from '../utils.js';
 import {
   CollectionOptions,
   ForceFlushOptions,
   ShutdownOptions,
-} from '../types';
+} from '../types.js';
 import {
   AggregationSelector,
   AggregationTemporalitySelector,
   DEFAULT_AGGREGATION_SELECTOR,
   DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR,
-} from './AggregationSelector';
-import { AggregationOption } from '../view/AggregationOption';
-import { CardinalitySelector } from './CardinalitySelector';
+} from './AggregationSelector.js';
+import { AggregationOption } from '../view/AggregationOption.js';
+import { CardinalitySelector } from './CardinalitySelector.js';
 
 export interface MetricReaderOptions {
   /**

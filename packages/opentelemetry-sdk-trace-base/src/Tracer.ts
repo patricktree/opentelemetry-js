@@ -20,13 +20,13 @@ import {
   sanitizeAttributes,
   isTracingSuppressed,
 } from '@opentelemetry/core';
-import { SpanImpl } from './Span';
-import { GeneralLimits, SpanLimits, TracerConfig } from './types';
-import { mergeConfig } from './utility';
-import { SpanProcessor } from './SpanProcessor';
-import { Sampler } from './Sampler';
-import { IdGenerator } from './IdGenerator';
-import { RandomIdGenerator } from './platform';
+import { SpanImpl } from './Span.js';
+import { GeneralLimits, SpanLimits, TracerConfig } from './types.js';
+import { mergeConfig } from './utility.js';
+import { SpanProcessor } from './SpanProcessor.js';
+import { Sampler } from './Sampler.js';
+import { IdGenerator } from './IdGenerator.js';
+import { RandomIdGenerator } from './platform.js';
 import { Resource } from '@opentelemetry/resources';
 
 /**

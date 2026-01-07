@@ -17,13 +17,13 @@
 import { HrTime } from '@opentelemetry/api';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { AggregationTemporality } from '../../src';
+import { AggregationTemporality } from '../../src.js';
 import {
   LastValueAccumulation,
   LastValueAggregator,
-} from '../../src/aggregator';
-import { MetricData, DataPointType } from '../../src/export/MetricData';
-import { commonValues, defaultInstrumentDescriptor } from '../util';
+} from '../../src/aggregator.js';
+import { MetricData, DataPointType } from '../../src/export/MetricData.js';
+import { commonValues, defaultInstrumentDescriptor } from '../util.js';
 
 describe('LastValueAggregator', () => {
   let clock: sinon.SinonFakeTimers;

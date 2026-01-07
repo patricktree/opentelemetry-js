@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { unrefTimer } from '../../../src';
+import { unrefTimer } from '../../../src.js';
 import * as sinon from 'sinon';
 
 describe('timer-util', function () {

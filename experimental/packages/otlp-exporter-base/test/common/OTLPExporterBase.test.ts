@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { IOtlpExportDelegate, OTLPExporterBase } from '../../src';
+import { IOtlpExportDelegate, OTLPExporterBase } from '../../src.js';
 
 import * as sinon from 'sinon';
 

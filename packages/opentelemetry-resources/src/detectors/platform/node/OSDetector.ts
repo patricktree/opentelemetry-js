@@ -15,11 +15,11 @@
  */
 
 import { Attributes } from '@opentelemetry/api';
-import { ATTR_OS_TYPE, ATTR_OS_VERSION } from '../../../semconv';
+import { ATTR_OS_TYPE, ATTR_OS_VERSION } from '../../../semconv.js';
 import { platform, release } from 'os';
-import { ResourceDetectionConfig } from '../../../config';
-import { DetectedResource, ResourceDetector } from '../../../types';
-import { normalizeType } from './utils';
+import { ResourceDetectionConfig } from '../../../config.js';
+import { DetectedResource, ResourceDetector } from '../../../types.js';
+import { normalizeType } from './utils.js';
 
 /**
  * OSDetector detects the resources related to the operating system (OS) on

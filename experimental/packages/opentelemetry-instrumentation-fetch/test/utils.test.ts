@@ -16,7 +16,7 @@
 
 import * as assert from 'assert';
 
-import { getXHRBodyLength, getFetchBodyLength } from '../src/utils';
+import { getXHRBodyLength, getFetchBodyLength } from '../src/utils.js';
 
 const ENCODER = new TextEncoder();
 function textToReadableStream(msg: string) {

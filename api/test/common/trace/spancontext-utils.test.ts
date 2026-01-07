@@ -15,8 +15,8 @@
  */
 
 import * as assert from 'assert';
-import * as context from '../../../src/trace/spancontext-utils';
-import { INVALID_SPANID, INVALID_TRACEID, TraceFlags } from '../../../src';
+import * as context from '../../../src/trace/spancontext-utils.js';
+import { INVALID_SPANID, INVALID_TRACEID, TraceFlags } from '../../../src.js';
 
 describe('spancontext-utils', function () {
   it('should return true for valid spancontext', function () {

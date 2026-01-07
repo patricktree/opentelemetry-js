@@ -16,7 +16,7 @@
 
 import { Context, ROOT_CONTEXT } from '@opentelemetry/api';
 import * as asyncHooks from 'async_hooks';
-import { AbstractAsyncHooksContextManager } from './AbstractAsyncHooksContextManager';
+import { AbstractAsyncHooksContextManager } from './AbstractAsyncHooksContextManager.js';
 
 export class AsyncHooksContextManager extends AbstractAsyncHooksContextManager {
   private _asyncHook: asyncHooks.AsyncHook;

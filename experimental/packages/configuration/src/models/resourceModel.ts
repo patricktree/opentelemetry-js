@@ -15,7 +15,7 @@
  */
 'use strict';
 
-import { IncludeExclude } from './commonModel';
+import { IncludeExclude } from './commonModel.js';
 
 export interface Resource {
   /**

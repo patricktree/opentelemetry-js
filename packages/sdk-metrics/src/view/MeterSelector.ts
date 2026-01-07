@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { ExactPredicate, Predicate } from './Predicate';
+import { ExactPredicate, Predicate } from './Predicate.js';
 
 export interface MeterSelectorCriteria {
   name?: string;

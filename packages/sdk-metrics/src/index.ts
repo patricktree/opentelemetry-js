@@ -19,16 +19,16 @@ export type {
   LastValue,
   Histogram,
   ExponentialHistogram,
-} from './aggregator/types';
+} from './aggregator/types.js';
 
 export type {
   AggregationSelector,
   AggregationTemporalitySelector,
-} from './export/AggregationSelector';
+} from './export/AggregationSelector.js';
 
-export { AggregationTemporality } from './export/AggregationTemporality';
+export { AggregationTemporality } from './export/AggregationTemporality.js';
 
-export { DataPointType, InstrumentType } from './export/MetricData';
+export { DataPointType, InstrumentType } from './export/MetricData.js';
 export type {
   DataPoint,
   SumMetricData,
@@ -40,37 +40,40 @@ export type {
   MetricData,
   MetricDescriptor,
   CollectionResult,
-} from './export/MetricData';
+} from './export/MetricData.js';
 
-export type { PushMetricExporter } from './export/MetricExporter';
+export type { PushMetricExporter } from './export/MetricExporter.js';
 
-export { MetricReader } from './export/MetricReader';
-export type { IMetricReader, MetricReaderOptions } from './export/MetricReader';
+export { MetricReader } from './export/MetricReader.js';
+export type {
+  IMetricReader,
+  MetricReaderOptions,
+} from './export/MetricReader.js';
 
-export { PeriodicExportingMetricReader } from './export/PeriodicExportingMetricReader';
-export type { PeriodicExportingMetricReaderOptions } from './export/PeriodicExportingMetricReader';
+export { PeriodicExportingMetricReader } from './export/PeriodicExportingMetricReader.js';
+export type { PeriodicExportingMetricReaderOptions } from './export/PeriodicExportingMetricReader.js';
 
-export { InMemoryMetricExporter } from './export/InMemoryMetricExporter';
+export { InMemoryMetricExporter } from './export/InMemoryMetricExporter.js';
 
-export { ConsoleMetricExporter } from './export/ConsoleMetricExporter';
+export { ConsoleMetricExporter } from './export/ConsoleMetricExporter.js';
 
 export type {
   MetricCollectOptions,
   MetricProducer,
-} from './export/MetricProducer';
+} from './export/MetricProducer.js';
 
-export { MeterProvider } from './MeterProvider';
-export type { MeterProviderOptions } from './MeterProvider';
+export { MeterProvider } from './MeterProvider.js';
+export type { MeterProviderOptions } from './MeterProvider.js';
 
-export { AggregationType } from './view/AggregationOption';
-export type { AggregationOption } from './view/AggregationOption';
+export { AggregationType } from './view/AggregationOption.js';
+export type { AggregationOption } from './view/AggregationOption.js';
 
-export type { ViewOptions } from './view/View';
+export type { ViewOptions } from './view/View.js';
 
-export type { IAttributesProcessor } from './view/AttributesProcessor';
+export type { IAttributesProcessor } from './view/AttributesProcessor.js';
 export {
   createAllowListAttributesProcessor,
   createDenyListAttributesProcessor,
-} from './view/AttributesProcessor';
+} from './view/AttributesProcessor.js';
 
-export { TimeoutError } from './utils';
+export { TimeoutError } from './utils.js';

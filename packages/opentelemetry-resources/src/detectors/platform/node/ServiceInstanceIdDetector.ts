@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { ATTR_SERVICE_INSTANCE_ID } from '../../../semconv';
+import { ATTR_SERVICE_INSTANCE_ID } from '../../../semconv.js';
 import { randomUUID } from 'crypto';
-import { ResourceDetectionConfig } from '../../../config';
-import { DetectedResource, ResourceDetector } from '../../../types';
+import { ResourceDetectionConfig } from '../../../config.js';
+import { DetectedResource, ResourceDetector } from '../../../types.js';
 
 /**
  * ServiceInstanceIdDetector detects the resources related to the service instance ID.

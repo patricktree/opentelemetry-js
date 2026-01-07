@@ -41,8 +41,8 @@ import {
   FetchCustomAttributeFunction,
   FetchInstrumentation,
   FetchInstrumentationConfig,
-} from '../src';
-import { AttributeNames } from '../src/enums/AttributeNames';
+} from '../src.js';
+import { AttributeNames } from '../src/enums/AttributeNames.js';
 import {
   ATTR_HTTP_HOST,
   ATTR_HTTP_METHOD,
@@ -53,7 +53,7 @@ import {
   ATTR_HTTP_USER_AGENT,
   ATTR_HTTP_REQUEST_CONTENT_LENGTH_UNCOMPRESSED,
   ATTR_HTTP_REQUEST_BODY_SIZE,
-} from '../src/semconv';
+} from '../src/semconv.js';
 import {
   ATTR_ERROR_TYPE,
   ATTR_HTTP_REQUEST_METHOD,

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { ConfigFactory } from './IConfigFactory';
-import { EnvironmentConfigFactory } from './EnvironmentConfigFactory';
-import { FileConfigFactory, hasValidConfigFile } from './FileConfigFactory';
+import { ConfigFactory } from './IConfigFactory.js';
+import { EnvironmentConfigFactory } from './EnvironmentConfigFactory.js';
+import { FileConfigFactory, hasValidConfigFile } from './FileConfigFactory.js';
 
 export function createConfigFactory(): ConfigFactory {
   if (hasValidConfigFile()) {

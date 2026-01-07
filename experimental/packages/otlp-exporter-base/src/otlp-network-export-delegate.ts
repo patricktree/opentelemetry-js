@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { createBoundedQueueExportPromiseHandler } from './bounded-queue-export-promise-handler';
-import { OtlpSharedConfiguration } from './configuration/shared-configuration';
+import { createBoundedQueueExportPromiseHandler } from './bounded-queue-export-promise-handler.js';
+import { OtlpSharedConfiguration } from './configuration/shared-configuration.js';
 import { ISerializer } from '@opentelemetry/otlp-transformer';
-import { IExporterTransport } from './exporter-transport';
+import { IExporterTransport } from './exporter-transport.js';
 import {
   createOtlpExportDelegate,
   IOtlpExportDelegate,
-} from './otlp-export-delegate';
+} from './otlp-export-delegate.js';
 
 export function createOtlpNetworkExportDelegate<Internal, Response>(
   options: OtlpSharedConfiguration,

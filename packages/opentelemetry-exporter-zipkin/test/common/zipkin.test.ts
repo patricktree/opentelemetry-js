@@ -15,9 +15,9 @@
  */
 
 import * as assert from 'assert';
-import { ZipkinExporter } from '../../src';
+import { ZipkinExporter } from '../../src.js';
 import * as sinon from 'sinon';
-import { mockedReadableSpan } from '../helper';
+import { mockedReadableSpan } from '../helper.js';
 
 describe('zipkin - header interceptor', () => {
   describe('getExportRequestHeaders', () => {

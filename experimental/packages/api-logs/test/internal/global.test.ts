@@ -15,9 +15,12 @@
  */
 
 import * as assert from 'assert';
-import { _global, GLOBAL_LOGS_API_KEY } from '../../src/internal/global-utils';
-import { NoopLoggerProvider } from '../../src/NoopLoggerProvider';
-import { ProxyLoggerProvider } from '../../src';
+import {
+  _global,
+  GLOBAL_LOGS_API_KEY,
+} from '../../src/internal/global-utils.js';
+import { NoopLoggerProvider } from '../../src/NoopLoggerProvider.js';
+import { ProxyLoggerProvider } from '../../src.js';
 
 const api1 = require('../../src') as typeof import('../../src');
 

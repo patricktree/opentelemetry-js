@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Logger } from './types/Logger';
-import { LogRecord } from './types/LogRecord';
+import { Logger } from './types/Logger.js';
+import { LogRecord } from './types/LogRecord.js';
 
 export class NoopLogger implements Logger {
   emit(_logRecord: LogRecord): void {}

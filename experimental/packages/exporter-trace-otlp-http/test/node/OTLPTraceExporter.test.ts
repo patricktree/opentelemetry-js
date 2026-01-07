@@ -23,7 +23,7 @@ import {
   BasicTracerProvider,
   SimpleSpanProcessor,
 } from '@opentelemetry/sdk-trace-base';
-import { OTLPTraceExporter } from '../../src/platform/node';
+import { OTLPTraceExporter } from '../../src/platform/node.js';
 
 /*
  * NOTE: Tests here are not intended to test the underlying components directly. They are intended as a quick

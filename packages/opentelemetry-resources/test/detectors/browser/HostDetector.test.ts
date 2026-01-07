@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 import * as sinon from 'sinon';
-import { hostDetector } from '../../../src';
-import { describeBrowser } from '../../util';
-import { assertEmptyResource } from '../../util/resource-assertions';
+import { hostDetector } from '../../../src.js';
+import { describeBrowser } from '../../util.js';
+import { assertEmptyResource } from '../../util/resource-assertions.js';
 
 describeBrowser('hostDetector() on web browser', () => {
   afterEach(() => {

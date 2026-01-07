@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export { JaegerExporter } from './jaeger';
-export type { ExporterConfig } from './types';
+export { JaegerExporter } from './jaeger.js';
+export type { ExporterConfig } from './types.js';

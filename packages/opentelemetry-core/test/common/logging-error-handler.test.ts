@@ -17,7 +17,7 @@
 import { diag } from '@opentelemetry/api';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { ErrorHandler, loggingErrorHandler } from '../../src';
+import { ErrorHandler, loggingErrorHandler } from '../../src.js';
 
 describe('loggingErrorHandler', () => {
   let handler: ErrorHandler;

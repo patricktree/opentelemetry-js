@@ -18,4 +18,4 @@
 export type {
   IExportMetricsPartialSuccess,
   IExportMetricsServiceResponse,
-} from './export-response';
+} from './export-response.js';

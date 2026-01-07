@@ -20,10 +20,10 @@ import {
   ExportResultCode,
   globalErrorHandler,
 } from '@opentelemetry/core';
-import { MetricReader } from './MetricReader';
-import { PushMetricExporter } from './MetricExporter';
-import { callWithTimeout, TimeoutError } from '../utils';
-import { MetricProducer } from './MetricProducer';
+import { MetricReader } from './MetricReader.js';
+import { PushMetricExporter } from './MetricExporter.js';
+import { callWithTimeout, TimeoutError } from '../utils.js';
+import { MetricProducer } from './MetricProducer.js';
 
 export type PeriodicExportingMetricReaderOptions = {
   /**

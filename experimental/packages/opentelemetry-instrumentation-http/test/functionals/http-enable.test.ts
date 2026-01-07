@@ -63,15 +63,15 @@ import {
   ATTR_NET_PEER_PORT,
   ATTR_NET_TRANSPORT,
   NET_TRANSPORT_VALUE_IP_TCP,
-} from '../../src/semconv';
+} from '../../src/semconv.js';
 import * as assert from 'assert';
 import * as nock from 'nock';
 import * as path from 'path';
-import { HttpInstrumentation } from '../../src/http';
-import { HttpInstrumentationConfig } from '../../src/types';
-import { assertSpan } from '../utils/assertSpan';
-import { DummyPropagation } from '../utils/DummyPropagation';
-import { httpRequest } from '../utils/httpRequest';
+import { HttpInstrumentation } from '../../src/http.js';
+import { HttpInstrumentationConfig } from '../../src/types.js';
+import { assertSpan } from '../utils/assertSpan.js';
+import { DummyPropagation } from '../utils/DummyPropagation.js';
+import { httpRequest } from '../utils/httpRequest.js';
 import { ContextManager } from '@opentelemetry/api';
 import { AsyncHooksContextManager } from '@opentelemetry/context-async-hooks';
 import type {
@@ -88,8 +88,8 @@ instrumentation.enable();
 instrumentation.disable();
 
 import * as http from 'http';
-import { AttributeNames } from '../../src/enums/AttributeNames';
-import { getRemoteClientAddress } from '../../src/utils';
+import { AttributeNames } from '../../src/enums/AttributeNames.js';
+import { getRemoteClientAddress } from '../../src/utils.js';
 
 const applyCustomAttributesOnSpanErrorMessage =
   'bad applyCustomAttributesOnSpan function';

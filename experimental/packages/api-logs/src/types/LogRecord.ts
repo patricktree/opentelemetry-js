@@ -15,7 +15,7 @@
  */
 
 import { Context, TimeInput } from '@opentelemetry/api';
-import { AnyValue, AnyValueMap } from './AnyValue';
+import { AnyValue, AnyValueMap } from './AnyValue.js';
 
 export type LogBody = AnyValue;
 export type LogAttributes = AnyValueMap;

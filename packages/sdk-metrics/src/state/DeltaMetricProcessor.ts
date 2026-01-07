@@ -15,9 +15,9 @@
  */
 
 import { Context, HrTime, Attributes } from '@opentelemetry/api';
-import { Maybe, hashAttributes } from '../utils';
-import { Accumulation, Aggregator } from '../aggregator/types';
-import { AttributeHashMap } from './HashMap';
+import { Maybe, hashAttributes } from '../utils.js';
+import { Accumulation, Aggregator } from '../aggregator/types.js';
+import { AttributeHashMap } from './HashMap.js';
 
 /**
  * Internal interface.

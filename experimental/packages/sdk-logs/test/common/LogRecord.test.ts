@@ -33,11 +33,11 @@ import {
   LogRecordLimits,
   LogRecordProcessor,
   LoggerProvider,
-} from './../../src';
-import { invalidAttributes, validAttributes } from './utils';
-import { LoggerProviderSharedState } from '../../src/internal/LoggerProviderSharedState';
-import { reconfigureLimits } from '../../src/config';
-import { LogRecordImpl } from '../../src/LogRecordImpl';
+} from './../../src.js';
+import { invalidAttributes, validAttributes } from './utils.js';
+import { LoggerProviderSharedState } from '../../src/internal/LoggerProviderSharedState.js';
+import { reconfigureLimits } from '../../src/config.js';
+import { LogRecordImpl } from '../../src/LogRecordImpl.js';
 
 const performanceTimeOrigin: HrTime = [1, 1];
 

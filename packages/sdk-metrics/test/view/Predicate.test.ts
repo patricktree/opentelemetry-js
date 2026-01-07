@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { ExactPredicate, PatternPredicate } from '../../src/view/Predicate';
+import { ExactPredicate, PatternPredicate } from '../../src/view/Predicate.js';
 
 describe('PatternPredicate', () => {
   describe('asterisk match', () => {

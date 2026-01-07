@@ -20,30 +20,30 @@ import {
   NET_TRANSPORT_VALUE_IP_TCP,
   ATTR_HTTP_FLAVOR,
   ATTR_NET_TRANSPORT,
-} from '../../src/semconv';
+} from '../../src/semconv.js';
 import * as assert from 'assert';
 import * as http from 'http';
 import * as fs from 'fs';
 import * as path from 'path';
 import { Socket } from 'net';
-import { assertSpan } from '../utils/assertSpan';
+import { assertSpan } from '../utils/assertSpan.js';
 import { urlToHttpOptions } from 'url';
-import * as utils from '../utils/utils';
+import * as utils from '../utils/utils.js';
 import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 import {
   InMemorySpanExporter,
   SimpleSpanProcessor,
 } from '@opentelemetry/sdk-trace-base';
 import { AsyncHooksContextManager } from '@opentelemetry/context-async-hooks';
-import { HttpInstrumentation } from '../../src';
+import { HttpInstrumentation } from '../../src.js';
 
 const instrumentation = new HttpInstrumentation();
 instrumentation.enable();
 instrumentation.disable();
 
 import * as https from 'https';
-import { httpsRequest } from '../utils/httpsRequest';
-import { DummyPropagation } from '../utils/DummyPropagation';
+import { httpsRequest } from '../utils/httpsRequest.js';
+import { DummyPropagation } from '../utils/DummyPropagation.js';
 
 const protocol = 'https';
 const memoryExporter = new InMemorySpanExporter();

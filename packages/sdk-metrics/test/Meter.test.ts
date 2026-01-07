@@ -25,16 +25,16 @@ import {
   ObservableGaugeInstrument,
   ObservableUpDownCounterInstrument,
   UpDownCounterInstrument,
-} from '../src/Instruments';
-import { Meter } from '../src/Meter';
-import { MeterProviderSharedState } from '../src/state/MeterProviderSharedState';
-import { MeterSharedState } from '../src/state/MeterSharedState';
+} from '../src/Instruments.js';
+import { Meter } from '../src/Meter.js';
+import { MeterProviderSharedState } from '../src/state/MeterProviderSharedState.js';
+import { MeterSharedState } from '../src/state/MeterSharedState.js';
 import {
   defaultInstrumentationScope,
   testResource,
   invalidNames,
   validNames,
-} from './util';
+} from './util.js';
 
 describe('Meter', () => {
   afterEach(() => {

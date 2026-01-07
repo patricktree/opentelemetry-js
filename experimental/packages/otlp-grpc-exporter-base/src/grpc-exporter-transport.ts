@@ -27,7 +27,7 @@ import {
   ExportResponse,
   IExporterTransport,
 } from '@opentelemetry/otlp-exporter-base';
-import { VERSION } from './version';
+import { VERSION } from './version.js';
 
 const DEFAULT_USER_AGENT = `OTel-OTLP-Exporter-JavaScript/${VERSION}`;
 

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import { SessionIdGenerator } from './types/SessionIdGenerator';
-import { Session } from './types/Session';
-import { SessionProvider } from './types/SessionProvider';
-import { SessionObserver } from './types/SessionObserver';
-import { SessionStore } from './types/SessionStore';
-import { SessionPublisher } from './types/SessionPublisher';
+import { SessionIdGenerator } from './types/SessionIdGenerator.js';
+import { Session } from './types/Session.js';
+import { SessionProvider } from './types/SessionProvider.js';
+import { SessionObserver } from './types/SessionObserver.js';
+import { SessionStore } from './types/SessionStore.js';
+import { SessionPublisher } from './types/SessionPublisher.js';
 
 export interface SessionManagerConfig {
   /** Class responsible for generating a session ID */

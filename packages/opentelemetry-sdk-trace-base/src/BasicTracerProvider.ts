@@ -17,12 +17,12 @@
 import { TracerProvider, Tracer as ApiTracer } from '@opentelemetry/api';
 import { merge } from '@opentelemetry/core';
 import { defaultResource, Resource } from '@opentelemetry/resources';
-import { SpanProcessor } from './SpanProcessor';
-import { Tracer } from './Tracer';
-import { loadDefaultConfig } from './config';
-import { MultiSpanProcessor } from './MultiSpanProcessor';
-import { TracerConfig } from './types';
-import { reconfigureLimits } from './utility';
+import { SpanProcessor } from './SpanProcessor.js';
+import { Tracer } from './Tracer.js';
+import { loadDefaultConfig } from './config.js';
+import { MultiSpanProcessor } from './MultiSpanProcessor.js';
+import { TracerConfig } from './types.js';
+import { reconfigureLimits } from './utility.js';
 
 export enum ForceFlushState {
   'resolved',

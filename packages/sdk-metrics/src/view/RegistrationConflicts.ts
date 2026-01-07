@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { InstrumentSelectorCriteria } from './InstrumentSelector';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
+import { InstrumentSelectorCriteria } from './InstrumentSelector.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
 
 export function getIncompatibilityDetails(
   existing: InstrumentDescriptor,

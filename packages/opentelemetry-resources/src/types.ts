@@ -15,7 +15,7 @@
  */
 
 import { AttributeValue } from '@opentelemetry/api';
-import { ResourceDetectionConfig } from './config';
+import { ResourceDetectionConfig } from './config.js';
 
 /**
  * Interface for a Resource Detector.

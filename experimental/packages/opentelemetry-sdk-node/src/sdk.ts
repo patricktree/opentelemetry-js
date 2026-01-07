@@ -62,7 +62,7 @@ import {
   NodeTracerProvider,
 } from '@opentelemetry/sdk-trace-node';
 import { ATTR_SERVICE_NAME } from '@opentelemetry/semantic-conventions';
-import { NodeSDKConfiguration } from './types';
+import { NodeSDKConfiguration } from './types.js';
 import {
   getBooleanFromEnv,
   getStringFromEnv,
@@ -75,7 +75,7 @@ import {
   getPropagatorFromEnv,
   setupPropagator,
   setupContextManager,
-} from './utils';
+} from './utils.js';
 
 type TracerProviderConfig = {
   tracerConfig: NodeTracerConfig;

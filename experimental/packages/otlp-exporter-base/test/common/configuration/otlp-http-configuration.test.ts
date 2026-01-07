@@ -17,7 +17,7 @@
 import {
   mergeOtlpHttpConfigurationWithDefaults,
   OtlpHttpConfiguration,
-} from '../../../src/configuration/otlp-http-configuration';
+} from '../../../src/configuration/otlp-http-configuration.js';
 import * as assert from 'assert';
 import { testSharedConfigBehavior } from './shared-configuration.test';
 

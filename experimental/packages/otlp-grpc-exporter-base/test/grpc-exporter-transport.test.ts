@@ -20,8 +20,8 @@ import {
   createSslCredentials,
   GrpcExporterTransport,
   GrpcExporterTransportParameters,
-} from '../src/grpc-exporter-transport';
-import { VERSION } from '../src/version';
+} from '../src/grpc-exporter-transport.js';
+import { VERSION } from '../src/version.js';
 import * as assert from 'assert';
 import * as crypto from 'crypto';
 import * as fs from 'fs';

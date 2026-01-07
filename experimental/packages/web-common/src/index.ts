@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-export type { SessionProvider } from './types/SessionProvider';
+export type { SessionProvider } from './types/SessionProvider.js';
 export {
   createSessionSpanProcessor,
   createSessionLogRecordProcessor,
   createSessionManager,
   createDefaultSessionIdGenerator,
   createLocalStorageSessionStore,
-} from './utils';
-export type { Session } from './types/Session';
-export type { SessionIdGenerator } from './types/SessionIdGenerator';
-export type { SessionPublisher } from './types/SessionPublisher';
-export type { SessionObserver } from './types/SessionObserver';
-export type { SessionStore } from './types/SessionStore';
+} from './utils.js';
+export type { Session } from './types/Session.js';
+export type { SessionIdGenerator } from './types/SessionIdGenerator.js';
+export type { SessionPublisher } from './types/SessionPublisher.js';
+export type { SessionObserver } from './types/SessionObserver.js';
+export type { SessionStore } from './types/SessionStore.js';

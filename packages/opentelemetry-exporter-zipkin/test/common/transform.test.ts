@@ -31,9 +31,9 @@ import {
   toZipkinSpan,
   _toZipkinAnnotations,
   _toZipkinTags,
-} from '../../src/transform';
-import * as zipkinTypes from '../../src/types';
-import { VERSION } from '../../src/version';
+} from '../../src/transform.js';
+import * as zipkinTypes from '../../src/types.js';
+import { VERSION } from '../../src/version.js';
 
 const resource = {
   attributes: {

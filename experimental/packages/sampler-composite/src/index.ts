@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-export { createComposableAlwaysOffSampler } from './alwaysoff';
-export { createComposableAlwaysOnSampler } from './alwayson';
-export { createComposableTraceIDRatioBasedSampler } from './traceidratio';
-export { createComposableParentThresholdSampler } from './parentthreshold';
-export { createCompositeSampler } from './composite';
-export type { ComposableSampler, SamplingIntent } from './types';
+export { createComposableAlwaysOffSampler } from './alwaysoff.js';
+export { createComposableAlwaysOnSampler } from './alwayson.js';
+export { createComposableTraceIDRatioBasedSampler } from './traceidratio.js';
+export { createComposableParentThresholdSampler } from './parentthreshold.js';
+export { createCompositeSampler } from './composite.js';
+export type { ComposableSampler, SamplingIntent } from './types.js';

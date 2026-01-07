@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Meter } from './Meter';
+import { Meter } from './Meter.js';
 import {
   BatchObservableCallback,
   Counter,
@@ -28,7 +28,7 @@ import {
   ObservableGauge,
   ObservableUpDownCounter,
   UpDownCounter,
-} from './Metric';
+} from './Metric.js';
 
 /**
  * NoopMeter is a noop implementation of the {@link Meter} interface. It reuses

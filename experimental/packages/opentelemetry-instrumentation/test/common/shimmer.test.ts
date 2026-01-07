@@ -50,8 +50,8 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import shimmer from '../../src/shimmer';
-import { ShimWrapped } from '../../src';
+import shimmer from '../../src/shimmer.js';
+import { ShimWrapped } from '../../src.js';
 
 describe('Shimmer', function () {
   describe('init', function () {

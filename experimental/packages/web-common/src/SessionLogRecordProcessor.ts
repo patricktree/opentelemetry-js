@@ -16,8 +16,8 @@
 
 import { Context } from '@opentelemetry/api';
 import { SdkLogRecord, LogRecordProcessor } from '@opentelemetry/sdk-logs';
-import { ATTR_SESSION_ID } from './semconv';
-import { SessionProvider } from './types/SessionProvider';
+import { ATTR_SESSION_ID } from './semconv.js';
+import { SessionProvider } from './types/SessionProvider.js';
 
 /**
  * SessionLogRecordProcessor is a {@link SpanProcessor} adds the session.id attribute

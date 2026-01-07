@@ -21,9 +21,9 @@ import {
   ATTR_CLOUD_REGION,
   ATTR_HOST_ID,
   ATTR_HOST_TYPE,
-} from '../../src/semconv';
-import { ResourceDetector } from '../../src';
-import { DetectedResource } from '../../src/types';
+} from '../../src/semconv.js';
+import { ResourceDetector } from '../../src.js';
+import { DetectedResource } from '../../src/types.js';
 
 class SampleDetector implements ResourceDetector {
   detect(): DetectedResource {

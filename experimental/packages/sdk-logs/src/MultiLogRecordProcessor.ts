@@ -16,8 +16,8 @@
 
 import { callWithTimeout } from '@opentelemetry/core';
 import type { Context } from '@opentelemetry/api';
-import type { LogRecordProcessor } from './LogRecordProcessor';
-import type { SdkLogRecord } from './export/SdkLogRecord';
+import type { LogRecordProcessor } from './LogRecordProcessor.js';
+import type { SdkLogRecord } from './export/SdkLogRecord.js';
 
 /**
  * Implementation of the {@link LogRecordProcessor} that simply forwards all

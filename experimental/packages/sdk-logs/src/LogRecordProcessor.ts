@@ -16,7 +16,7 @@
 
 import { Context } from '@opentelemetry/api';
 
-import { SdkLogRecord } from './export/SdkLogRecord';
+import { SdkLogRecord } from './export/SdkLogRecord.js';
 
 export interface LogRecordProcessor {
   /**

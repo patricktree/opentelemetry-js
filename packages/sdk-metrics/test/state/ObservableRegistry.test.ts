@@ -15,9 +15,9 @@
  */
 
 import * as assert from 'assert';
-import { ObservableInstrument } from '../../src/Instruments';
-import { ObservableRegistry } from '../../src/state/ObservableRegistry';
-import { defaultInstrumentDescriptor } from '../util';
+import { ObservableInstrument } from '../../src/Instruments.js';
+import { ObservableRegistry } from '../../src/state/ObservableRegistry.js';
+import { defaultInstrumentDescriptor } from '../util.js';
 
 describe('ObservableRegistry', () => {
   const callback1 = () => {};

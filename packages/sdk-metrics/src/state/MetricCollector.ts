@@ -15,16 +15,19 @@
  */
 
 import { millisToHrTime } from '@opentelemetry/core';
-import { AggregationTemporalitySelector } from '../export/AggregationSelector';
+import { AggregationTemporalitySelector } from '../export/AggregationSelector.js';
 import {
   CollectionResult,
   InstrumentType,
   ScopeMetrics,
-} from '../export/MetricData';
-import { MetricCollectOptions, MetricProducer } from '../export/MetricProducer';
-import { IMetricReader } from '../export/MetricReader';
-import { ForceFlushOptions, ShutdownOptions } from '../types';
-import { MeterProviderSharedState } from './MeterProviderSharedState';
+} from '../export/MetricData.js';
+import {
+  MetricCollectOptions,
+  MetricProducer,
+} from '../export/MetricProducer.js';
+import { IMetricReader } from '../export/MetricReader.js';
+import { ForceFlushOptions, ShutdownOptions } from '../types.js';
+import { MeterProviderSharedState } from './MeterProviderSharedState.js';
 
 /**
  * An internal opaque interface that the MetricReader receives as

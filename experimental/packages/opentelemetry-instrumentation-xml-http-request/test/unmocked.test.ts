@@ -17,7 +17,7 @@ import { Span } from '@opentelemetry/api';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
 import { ReadableSpan, SpanProcessor } from '@opentelemetry/sdk-trace-base';
 import { WebTracerProvider } from '@opentelemetry/sdk-trace-web';
-import { XMLHttpRequestInstrumentation } from '../src';
+import { XMLHttpRequestInstrumentation } from '../src.js';
 import * as assert from 'assert';
 
 class TestSpanProcessor implements SpanProcessor {

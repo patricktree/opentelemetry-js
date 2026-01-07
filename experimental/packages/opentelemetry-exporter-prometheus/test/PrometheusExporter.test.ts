@@ -19,7 +19,7 @@ import { MeterProvider } from '@opentelemetry/sdk-metrics';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 import * as http from 'http';
-import { PrometheusExporter } from '../src';
+import { PrometheusExporter } from '../src.js';
 import {
   mockHrTime,
   sdkLanguage,
@@ -27,7 +27,7 @@ import {
   sdkVersion,
   serviceName,
   mockedHrTimeMs,
-} from './util';
+} from './util.js';
 import { SinonStubbedInstance } from 'sinon';
 
 const infoLine = `target_info{service_name="${serviceName}",telemetry_sdk_language="${sdkLanguage}",telemetry_sdk_name="${sdkName}",telemetry_sdk_version="${sdkVersion}"} 1`;

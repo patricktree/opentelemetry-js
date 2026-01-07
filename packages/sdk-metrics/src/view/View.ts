@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-import { PatternPredicate } from './Predicate';
+import { PatternPredicate } from './Predicate.js';
 import {
   createMultiAttributesProcessor,
   createNoopAttributesProcessor,
   IAttributesProcessor,
-} from './AttributesProcessor';
-import { InstrumentSelector } from './InstrumentSelector';
-import { MeterSelector } from './MeterSelector';
-import { Aggregation } from './Aggregation';
+} from './AttributesProcessor.js';
+import { InstrumentSelector } from './InstrumentSelector.js';
+import { MeterSelector } from './MeterSelector.js';
+import { Aggregation } from './Aggregation.js';
 import {
   AggregationOption,
   AggregationType,
   toAggregation,
-} from './AggregationOption';
-import { InstrumentType } from '../export/MetricData';
+} from './AggregationOption.js';
+import { InstrumentType } from '../export/MetricData.js';
 
 export type ViewOptions = {
   /**

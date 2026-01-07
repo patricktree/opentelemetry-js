@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { runTestsWithSemconvStabilityLevels } from './helper';
-import { GrpcInstrumentation } from '../src';
+import { runTestsWithSemconvStabilityLevels } from './helper.js';
+import { GrpcInstrumentation } from '../src.js';
 
 const instrumentation = new GrpcInstrumentation();
 instrumentation.enable();
