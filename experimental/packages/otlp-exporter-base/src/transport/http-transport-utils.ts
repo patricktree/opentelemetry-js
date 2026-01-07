@@ -17,12 +17,12 @@ import type * as http from 'http';
 import type * as https from 'https';
 import * as zlib from 'zlib';
 import { Readable } from 'stream';
-import { ExportResponse } from '../export-response';
+import { ExportResponse } from '../export-response.js';
 import {
   isExportHTTPErrorRetryable,
   parseRetryAfterToMills,
-} from '../is-export-retryable';
-import { OTLPExporterError } from '../types';
+} from '../is-export-retryable.js';
+import { OTLPExporterError } from '../types.js';
 import { VERSION } from '../version';
 
 const DEFAULT_USER_AGENT = `OTel-OTLP-Exporter-JavaScript/${VERSION}`;

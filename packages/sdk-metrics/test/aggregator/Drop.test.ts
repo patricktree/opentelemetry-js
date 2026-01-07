@@ -16,9 +16,9 @@
 
 import { HrTime } from '@opentelemetry/api';
 import * as assert from 'assert';
-import { AggregationTemporality } from '../../src';
-import { DropAggregator } from '../../src/aggregator';
-import { defaultInstrumentDescriptor } from '../util';
+import { AggregationTemporality } from '../../src/index.js';
+import { DropAggregator } from '../../src/aggregator/index.js';
+import { defaultInstrumentDescriptor } from '../util.js';
 
 describe('DropAggregator', () => {
   describe('createAccumulation', () => {

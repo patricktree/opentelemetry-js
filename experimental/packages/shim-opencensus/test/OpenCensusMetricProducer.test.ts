@@ -24,7 +24,7 @@ import {
 } from '@opentelemetry/sdk-metrics';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { OpenCensusMetricProducer } from '../src/OpenCensusMetricProducer';
+import { OpenCensusMetricProducer } from '../src/OpenCensusMetricProducer.js';
 
 describe('OpenCensusMetricProducer', () => {
   beforeEach(() => {

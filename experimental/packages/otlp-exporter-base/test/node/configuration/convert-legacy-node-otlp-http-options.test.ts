@@ -17,8 +17,8 @@
 import * as sinon from 'sinon';
 import * as assert from 'assert';
 import type * as https from 'https';
-import { convertLegacyHttpOptions } from '../../../src/configuration/convert-legacy-node-http-options';
-import { registerMockDiagLogger } from '../../common/test-utils';
+import { convertLegacyHttpOptions } from '../../../src/configuration/convert-legacy-node-http-options.js';
+import { registerMockDiagLogger } from '../../common/test-utils.js';
 
 describe('convertLegacyHttpOptions', function () {
   afterEach(function () {

@@ -31,13 +31,13 @@ import api, {
   TextMapSetter,
   trace,
   TraceFlags,
-} from '../../../src';
-import { DiagAPI } from '../../../src/api/diag';
-import { NoopMeter } from '../../../src/metrics/NoopMeter';
-import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider';
-import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan';
-import { NoopTracer } from '../../../src/trace/NoopTracer';
-import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider';
+} from '../../../src/index.js';
+import { DiagAPI } from '../../../src/api/diag.js';
+import { NoopMeter } from '../../../src/metrics/NoopMeter.js';
+import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider.js';
+import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan.js';
+import { NoopTracer } from '../../../src/trace/NoopTracer.js';
+import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider.js';
 
 // DiagLogger implementation
 const diagLoggerFunctions = [

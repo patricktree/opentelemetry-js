@@ -16,9 +16,9 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { SpanExporter } from '../../../src';
-import { BatchSpanProcessor } from '../../../src/platform/browser/export/BatchSpanProcessor';
-import { TestTracingSpanExporter } from '../../common/export/TestTracingSpanExporter';
+import { SpanExporter } from '../../../src/index.js';
+import { BatchSpanProcessor } from '../../../src/platform/browser/export/BatchSpanProcessor.js';
+import { TestTracingSpanExporter } from '../../common/export/TestTracingSpanExporter.js';
 import {
   loggingErrorHandler,
   setGlobalErrorHandler,

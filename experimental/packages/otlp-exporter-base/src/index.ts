@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
-export { OTLPExporterBase } from './OTLPExporterBase';
-export { OTLPExporterError } from './types';
+export { OTLPExporterBase } from './OTLPExporterBase.js';
+export { OTLPExporterError } from './types.js';
 
 export type {
   ExportResponse,
   ExportResponseFailure,
   ExportResponseSuccess,
   ExportResponseRetryable,
-} from './export-response';
+} from './export-response.js';
 
-export type { IExporterTransport } from './exporter-transport';
+export type { IExporterTransport } from './exporter-transport.js';
 
 export {
   mergeOtlpSharedConfigurationWithDefaults,
   getSharedConfigurationDefaults,
-} from './configuration/shared-configuration';
-export type { OtlpSharedConfiguration } from './configuration/shared-configuration';
+} from './configuration/shared-configuration.js';
+export type { OtlpSharedConfiguration } from './configuration/shared-configuration.js';
 
-export { CompressionAlgorithm } from './configuration/legacy-node-configuration';
-export type { OTLPExporterNodeConfigBase } from './configuration/legacy-node-configuration';
-export type { OTLPExporterConfigBase } from './configuration/legacy-base-configuration';
-export type { IOtlpExportDelegate } from './otlp-export-delegate';
-export { createOtlpNetworkExportDelegate } from './otlp-network-export-delegate';
+export { CompressionAlgorithm } from './configuration/legacy-node-configuration.js';
+export type { OTLPExporterNodeConfigBase } from './configuration/legacy-node-configuration.js';
+export type { OTLPExporterConfigBase } from './configuration/legacy-base-configuration.js';
+export type { IOtlpExportDelegate } from './otlp-export-delegate.js';
+export { createOtlpNetworkExportDelegate } from './otlp-network-export-delegate.js';

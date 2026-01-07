@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { createConstMap } from '../internal/utils';
+import { createConstMap } from '../internal/utils.js';
 
 //----------------------------------------------------------------------------------------------------------
 // DO NOT EDIT, this is an Auto-generated file from scripts/semconv/templates//templates/SemanticAttributes.ts.j2

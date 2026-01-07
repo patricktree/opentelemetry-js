@@ -17,8 +17,8 @@
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
 import * as oc from '@opencensus/core';
 import * as assert from 'assert';
-import { withTestTracer, setupNodeContextManager } from './util';
-import { ShimSpan } from '../src/ShimSpan';
+import { withTestTracer, setupNodeContextManager } from './util.js';
+import { ShimSpan } from '../src/ShimSpan.js';
 
 async function withTestSpan(
   func: (span: ShimSpan) => void | Promise<void>

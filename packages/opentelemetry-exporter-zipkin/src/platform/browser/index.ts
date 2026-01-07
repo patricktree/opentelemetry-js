@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { prepareSend } from './util';
+export { prepareSend } from './util.js';

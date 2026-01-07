@@ -13,5 +13,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export { InstrumentationBase } from './instrumentation';
-export { normalize } from './normalize';
+export { InstrumentationBase } from './instrumentation.js';
+export { normalize } from './normalize.js';

@@ -16,10 +16,10 @@
 
 import * as assert from 'assert';
 import * as Sinon from 'sinon';
-import { ConfigurationModel } from '../src';
+import { ConfigurationModel } from '../src/index.js';
 import { diag, DiagLogLevel } from '@opentelemetry/api';
-import { createConfigFactory } from '../src/ConfigFactory';
-import { OtlpHttpEncoding } from '../src/models/commonModel';
+import { createConfigFactory } from '../src/ConfigFactory.js';
+import { OtlpHttpEncoding } from '../src/models/commonModel.js';
 import {
   ExemplarFilter,
   ExporterDefaultHistogramAggregation,
@@ -27,13 +27,13 @@ import {
   InstrumentType,
   MeterProvider,
   MetricReader,
-} from '../src/models/meterProviderModel';
+} from '../src/models/meterProviderModel.js';
 import {
   setAttributeLimits,
   setMeterProvider,
   setPropagators,
   setResources,
-} from '../src/EnvironmentConfigFactory';
+} from '../src/EnvironmentConfigFactory.js';
 import {
   parseConfigFile,
   setResourceAttributes,
@@ -41,8 +41,8 @@ import {
   setPropagator,
   setMeterProvider as setFileMeterProvider,
   getTemporalityPreference,
-} from '../src/FileConfigFactory';
-import { TracerProvider } from '../src/models/tracerProviderModel';
+} from '../src/FileConfigFactory.js';
+import { TracerProvider } from '../src/models/tracerProviderModel.js';
 
 const defaultConfig: ConfigurationModel = {
   disabled: false,

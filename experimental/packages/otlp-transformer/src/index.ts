@@ -17,22 +17,22 @@
 export type {
   IExportMetricsPartialSuccess,
   IExportMetricsServiceResponse,
-} from './metrics';
+} from './metrics/index.js';
 export type {
   IExportTracePartialSuccess,
   IExportTraceServiceResponse,
-} from './trace';
+} from './trace/index.js';
 export type {
   IExportLogsServiceResponse,
   IExportLogsPartialSuccess,
-} from './logs';
+} from './logs/index.js';
 
-export { ProtobufLogsSerializer } from './logs/protobuf';
-export { ProtobufMetricsSerializer } from './metrics/protobuf';
-export { ProtobufTraceSerializer } from './trace/protobuf';
+export { ProtobufLogsSerializer } from './logs/protobuf/index.js';
+export { ProtobufMetricsSerializer } from './metrics/protobuf/index.js';
+export { ProtobufTraceSerializer } from './trace/protobuf/index.js';
 
-export { JsonLogsSerializer } from './logs/json';
-export { JsonMetricsSerializer } from './metrics/json';
-export { JsonTraceSerializer } from './trace/json';
+export { JsonLogsSerializer } from './logs/json/index.js';
+export { JsonMetricsSerializer } from './metrics/json/index.js';
+export { JsonTraceSerializer } from './trace/json/index.js';
 
-export type { ISerializer } from './i-serializer';
+export type { ISerializer } from './i-serializer.js';

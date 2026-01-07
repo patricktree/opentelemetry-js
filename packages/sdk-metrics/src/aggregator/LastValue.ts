@@ -20,13 +20,13 @@ import {
   Aggregator,
   AggregatorKind,
   LastValue,
-} from './types';
+} from './types.js';
 import { HrTime } from '@opentelemetry/api';
 import { millisToHrTime, hrTimeToMicroseconds } from '@opentelemetry/core';
-import { DataPointType, GaugeMetricData } from '../export/MetricData';
-import { Maybe } from '../utils';
-import { AggregationTemporality } from '../export/AggregationTemporality';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
+import { DataPointType, GaugeMetricData } from '../export/MetricData.js';
+import { Maybe } from '../utils.js';
+import { AggregationTemporality } from '../export/AggregationTemporality.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
 
 export class LastValueAccumulation implements Accumulation {
   public startTime;

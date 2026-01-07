@@ -21,9 +21,9 @@ import {
   globalErrorHandler,
   internal,
 } from '@opentelemetry/core';
-import type { LogRecordExporter } from './LogRecordExporter';
-import type { LogRecordProcessor } from '../LogRecordProcessor';
-import type { SdkLogRecord } from './SdkLogRecord';
+import type { LogRecordExporter } from './LogRecordExporter.js';
+import type { LogRecordProcessor } from '../LogRecordProcessor.js';
+import type { SdkLogRecord } from './SdkLogRecord.js';
 
 /**
  * An implementation of the {@link LogRecordProcessor} interface that exports

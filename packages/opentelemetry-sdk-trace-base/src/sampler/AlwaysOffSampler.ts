@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Sampler, SamplingDecision, SamplingResult } from '../Sampler';
+import { Sampler, SamplingDecision, SamplingResult } from '../Sampler.js';
 
 /** Sampler that samples no traces. */
 export class AlwaysOffSampler implements Sampler {

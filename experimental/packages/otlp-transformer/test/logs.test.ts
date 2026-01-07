@@ -19,17 +19,17 @@ import { Resource, resourceFromAttributes } from '@opentelemetry/resources';
 import * as assert from 'assert';
 import { ReadableLogRecord } from '@opentelemetry/sdk-logs';
 import { SeverityNumber } from '@opentelemetry/api-logs';
-import { toBase64 } from './utils';
+import { toBase64 } from './utils.js';
 import * as root from '../src/generated/root';
-import { OtlpEncodingOptions } from '../src/common/internal-types';
+import { OtlpEncodingOptions } from '../src/common/internal-types.js';
 import {
   ESeverityNumber,
   IExportLogsServiceRequest,
-} from '../src/logs/internal-types';
-import { createExportLogsServiceRequest } from '../src/logs/internal';
-import { ProtobufLogsSerializer } from '../src/logs/protobuf';
-import { JsonLogsSerializer } from '../src/logs/json';
-import { hexToBinary } from '../src/common/hex-to-binary';
+} from '../src/logs/internal-types.js';
+import { createExportLogsServiceRequest } from '../src/logs/internal.js';
+import { ProtobufLogsSerializer } from '../src/logs/protobuf/index.js';
+import { JsonLogsSerializer } from '../src/logs/json/index.js';
+import { hexToBinary } from '../src/common/hex-to-binary.js';
 
 function createExpectedLogJson(
   options: OtlpEncodingOptions

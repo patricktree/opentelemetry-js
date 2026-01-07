@@ -25,8 +25,8 @@ import {
   NOOP_UP_DOWN_COUNTER_METRIC,
   createNoopMeter,
   NOOP_GAUGE_METRIC,
-} from '../../../src/metrics/NoopMeter';
-import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider';
+} from '../../../src/metrics/NoopMeter.js';
+import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider.js';
 
 const attributes = {};
 const options = {

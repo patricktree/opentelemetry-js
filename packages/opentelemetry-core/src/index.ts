@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-export { W3CBaggagePropagator } from './baggage/propagation/W3CBaggagePropagator';
-export { AnchoredClock } from './common/anchored-clock';
-export type { Clock } from './common/anchored-clock';
-export { isAttributeValue, sanitizeAttributes } from './common/attributes';
+export { W3CBaggagePropagator } from './baggage/propagation/W3CBaggagePropagator.js';
+export { AnchoredClock } from './common/anchored-clock.js';
+export type { Clock } from './common/anchored-clock.js';
+export { isAttributeValue, sanitizeAttributes } from './common/attributes.js';
 export {
   globalErrorHandler,
   setGlobalErrorHandler,
-} from './common/global-error-handler';
-export { loggingErrorHandler } from './common/logging-error-handler';
+} from './common/global-error-handler.js';
+export { loggingErrorHandler } from './common/logging-error-handler.js';
 export {
   addHrTimes,
   getTimeOrigin,
@@ -36,12 +36,12 @@ export {
   isTimeInputHrTime,
   millisToHrTime,
   timeInputToHrTime,
-} from './common/time';
-export { unrefTimer } from './common/timer-util';
-export type { ErrorHandler, InstrumentationScope } from './common/types';
-export { ExportResultCode } from './ExportResult';
-export type { ExportResult } from './ExportResult';
-export { parseKeyPairsIntoRecord } from './baggage/utils';
+} from './common/time.js';
+export { unrefTimer } from './common/timer-util.js';
+export type { ErrorHandler, InstrumentationScope } from './common/types.js';
+export { ExportResultCode } from './ExportResult.js';
+export type { ExportResult } from './ExportResult.js';
+export { parseKeyPairsIntoRecord } from './baggage/utils.js';
 export {
   SDK_INFO,
   _globalThis,
@@ -50,34 +50,34 @@ export {
   getNumberFromEnv,
   getStringListFromEnv,
   otperformance,
-} from './platform';
-export { CompositePropagator } from './propagation/composite';
-export type { CompositePropagatorConfig } from './propagation/composite';
+} from './platform/index.js';
+export { CompositePropagator } from './propagation/composite.js';
+export type { CompositePropagatorConfig } from './propagation/composite.js';
 export {
   TRACE_PARENT_HEADER,
   TRACE_STATE_HEADER,
   W3CTraceContextPropagator,
   parseTraceParent,
-} from './trace/W3CTraceContextPropagator';
+} from './trace/W3CTraceContextPropagator.js';
 export {
   RPCType,
   deleteRPCMetadata,
   getRPCMetadata,
   setRPCMetadata,
-} from './trace/rpc-metadata';
-export type { RPCMetadata } from './trace/rpc-metadata';
+} from './trace/rpc-metadata.js';
+export type { RPCMetadata } from './trace/rpc-metadata.js';
 export {
   isTracingSuppressed,
   suppressTracing,
   unsuppressTracing,
-} from './trace/suppress-tracing';
-export { TraceState } from './trace/TraceState';
-export { merge } from './utils/merge';
-export { TimeoutError, callWithTimeout } from './utils/timeout';
-export { isUrlIgnored, urlMatches } from './utils/url';
-export { BindOnceFuture } from './utils/callback';
-export { diagLogLevelFromString } from './utils/configuration';
-import { _export } from './internal/exporter';
+} from './trace/suppress-tracing.js';
+export { TraceState } from './trace/TraceState.js';
+export { merge } from './utils/merge.js';
+export { TimeoutError, callWithTimeout } from './utils/timeout.js';
+export { isUrlIgnored, urlMatches } from './utils/url.js';
+export { BindOnceFuture } from './utils/callback.js';
+export { diagLogLevelFromString } from './utils/configuration.js';
+import { _export } from './internal/exporter.js';
 export const internal = {
   _export,
 };

@@ -25,9 +25,9 @@ import {
   trace,
   Tracer,
 } from '@opentelemetry/api';
-import { DEFAULT_SPAN_NAME, ShimSpan } from './ShimSpan';
-import { mapSpanContext, mapSpanKind } from './trace-transform';
-import { shimPropagation } from './propagation';
+import { DEFAULT_SPAN_NAME, ShimSpan } from './ShimSpan.js';
+import { mapSpanContext, mapSpanKind } from './trace-transform.js';
+import { shimPropagation } from './propagation.js';
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const INVALID_SPAN = trace.getSpan(

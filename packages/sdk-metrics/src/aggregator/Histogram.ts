@@ -19,16 +19,16 @@ import {
   AccumulationRecord,
   Aggregator,
   AggregatorKind,
-} from './types';
+} from './types.js';
 import {
   DataPointType,
   HistogramMetricData,
   InstrumentType,
-} from '../export/MetricData';
+} from '../export/MetricData.js';
 import { HrTime } from '@opentelemetry/api';
-import { binarySearchUB, Maybe } from '../utils';
-import { AggregationTemporality } from '../export/AggregationTemporality';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
+import { binarySearchUB, Maybe } from '../utils.js';
+import { AggregationTemporality } from '../export/AggregationTemporality.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
 
 /**
  * Internal value type for HistogramAggregation.

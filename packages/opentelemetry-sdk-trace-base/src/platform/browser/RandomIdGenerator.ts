@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { IdGenerator } from '../../IdGenerator';
+import { IdGenerator } from '../../IdGenerator.js';
 
 const SPAN_ID_BYTES = 8;
 const TRACE_ID_BYTES = 16;

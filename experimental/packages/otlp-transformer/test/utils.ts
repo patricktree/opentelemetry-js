@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { hexToBinary } from '../src/common/hex-to-binary';
+import { hexToBinary } from '../src/common/hex-to-binary.js';
 
 /**
  * utility function to convert a string representing a hex value to a base64 string

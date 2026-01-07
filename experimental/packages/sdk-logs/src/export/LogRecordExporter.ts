@@ -16,7 +16,7 @@
 
 import type { ExportResult } from '@opentelemetry/core';
 
-import type { ReadableLogRecord } from './ReadableLogRecord';
+import type { ReadableLogRecord } from './ReadableLogRecord.js';
 
 export interface LogRecordExporter {
   /**

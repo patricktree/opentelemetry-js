@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { toAnyValue } from '../src/common/internal';
+import { toAnyValue } from '../src/common/internal.js';
 import * as assert from 'assert';
-import { getOtlpEncoder } from '../src/common/utils';
-import { hexToBinary } from '../src/common/hex-to-binary';
+import { getOtlpEncoder } from '../src/common/utils.js';
+import { hexToBinary } from '../src/common/hex-to-binary.js';
 
 const traceId = 'abcdef01234567890000000000000000';
 const spanId = '12341234abcdabcd';

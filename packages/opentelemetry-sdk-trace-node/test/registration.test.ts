@@ -25,7 +25,7 @@ import {
 } from '@opentelemetry/api';
 import { AsyncLocalStorageContextManager } from '@opentelemetry/context-async-hooks';
 import { CompositePropagator } from '@opentelemetry/core';
-import { NodeTracerProvider } from '../src';
+import { NodeTracerProvider } from '../src/index.js';
 
 // Here we are looking for a `AnyConstructor` type, and `Function` is a close
 // enough approximation that exists in the standard library.

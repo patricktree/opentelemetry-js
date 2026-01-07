@@ -15,7 +15,7 @@
  */
 
 import { isValidTraceId } from '@opentelemetry/api';
-import { Sampler, SamplingDecision, SamplingResult } from '../Sampler';
+import { Sampler, SamplingDecision, SamplingResult } from '../Sampler.js';
 
 /** Sampler that samples a given fraction of traces based of trace id deterministically. */
 export class TraceIdRatioBasedSampler implements Sampler {

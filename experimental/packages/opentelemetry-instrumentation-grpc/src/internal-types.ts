@@ -16,7 +16,7 @@
 
 import type { Span } from '@opentelemetry/api';
 import type { EventEmitter } from 'events';
-import type { CALL_SPAN_ENDED } from './serverUtils';
+import type { CALL_SPAN_ENDED } from './serverUtils.js';
 import type {
   requestCallback,
   ServerUnaryCall,

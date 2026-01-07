@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { PeriodicExportingMetricReader } from '../../src/export/PeriodicExportingMetricReader';
-import { AggregationTemporality } from '../../src/export/AggregationTemporality';
+import { PeriodicExportingMetricReader } from '../../src/export/PeriodicExportingMetricReader.js';
+import { AggregationTemporality } from '../../src/export/AggregationTemporality.js';
 import {
   AggregationOption,
   AggregationType,
@@ -23,29 +23,29 @@ import {
   InstrumentType,
   MetricProducer,
   PushMetricExporter,
-} from '../../src';
+} from '../../src/index.js';
 import {
   DataPointType,
   ResourceMetrics,
   ScopeMetrics,
-} from '../../src/export/MetricData';
+} from '../../src/export/MetricData.js';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { TimeoutError } from '../../src/utils';
+import { TimeoutError } from '../../src/utils.js';
 import {
   ExportResult,
   ExportResultCode,
   setGlobalErrorHandler,
 } from '@opentelemetry/core';
-import { TestMetricProducer } from './TestMetricProducer';
+import { TestMetricProducer } from './TestMetricProducer.js';
 import {
   assertAggregationSelector,
   assertAggregationTemporalitySelector,
-} from './utils';
+} from './utils.js';
 import {
   DEFAULT_AGGREGATION_SELECTOR,
   DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR,
-} from '../../src/export/AggregationSelector';
+} from '../../src/export/AggregationSelector.js';
 import { ValueType } from '@opentelemetry/api';
 
 const MAX_32_BIT_INT = 2 ** 31 - 1;

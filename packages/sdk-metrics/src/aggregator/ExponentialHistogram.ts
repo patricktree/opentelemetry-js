@@ -20,20 +20,20 @@ import {
   Aggregator,
   AggregatorKind,
   ExponentialHistogram,
-} from './types';
+} from './types.js';
 import {
   DataPointType,
   ExponentialHistogramMetricData,
   InstrumentType,
-} from '../export/MetricData';
+} from '../export/MetricData.js';
 import { diag, HrTime } from '@opentelemetry/api';
-import { Maybe } from '../utils';
-import { AggregationTemporality } from '../export/AggregationTemporality';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
-import { Buckets } from './exponential-histogram/Buckets';
-import { getMapping } from './exponential-histogram/mapping/getMapping';
-import { Mapping } from './exponential-histogram/mapping/types';
-import { nextGreaterSquare } from './exponential-histogram/util';
+import { Maybe } from '../utils.js';
+import { AggregationTemporality } from '../export/AggregationTemporality.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
+import { Buckets } from './exponential-histogram/Buckets.js';
+import { getMapping } from './exponential-histogram/mapping/getMapping.js';
+import { Mapping } from './exponential-histogram/mapping/types.js';
+import { nextGreaterSquare } from './exponential-histogram/util.js';
 
 /**
  * Internal value type for ExponentialHistogramAggregation.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Span, SpanOptions } from '../../';
+import { Span, SpanOptions } from '../../index.js';
 
 /**
  * Options needed for span creation

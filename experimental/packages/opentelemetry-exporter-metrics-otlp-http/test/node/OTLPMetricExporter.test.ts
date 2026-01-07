@@ -18,8 +18,8 @@ import * as assert from 'assert';
 import * as http from 'http';
 import * as sinon from 'sinon';
 
-import { AggregationTemporalityPreference } from '../../src';
-import { OTLPMetricExporter } from '../../src/platform/node';
+import { AggregationTemporalityPreference } from '../../src/index.js';
+import { OTLPMetricExporter } from '../../src/platform/node/index.js';
 import {
   AggregationOption,
   AggregationTemporality,

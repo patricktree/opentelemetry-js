@@ -16,9 +16,9 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { osDetector } from '../../../src';
-import { describeNode } from '../../util';
-import { ATTR_OS_TYPE, ATTR_OS_VERSION } from '../../../src/semconv';
+import { osDetector } from '../../../src/index.js';
+import { describeNode } from '../../util.js';
+import { ATTR_OS_TYPE, ATTR_OS_VERSION } from '../../../src/semconv.js';
 
 describeNode('osDetector() on Node.js', () => {
   afterEach(() => {

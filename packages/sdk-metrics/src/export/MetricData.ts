@@ -17,8 +17,8 @@
 import { HrTime, Attributes, ValueType } from '@opentelemetry/api';
 import { InstrumentationScope } from '@opentelemetry/core';
 import { Resource } from '@opentelemetry/resources';
-import { AggregationTemporality } from './AggregationTemporality';
-import { Histogram, ExponentialHistogram } from '../aggregator/types';
+import { AggregationTemporality } from './AggregationTemporality.js';
+import { Histogram, ExponentialHistogram } from '../aggregator/types.js';
 
 /**
  * Supported types of metric instruments.

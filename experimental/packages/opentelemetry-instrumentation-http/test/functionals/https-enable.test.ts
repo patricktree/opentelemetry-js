@@ -37,14 +37,14 @@ import {
   ATTR_NET_PEER_PORT,
   ATTR_NET_TRANSPORT,
   NET_TRANSPORT_VALUE_IP_TCP,
-} from '../../src/semconv';
+} from '../../src/semconv.js';
 import * as assert from 'assert';
 import * as fs from 'fs';
 import * as nock from 'nock';
 import * as path from 'path';
-import { HttpInstrumentation } from '../../src/http';
-import { assertSpan } from '../utils/assertSpan';
-import { DummyPropagation } from '../utils/DummyPropagation';
+import { HttpInstrumentation } from '../../src/http.js';
+import { assertSpan } from '../utils/assertSpan.js';
+import { DummyPropagation } from '../utils/DummyPropagation.js';
 import { isWrapped } from '@opentelemetry/instrumentation';
 
 const instrumentation = new HttpInstrumentation();
@@ -53,7 +53,7 @@ instrumentation.disable();
 
 import * as http from 'http';
 import * as https from 'https';
-import { httpsRequest } from '../utils/httpsRequest';
+import { httpsRequest } from '../utils/httpsRequest.js';
 
 const applyCustomAttributesOnSpanErrorMessage =
   'bad applyCustomAttributesOnSpan function';

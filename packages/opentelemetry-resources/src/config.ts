@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type { ResourceDetector } from './types';
+import type { ResourceDetector } from './types.js';
 
 /**
  * ResourceDetectionConfig provides an interface for configuring resource auto-detection.

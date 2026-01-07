@@ -22,7 +22,7 @@ import {
   LoggerProvider,
   InMemoryLogRecordExporter,
   SimpleLogRecordProcessor,
-} from '../../../src';
+} from '../../../src/index.js';
 
 const setup = () => {
   const memoryExporter = new InMemoryLogRecordExporter();

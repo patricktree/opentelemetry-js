@@ -20,20 +20,20 @@ import {
   DataPointType,
   InstrumentType,
   MetricData,
-} from '../../src';
+} from '../../src/index.js';
 import {
   ExponentialHistogramAccumulation,
   ExponentialHistogramAggregator,
-} from '../../src/aggregator/ExponentialHistogram';
-import { Buckets } from '../../src/aggregator/exponential-histogram/Buckets';
-import { getMapping } from '../../src/aggregator/exponential-histogram/mapping/getMapping';
-import { Mapping } from '../../src/aggregator/exponential-histogram/mapping/types';
+} from '../../src/aggregator/ExponentialHistogram.js';
+import { Buckets } from '../../src/aggregator/exponential-histogram/Buckets.js';
+import { getMapping } from '../../src/aggregator/exponential-histogram/mapping/getMapping.js';
+import { Mapping } from '../../src/aggregator/exponential-histogram/mapping/types.js';
 import * as assert from 'assert';
 import {
   assertInEpsilon,
   assertInDelta,
-} from './exponential-histogram/helpers';
-import { defaultInstrumentDescriptor } from '../util';
+} from './exponential-histogram/helpers.js';
+import { defaultInstrumentDescriptor } from '../util.js';
 
 describe('ExponentialHistogramAccumulation', () => {
   describe('record', () => {

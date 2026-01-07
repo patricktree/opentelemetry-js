@@ -31,12 +31,12 @@ import {
   ReadableSpan,
   Span,
   SpanExporter,
-} from '../../../src';
+} from '../../../src/index.js';
 import { context } from '@opentelemetry/api';
-import { TestRecordOnlySampler } from './TestRecordOnlySampler';
-import { TestTracingSpanExporter } from './TestTracingSpanExporter';
-import { TestStackContextManager } from './TestStackContextManager';
-import { BatchSpanProcessorBase } from '../../../src/export/BatchSpanProcessorBase';
+import { TestRecordOnlySampler } from './TestRecordOnlySampler.js';
+import { TestTracingSpanExporter } from './TestTracingSpanExporter.js';
+import { TestStackContextManager } from './TestStackContextManager.js';
+import { BatchSpanProcessorBase } from '../../../src/export/BatchSpanProcessorBase.js';
 import { resourceFromAttributes } from '@opentelemetry/resources';
 
 function createSampledSpan(spanName: string): Span {

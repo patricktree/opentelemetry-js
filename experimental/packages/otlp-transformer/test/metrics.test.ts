@@ -22,13 +22,13 @@ import {
   ResourceMetrics,
 } from '@opentelemetry/sdk-metrics';
 import * as assert from 'assert';
-import { createExportMetricsServiceRequest } from '../src/metrics/internal';
-import { EAggregationTemporality } from '../src/metrics/internal-types';
+import { createExportMetricsServiceRequest } from '../src/metrics/internal.js';
+import { EAggregationTemporality } from '../src/metrics/internal-types.js';
 import { hrTime, hrTimeToNanoseconds } from '@opentelemetry/core';
 import * as root from '../src/generated/root';
-import { encodeAsLongBits, encodeAsString } from '../src/common/utils';
-import { ProtobufMetricsSerializer } from '../src/metrics/protobuf';
-import { JsonMetricsSerializer } from '../src/metrics/json';
+import { encodeAsLongBits, encodeAsString } from '../src/common/utils.js';
+import { ProtobufMetricsSerializer } from '../src/metrics/protobuf/index.js';
+import { JsonMetricsSerializer } from '../src/metrics/json/index.js';
 
 const START_TIME = hrTime();
 const END_TIME = hrTime();

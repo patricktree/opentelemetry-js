@@ -21,7 +21,7 @@ import {
   InstrumentationConfig,
   InstrumentationNodeModuleDefinition,
   InstrumentationNodeModuleFile,
-} from '../../src';
+} from '../../src/index.js';
 
 class TestInstrumentationSimple extends InstrumentationBase {
   constructor(config: InstrumentationConfig) {

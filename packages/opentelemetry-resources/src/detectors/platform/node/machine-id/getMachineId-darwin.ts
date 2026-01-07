@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { execAsync } from './execAsync';
+import { execAsync } from './execAsync.js';
 import { diag } from '@opentelemetry/api';
 
 export async function getMachineId(): Promise<string | undefined> {

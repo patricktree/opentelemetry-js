@@ -15,9 +15,9 @@
  */
 
 import { Context } from '@opentelemetry/api';
-import { ReadableSpan } from './ReadableSpan';
-import { Span } from '../Span';
-import { SpanProcessor } from '../SpanProcessor';
+import { ReadableSpan } from './ReadableSpan.js';
+import { Span } from '../Span.js';
+import { SpanProcessor } from '../SpanProcessor.js';
 
 /** No-op implementation of SpanProcessor */
 export class NoopSpanProcessor implements SpanProcessor {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { baggageEntryMetadataSymbol } from './internal/symbol';
+import { baggageEntryMetadataSymbol } from './internal/symbol.js';
 
 /*
  * Copyright The OpenTelemetry Authors

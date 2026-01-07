@@ -19,8 +19,8 @@ import {
   IOtlpExportDelegate,
 } from '@opentelemetry/otlp-exporter-base';
 import { ISerializer } from '@opentelemetry/otlp-transformer';
-import { OtlpGrpcConfiguration } from './configuration/otlp-grpc-configuration';
-import { createOtlpGrpcExporterTransport } from './grpc-exporter-transport';
+import { OtlpGrpcConfiguration } from './configuration/otlp-grpc-configuration.js';
+import { createOtlpGrpcExporterTransport } from './grpc-exporter-transport.js';
 
 export function createOtlpGrpcExportDelegate<Internal, Response>(
   options: OtlpGrpcConfiguration,

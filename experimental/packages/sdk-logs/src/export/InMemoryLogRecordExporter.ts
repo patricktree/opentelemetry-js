@@ -17,8 +17,8 @@
 import type { ExportResult } from '@opentelemetry/core';
 import { ExportResultCode } from '@opentelemetry/core';
 
-import type { ReadableLogRecord } from './ReadableLogRecord';
-import type { LogRecordExporter } from './LogRecordExporter';
+import type { ReadableLogRecord } from './ReadableLogRecord.js';
+import type { LogRecordExporter } from './LogRecordExporter.js';
 
 /**
  * This class can be used for testing purposes. It stores the exported LogRecords

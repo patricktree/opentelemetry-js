@@ -16,7 +16,7 @@
 
 import * as assert from 'assert';
 
-import { getXHRBodyLength } from '../src/utils';
+import { getXHRBodyLength } from '../src/utils.js';
 
 describe('getXHRBodyLength', () => {
   it('should compute body length for Document payload', () => {

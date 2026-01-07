@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { BatchSpanProcessorBase } from '../../../export/BatchSpanProcessorBase';
-import { BufferConfig } from '../../../types';
+import { BatchSpanProcessorBase } from '../../../export/BatchSpanProcessorBase.js';
+import { BufferConfig } from '../../../types.js';
 
 export class BatchSpanProcessor extends BatchSpanProcessorBase<BufferConfig> {
   protected onShutdown(): void {}

@@ -18,4 +18,4 @@
  * These re-exports are only of constants, only one-level deep at this point,
  * and should not cause problems for tree-shakers.
  */
-export * from './SemanticResourceAttributes';
+export * from './SemanticResourceAttributes.js';

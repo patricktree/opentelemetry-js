@@ -15,12 +15,12 @@
  */
 
 import * as assert from 'assert';
-import { inferExportDelegateToUse } from '../../src/configuration/create-legacy-browser-delegate';
+import { inferExportDelegateToUse } from '../../src/configuration/create-legacy-browser-delegate.js';
 import {
   createOtlpFetchExportDelegate,
   createOtlpSendBeaconExportDelegate,
   createOtlpXhrExportDelegate,
-} from '../../src/otlp-browser-http-export-delegate';
+} from '../../src/otlp-browser-http-export-delegate.js';
 
 describe('createLegacyBrowserDelegate', function () {
   describe('when beacon and fetch are available', function () {

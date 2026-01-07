@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { InstrumentType } from './MetricData';
+import { InstrumentType } from './MetricData.js';
 
 /**
  * Cardinality Limit selector based on metric instrument types.

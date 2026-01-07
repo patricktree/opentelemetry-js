@@ -42,11 +42,11 @@ import {
   SamplingDecision,
   Span,
   SpanProcessor,
-} from '../../src';
-import { TestStackContextManager } from './export/TestStackContextManager';
+} from '../../src/index.js';
+import { TestStackContextManager } from './export/TestStackContextManager.js';
 import * as sinon from 'sinon';
-import { invalidAttributes, validAttributes } from './util';
-import { Tracer } from '../../src/Tracer';
+import { invalidAttributes, validAttributes } from './util.js';
+import { Tracer } from '../../src/Tracer.js';
 
 describe('Tracer', () => {
   const tracerProvider = new BasicTracerProvider();

@@ -21,7 +21,7 @@ import {
   ReadableSpan,
   SimpleSpanProcessor,
 } from '@opentelemetry/sdk-trace-base';
-import { ShimTracer } from '../src/ShimTracer';
+import { ShimTracer } from '../src/ShimTracer.js';
 import { AsyncLocalStorageContextManager } from '@opentelemetry/context-async-hooks';
 import { Tracer, TracerProvider, context } from '@opentelemetry/api';
 

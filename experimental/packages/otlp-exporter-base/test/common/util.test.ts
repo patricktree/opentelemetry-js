@@ -17,7 +17,7 @@
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 import { diag } from '@opentelemetry/api';
-import { validateAndNormalizeHeaders } from '../../src/util';
+import { validateAndNormalizeHeaders } from '../../src/util.js';
 
 describe('parseHeaders', function () {
   afterEach(function () {

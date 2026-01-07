@@ -19,8 +19,8 @@ import * as sinon from 'sinon';
 
 import { diag } from '@opentelemetry/api';
 
-import { getNodeHttpConfigurationFromEnvironment } from '../../../src/configuration/otlp-node-http-env-configuration';
-import { testSharedConfigurationFromEnvironment } from './shared-env-configuration.test';
+import { getNodeHttpConfigurationFromEnvironment } from '../../../src/configuration/otlp-node-http-env-configuration.js';
+import { testSharedConfigurationFromEnvironment } from './shared-env-configuration.test.js';
 
 describe('getHttpConfigurationFromEnvironment', function () {
   describe('headers', function () {

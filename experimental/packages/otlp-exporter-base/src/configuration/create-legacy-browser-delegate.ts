@@ -18,10 +18,10 @@ import {
   createOtlpFetchExportDelegate,
   createOtlpSendBeaconExportDelegate,
   createOtlpXhrExportDelegate,
-} from '../otlp-browser-http-export-delegate';
-import { convertLegacyBrowserHttpOptions } from './convert-legacy-browser-http-options';
-import { IOtlpExportDelegate } from '../otlp-export-delegate';
-import { OTLPExporterConfigBase } from './legacy-base-configuration';
+} from '../otlp-browser-http-export-delegate.js';
+import { convertLegacyBrowserHttpOptions } from './convert-legacy-browser-http-options.js';
+import { IOtlpExportDelegate } from '../otlp-export-delegate.js';
+import { OTLPExporterConfigBase } from './legacy-base-configuration.js';
 
 /**
  * @deprecated

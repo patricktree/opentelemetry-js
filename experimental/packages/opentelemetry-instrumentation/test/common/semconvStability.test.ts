@@ -16,7 +16,7 @@
 
 import { inspect } from 'util';
 import * as assert from 'assert';
-import { SemconvStability, semconvStabilityFromStr } from '../../src';
+import { SemconvStability, semconvStabilityFromStr } from '../../src/index.js';
 
 describe('semconvStabilityFromStr', function () {
   const table = [

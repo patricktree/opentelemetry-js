@@ -31,7 +31,7 @@ import {
 } from '@opentelemetry/sdk-trace-base';
 import { ATTR_TELEMETRY_SDK_LANGUAGE } from '@opentelemetry/semantic-conventions';
 
-import { NodeTracerProvider } from '../src/NodeTracerProvider';
+import { NodeTracerProvider } from '../src/NodeTracerProvider.js';
 
 const sleep = (time: number) =>
   new Promise(resolve => {

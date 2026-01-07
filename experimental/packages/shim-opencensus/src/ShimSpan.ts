@@ -15,9 +15,9 @@
  */
 
 import * as oc from '@opencensus/core';
-import { ShimTracer } from './ShimTracer';
+import { ShimTracer } from './ShimTracer.js';
 import { AttributeValue, Span, SpanStatusCode, diag } from '@opentelemetry/api';
-import { mapMessageEvent, reverseMapSpanContext } from './trace-transform';
+import { mapMessageEvent, reverseMapSpanContext } from './trace-transform.js';
 
 // Copied from
 // https://github.com/census-instrumentation/opencensus-node/blob/v0.1.0/packages/opencensus-core/src/trace/model/span.ts#L61

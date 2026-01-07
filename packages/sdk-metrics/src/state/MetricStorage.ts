@@ -15,13 +15,13 @@
  */
 
 import { HrTime } from '@opentelemetry/api';
-import { MetricData } from '../export/MetricData';
-import { Maybe } from '../utils';
-import { MetricCollectorHandle } from './MetricCollector';
+import { MetricData } from '../export/MetricData.js';
+import { Maybe } from '../utils.js';
+import { MetricCollectorHandle } from './MetricCollector.js';
 import {
   createInstrumentDescriptor,
   InstrumentDescriptor,
-} from '../InstrumentDescriptor';
+} from '../InstrumentDescriptor.js';
 
 /**
  * Internal interface.

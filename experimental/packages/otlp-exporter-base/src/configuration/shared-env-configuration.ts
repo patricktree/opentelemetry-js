@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import { getNumberFromEnv, getStringFromEnv } from '@opentelemetry/core';
-import { OtlpSharedConfiguration } from './shared-configuration';
+import { OtlpSharedConfiguration } from './shared-configuration.js';
 import { diag } from '@opentelemetry/api';
 
 function parseAndValidateTimeoutFromEnv(

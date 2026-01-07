@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export { hostDetector } from './HostDetector';
-export { osDetector } from './OSDetector';
-export { processDetector } from './ProcessDetector';
-export { serviceInstanceIdDetector } from './ServiceInstanceIdDetector';
+export { hostDetector } from './HostDetector.js';
+export { osDetector } from './OSDetector.js';
+export { processDetector } from './ProcessDetector.js';
+export { serviceInstanceIdDetector } from './ServiceInstanceIdDetector.js';

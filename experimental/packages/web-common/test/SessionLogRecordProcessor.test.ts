@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { SessionLogRecordProcessor } from '../src/SessionLogRecordProcessor';
+import { SessionLogRecordProcessor } from '../src/SessionLogRecordProcessor.js';
 import {
   InMemoryLogRecordExporter,
   LoggerProvider,

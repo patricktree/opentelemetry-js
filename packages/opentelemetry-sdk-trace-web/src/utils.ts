@@ -18,8 +18,8 @@ import {
   PerformanceEntries,
   PerformanceResourceTimingInfo,
   PropagateTraceHeaderCorsUrls,
-} from './types';
-import { PerformanceTimingNames as PTN } from './enums/PerformanceTimingNames';
+} from './types.js';
+import { PerformanceTimingNames as PTN } from './enums/PerformanceTimingNames.js';
 import * as api from '@opentelemetry/api';
 import {
   hrTimeToNanoseconds,
@@ -29,7 +29,7 @@ import {
 import {
   ATTR_HTTP_RESPONSE_CONTENT_LENGTH,
   ATTR_HTTP_RESPONSE_CONTENT_LENGTH_UNCOMPRESSED,
-} from './semconv';
+} from './semconv.js';
 
 // Used to normalize relative URLs
 let urlNormalizingAnchor: HTMLAnchorElement | undefined;

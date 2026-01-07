@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-import { MetricStorage } from './MetricStorage';
+import { MetricStorage } from './MetricStorage.js';
 import {
   InstrumentDescriptor,
   isDescriptorCompatibleWith,
-} from '../InstrumentDescriptor';
+} from '../InstrumentDescriptor.js';
 import * as api from '@opentelemetry/api';
 import {
   getConflictResolutionRecipe,
   getIncompatibilityDetails,
-} from '../view/RegistrationConflicts';
-import { MetricCollectorHandle } from './MetricCollector';
+} from '../view/RegistrationConflicts.js';
+import { MetricCollectorHandle } from './MetricCollector.js';
 
 type StorageMap = Map<string, MetricStorage[]>;
 

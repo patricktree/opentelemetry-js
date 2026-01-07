@@ -18,7 +18,7 @@ import { diag, trace, Tracer } from '@opentelemetry/api';
 import { Hook } from 'require-in-the-middle';
 import * as oc from '@opencensus/core';
 
-import { ShimTracer } from './ShimTracer';
+import { ShimTracer } from './ShimTracer.js';
 import { VERSION } from './version';
 
 type CoreTracerConstructor = new (

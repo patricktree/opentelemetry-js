@@ -27,13 +27,13 @@ import {
   SamplingDecision,
   SamplingResult,
 } from '@opentelemetry/sdk-trace-base';
-import { ComposableSampler } from './types';
-import { parseOtelTraceState, serializeTraceState } from './tracestate';
+import { ComposableSampler } from './types.js';
+import { parseOtelTraceState, serializeTraceState } from './tracestate.js';
 import {
   INVALID_THRESHOLD,
   isValidRandomValue,
   isValidThreshold,
-} from './util';
+} from './util.js';
 
 class CompositeSampler implements Sampler {
   private readonly delegate: ComposableSampler;

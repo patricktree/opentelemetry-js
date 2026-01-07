@@ -15,10 +15,10 @@
  */
 
 import * as assert from 'assert';
-import { DataPointType, MeterProvider } from '../../src';
-import { TestDeltaMetricReader } from '../export/TestMetricReader';
-import { assertDataPoint, assertMetricData } from '../util';
-import { IMetricReader } from '../../src/export/MetricReader';
+import { DataPointType, MeterProvider } from '../../src/index.js';
+import { TestDeltaMetricReader } from '../export/TestMetricReader.js';
+import { assertDataPoint, assertMetricData } from '../util.js';
+import { IMetricReader } from '../../src/export/MetricReader.js';
 
 // https://github.com/open-telemetry/opentelemetry-js/issues/3664
 

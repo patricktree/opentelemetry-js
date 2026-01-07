@@ -16,12 +16,12 @@
 
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { createFetchTransport } from '../../src/transport/fetch-transport';
+import { createFetchTransport } from '../../src/transport/fetch-transport.js';
 import {
   ExportResponseRetryable,
   ExportResponseFailure,
   ExportResponseSuccess,
-} from '../../src';
+} from '../../src/index.js';
 
 const testTransportParameters = {
   url: 'http://example.test',

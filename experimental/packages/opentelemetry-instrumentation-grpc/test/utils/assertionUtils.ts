@@ -32,7 +32,7 @@ import {
   ATTR_NET_PEER_NAME,
   ATTR_NET_PEER_PORT,
   ATTR_RPC_GRPC_STATUS_CODE,
-} from '../../src/semconv';
+} from '../../src/semconv.js';
 
 import { SemconvStability } from '@opentelemetry/instrumentation';
 

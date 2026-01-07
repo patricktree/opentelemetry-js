@@ -32,12 +32,12 @@ import {
   BasicTracerProvider,
   InMemorySpanExporter,
   SimpleSpanProcessor,
-} from '../../../src';
-import { SpanImpl } from '../../../src/Span';
-import { TestStackContextManager } from './TestStackContextManager';
-import { TestTracingSpanExporter } from './TestTracingSpanExporter';
-import { TestExporterWithDelay } from './TestExporterWithDelay';
-import { Tracer } from '../../../src/Tracer';
+} from '../../../src/index.js';
+import { SpanImpl } from '../../../src/Span.js';
+import { TestStackContextManager } from './TestStackContextManager.js';
+import { TestTracingSpanExporter } from './TestTracingSpanExporter.js';
+import { TestExporterWithDelay } from './TestExporterWithDelay.js';
+import { Tracer } from '../../../src/Tracer.js';
 import { resourceFromAttributes } from '@opentelemetry/resources';
 
 describe('SimpleSpanProcessor', () => {

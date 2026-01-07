@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type { Hooked } from './RequireInTheMiddleSingleton';
+import type { Hooked } from './RequireInTheMiddleSingleton.js';
 
 export const ModuleNameSeparator = '/';
 

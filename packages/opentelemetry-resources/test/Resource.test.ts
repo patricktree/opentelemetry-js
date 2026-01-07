@@ -24,8 +24,8 @@ import {
 } from '@opentelemetry/semantic-conventions';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { describeBrowser, describeNode } from './util';
-import { defaultResource, emptyResource, resourceFromAttributes } from '../src';
+import { describeBrowser, describeNode } from './util.js';
+import { defaultResource, emptyResource, resourceFromAttributes } from '../src/index.js';
 import * as EventEmitter from 'events';
 
 describe('Resource', () => {

@@ -19,7 +19,7 @@ import * as fs from 'fs';
 import type { AddressInfo } from 'net';
 import * as nock from 'nock';
 import * as sinon from 'sinon';
-import { HttpInstrumentation } from '../../src';
+import { HttpInstrumentation } from '../../src/index.js';
 import { isWrapped } from '@opentelemetry/instrumentation';
 
 const instrumentation = new HttpInstrumentation();
@@ -27,7 +27,7 @@ instrumentation.enable();
 instrumentation.disable();
 
 import * as https from 'https';
-import { httpsRequest } from '../utils/httpsRequest';
+import { httpsRequest } from '../utils/httpsRequest.js';
 import {
   INVALID_SPAN_CONTEXT,
   trace,

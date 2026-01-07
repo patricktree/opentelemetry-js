@@ -15,8 +15,8 @@
  */
 
 import * as assert from 'assert';
-import { createTraceState } from '../../../src/trace/internal/utils';
-import { TraceStateImpl } from '../../../src/trace/internal/tracestate-impl';
+import { createTraceState } from '../../../src/trace/internal/utils.js';
+import { TraceStateImpl } from '../../../src/trace/internal/tracestate-impl.js';
 
 describe('TraceState', function () {
   describe('.serialize()', function () {

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-export type { NodeTracerConfig } from './config';
-export { NodeTracerProvider } from './NodeTracerProvider';
+export type { NodeTracerConfig } from './config.js';
+export { NodeTracerProvider } from './NodeTracerProvider.js';
 export {
   AlwaysOffSampler,
   AlwaysOnSampler,

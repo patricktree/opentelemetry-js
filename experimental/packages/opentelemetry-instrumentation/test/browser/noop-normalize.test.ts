@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { normalize } from '../../src/platform/browser';
+import { normalize } from '../../src/platform/browser/index.js';
 
 describe('noop-normalize', function () {
   it('should not normalize input', function () {

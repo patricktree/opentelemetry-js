@@ -22,11 +22,11 @@ import {
   createNoopMeter,
 } from '@opentelemetry/api';
 import { defaultResource, Resource } from '@opentelemetry/resources';
-import { IMetricReader } from './export/MetricReader';
-import { MeterProviderSharedState } from './state/MeterProviderSharedState';
-import { MetricCollector } from './state/MetricCollector';
-import { ForceFlushOptions, ShutdownOptions } from './types';
-import { View, ViewOptions } from './view/View';
+import { IMetricReader } from './export/MetricReader.js';
+import { MeterProviderSharedState } from './state/MeterProviderSharedState.js';
+import { MetricCollector } from './state/MetricCollector.js';
+import { ForceFlushOptions, ShutdownOptions } from './types.js';
+import { View, ViewOptions } from './view/View.js';
 
 /**
  * MeterProviderOptions provides an interface for configuring a MeterProvider.

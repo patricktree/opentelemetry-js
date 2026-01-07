@@ -17,7 +17,7 @@ import { logs } from '@opentelemetry/api-logs';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 
-import { LoggerProvider } from '../../src';
+import { LoggerProvider } from '../../src/index.js';
 
 describe('LoggerProvider - node', () => {
   beforeEach(() => {

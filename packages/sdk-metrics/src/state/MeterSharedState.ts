@@ -16,27 +16,27 @@
 
 import { HrTime } from '@opentelemetry/api';
 import { InstrumentationScope } from '@opentelemetry/core';
-import { MetricCollectOptions } from '../export/MetricProducer';
-import { MetricData, ScopeMetrics } from '../export/MetricData';
+import { MetricCollectOptions } from '../export/MetricProducer.js';
+import { MetricData, ScopeMetrics } from '../export/MetricData.js';
 import {
   createInstrumentDescriptorWithView,
   InstrumentDescriptor,
-} from '../InstrumentDescriptor';
-import { Meter } from '../Meter';
-import { Maybe } from '../utils';
-import { AsyncMetricStorage } from './AsyncMetricStorage';
-import { MeterProviderSharedState } from './MeterProviderSharedState';
-import { MetricCollectorHandle } from './MetricCollector';
-import { MetricStorageRegistry } from './MetricStorageRegistry';
-import { MultiMetricStorage } from './MultiWritableMetricStorage';
-import { ObservableRegistry } from './ObservableRegistry';
-import { SyncMetricStorage } from './SyncMetricStorage';
-import { Accumulation, Aggregator } from '../aggregator/types';
+} from '../InstrumentDescriptor.js';
+import { Meter } from '../Meter.js';
+import { Maybe } from '../utils.js';
+import { AsyncMetricStorage } from './AsyncMetricStorage.js';
+import { MeterProviderSharedState } from './MeterProviderSharedState.js';
+import { MetricCollectorHandle } from './MetricCollector.js';
+import { MetricStorageRegistry } from './MetricStorageRegistry.js';
+import { MultiMetricStorage } from './MultiWritableMetricStorage.js';
+import { ObservableRegistry } from './ObservableRegistry.js';
+import { SyncMetricStorage } from './SyncMetricStorage.js';
+import { Accumulation, Aggregator } from '../aggregator/types.js';
 import {
   createNoopAttributesProcessor,
   IAttributesProcessor,
-} from '../view/AttributesProcessor';
-import { MetricStorage } from './MetricStorage';
+} from '../view/AttributesProcessor.js';
+import { MetricStorage } from './MetricStorage.js';
 
 /**
  * An internal record for shared meter provider states.

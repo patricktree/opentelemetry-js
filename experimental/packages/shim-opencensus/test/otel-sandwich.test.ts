@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { setupNodeContextManager, withTestTracer } from './util';
+import { setupNodeContextManager, withTestTracer } from './util.js';
 
 /**
  * Tests the "OpenTelemetry sandwich" problem described in the spec at

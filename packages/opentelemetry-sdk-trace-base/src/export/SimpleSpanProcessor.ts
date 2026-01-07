@@ -21,10 +21,10 @@ import {
   globalErrorHandler,
   BindOnceFuture,
 } from '@opentelemetry/core';
-import { Span } from '../Span';
-import { SpanProcessor } from '../SpanProcessor';
-import { ReadableSpan } from './ReadableSpan';
-import { SpanExporter } from './SpanExporter';
+import { Span } from '../Span.js';
+import { SpanProcessor } from '../SpanProcessor.js';
+import { ReadableSpan } from './ReadableSpan.js';
+import { SpanExporter } from './SpanExporter.js';
 
 /**
  * An implementation of the {@link SpanProcessor} that converts the {@link Span}

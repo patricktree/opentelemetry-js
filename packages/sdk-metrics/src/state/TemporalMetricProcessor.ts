@@ -19,13 +19,13 @@ import {
   Accumulation,
   AccumulationRecord,
   Aggregator,
-} from '../aggregator/types';
-import { MetricData } from '../export/MetricData';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
-import { AggregationTemporality } from '../export/AggregationTemporality';
-import { Maybe } from '../utils';
-import { MetricCollectorHandle } from './MetricCollector';
-import { AttributeHashMap } from './HashMap';
+} from '../aggregator/types.js';
+import { MetricData } from '../export/MetricData.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
+import { AggregationTemporality } from '../export/AggregationTemporality.js';
+import { Maybe } from '../utils.js';
+import { MetricCollectorHandle } from './MetricCollector.js';
+import { AttributeHashMap } from './HashMap.js';
 
 /**
  * Remembers what was presented to a specific exporter.

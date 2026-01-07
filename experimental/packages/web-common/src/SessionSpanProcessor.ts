@@ -20,8 +20,8 @@ import {
   Span,
   ReadableSpan,
 } from '@opentelemetry/sdk-trace-base';
-import { ATTR_SESSION_ID } from './semconv';
-import { SessionProvider } from './types/SessionProvider';
+import { ATTR_SESSION_ID } from './semconv.js';
+import { SessionProvider } from './types/SessionProvider.js';
 
 /**
  * SessionSpanProcessor is a {@link SpanProcessor} that adds the session.id attribute

@@ -21,17 +21,17 @@ import {
   Observable,
   ObservableCallback,
 } from '@opentelemetry/api';
-import { isObservableInstrument, ObservableInstrument } from '../Instruments';
+import { isObservableInstrument, ObservableInstrument } from '../Instruments.js';
 import {
   BatchObservableResultImpl,
   ObservableResultImpl,
-} from '../ObservableResult';
+} from '../ObservableResult.js';
 import {
   callWithTimeout,
   PromiseAllSettled,
   isPromiseAllSettledRejectionResult,
   setEquals,
-} from '../utils';
+} from '../utils.js';
 
 /**
  * Records for single instrument observable callback.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { LogRecord } from './LogRecord';
+import { LogRecord } from './LogRecord.js';
 
 export interface Logger {
   /**

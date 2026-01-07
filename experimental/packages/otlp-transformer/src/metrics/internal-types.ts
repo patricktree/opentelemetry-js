@@ -18,7 +18,7 @@ import {
   IInstrumentationScope,
   IKeyValue,
   Resource,
-} from '../common/internal-types';
+} from '../common/internal-types.js';
 
 /** Properties of an ExportMetricsServiceRequest. */
 export interface IExportMetricsServiceRequest {

@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ISerializer } from '../../i-serializer';
+import { ISerializer } from '../../i-serializer.js';
 import { ReadableLogRecord } from '@opentelemetry/sdk-logs';
-import { createExportLogsServiceRequest } from '../internal';
-import { IExportLogsServiceResponse } from '../export-response';
+import { createExportLogsServiceRequest } from '../internal.js';
+import { IExportLogsServiceResponse } from '../export-response.js';
 
 /*
  * @experimental this serializer may receive breaking changes in minor versions, pin this package's version when using this constant

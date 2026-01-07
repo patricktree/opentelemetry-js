@@ -20,7 +20,7 @@ import type {
   IInstrumentationScope,
   IKeyValue,
   Resource,
-} from '../common/internal-types';
+} from '../common/internal-types.js';
 
 /** Properties of an ExportLogsServiceRequest. */
 export interface IExportLogsServiceRequest {

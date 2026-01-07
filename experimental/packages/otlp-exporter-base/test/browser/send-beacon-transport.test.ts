@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import * as sinon from 'sinon';
-import { createSendBeaconTransport } from '../../src/transport/send-beacon-transport';
+import { createSendBeaconTransport } from '../../src/transport/send-beacon-transport.js';
 import * as assert from 'assert';
 
 describe('SendBeaconTransport', function () {

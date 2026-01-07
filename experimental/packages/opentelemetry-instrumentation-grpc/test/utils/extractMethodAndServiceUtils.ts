@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { _extractMethodAndService } from '../../src/utils';
+import { _extractMethodAndService } from '../../src/utils.js';
 import * as assert from 'assert';
 
 const cases = [

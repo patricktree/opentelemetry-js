@@ -17,9 +17,9 @@ import {
   getHttpConfigurationDefaults,
   mergeOtlpHttpConfigurationWithDefaults,
   OtlpHttpConfiguration,
-} from './otlp-http-configuration';
-import { OTLPExporterNodeConfigBase } from './legacy-node-configuration';
-import { convertLegacyHeaders } from './convert-legacy-http-options';
+} from './otlp-http-configuration.js';
+import { OTLPExporterNodeConfigBase } from './legacy-node-configuration.js';
+import { convertLegacyHeaders } from './convert-legacy-http-options.js';
 
 /**
  * @deprecated this will be removed in 2.0

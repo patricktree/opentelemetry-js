@@ -22,7 +22,7 @@ import {
 } from '@opentelemetry/api';
 import { CompositePropagator } from '@opentelemetry/core';
 import * as assert from 'assert';
-import { StackContextManager, WebTracerProvider } from '../src';
+import { StackContextManager, WebTracerProvider } from '../src/index.js';
 
 describe('API registration', function () {
   beforeEach(() => {

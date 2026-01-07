@@ -15,16 +15,16 @@
  */
 
 import { Context, HrTime, Attributes } from '@opentelemetry/api';
-import { WritableMetricStorage } from './WritableMetricStorage';
-import { Accumulation, Aggregator } from '../aggregator/types';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
-import { IAttributesProcessor } from '../view/AttributesProcessor';
-import { MetricStorage } from './MetricStorage';
-import { MetricData } from '../export/MetricData';
-import { DeltaMetricProcessor } from './DeltaMetricProcessor';
-import { TemporalMetricProcessor } from './TemporalMetricProcessor';
-import { Maybe } from '../utils';
-import { MetricCollectorHandle } from './MetricCollector';
+import { WritableMetricStorage } from './WritableMetricStorage.js';
+import { Accumulation, Aggregator } from '../aggregator/types.js';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
+import { IAttributesProcessor } from '../view/AttributesProcessor.js';
+import { MetricStorage } from './MetricStorage.js';
+import { MetricData } from '../export/MetricData.js';
+import { DeltaMetricProcessor } from './DeltaMetricProcessor.js';
+import { TemporalMetricProcessor } from './TemporalMetricProcessor.js';
+import { Maybe } from '../utils.js';
+import { MetricCollectorHandle } from './MetricCollector.js';
 
 /**
  * Internal interface.

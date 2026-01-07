@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { SessionObserver } from './SessionObserver';
+import { SessionObserver } from './SessionObserver.js';
 
 export interface SessionPublisher {
   addObserver(observer: SessionObserver): void;

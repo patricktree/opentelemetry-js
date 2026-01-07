@@ -22,16 +22,16 @@ import {
   ATTR_TELEMETRY_SDK_NAME,
   ATTR_TELEMETRY_SDK_VERSION,
 } from '@opentelemetry/semantic-conventions';
-import { Resource } from './Resource';
-import { defaultServiceName } from './default-service-name';
+import { Resource } from './Resource.js';
+import { defaultServiceName } from './default-service-name.js';
 import {
   DetectedResource,
   DetectedResourceAttributes,
   MaybePromise,
   RawResourceAttribute,
   ResourceOptions,
-} from './types';
-import { isPromiseLike } from './utils';
+} from './types.js';
+import { isPromiseLike } from './utils.js';
 
 class ResourceImpl implements Resource {
   private _rawAttributes: RawResourceAttribute[];

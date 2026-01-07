@@ -27,8 +27,8 @@ import {
   emptyResource,
   resourceFromAttributes,
 } from '@opentelemetry/resources';
-import { ZipkinExporter } from '../../src';
-import * as zipkinTypes from '../../src/types';
+import { ZipkinExporter } from '../../src/index.js';
+import * as zipkinTypes from '../../src/types.js';
 import { TraceFlags } from '@opentelemetry/api';
 import { ATTR_SERVICE_NAME } from '@opentelemetry/semantic-conventions';
 

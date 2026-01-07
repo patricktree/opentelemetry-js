@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Logger } from './Logger';
-import { LoggerOptions } from './LoggerOptions';
+import { Logger } from './Logger.js';
+import { LoggerOptions } from './LoggerOptions.js';
 
 /**
  * A registry for creating named {@link Logger}s.

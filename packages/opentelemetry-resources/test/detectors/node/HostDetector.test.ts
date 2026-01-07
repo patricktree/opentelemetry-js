@@ -16,14 +16,14 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { hostDetector } from '../../../src';
-import { resourceFromDetectedResource } from '../../../src/ResourceImpl';
-import { describeNode } from '../../util';
+import { hostDetector } from '../../../src/index.js';
+import { resourceFromDetectedResource } from '../../../src/ResourceImpl.js';
+import { describeNode } from '../../util.js';
 import {
   ATTR_HOST_ARCH,
   ATTR_HOST_ID,
   ATTR_HOST_NAME,
-} from '../../../src/semconv';
+} from '../../../src/semconv.js';
 
 describeNode('hostDetector() on Node.js', () => {
   afterEach(() => {
@@ -32,7 +32,7 @@ describeNode('hostDetector() on Node.js', () => {
 
   it('should return resource information about the host', async () => {
     const os = require('os');
-    const mid = require('../../../src/detectors/platform/node/machine-id/getMachineId');
+    const mid = require('../../../src/detectors/platform/node/machine-id/getMachineId.js');
 
     const expectedHostId = 'f2c668b579780554f70f72a063dc0864';
 
@@ -66,7 +66,7 @@ describeNode('hostDetector() on Node.js', () => {
 
   it('should handle missing machine id', async () => {
     const os = require('os');
-    const mid = require('../../../src/detectors/platform/node/machine-id/getMachineId');
+    const mid = require('../../../src/detectors/platform/node/machine-id/getMachineId.js');
 
     sinon.stub(os, 'arch').returns('x64');
     sinon.stub(os, 'hostname').returns('opentelemetry-test');

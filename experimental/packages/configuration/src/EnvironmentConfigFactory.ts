@@ -17,7 +17,7 @@
 import {
   ConfigurationModel,
   initializeDefaultConfiguration,
-} from './models/configModel';
+} from './models/configModel.js';
 import {
   getBooleanFromEnv,
   getStringFromEnv,
@@ -25,24 +25,24 @@ import {
   diagLogLevelFromString,
   getNumberFromEnv,
 } from '@opentelemetry/core';
-import { ConfigFactory } from './IConfigFactory';
+import { ConfigFactory } from './IConfigFactory.js';
 import {
   ExemplarFilter,
   ExporterDefaultHistogramAggregation,
   ExporterTemporalityPreference,
   initializeDefaultMeterProviderConfiguration,
   PeriodicMetricReader,
-} from './models/meterProviderModel';
-import { OtlpHttpEncoding } from './models/commonModel';
+} from './models/meterProviderModel.js';
+import { OtlpHttpEncoding } from './models/commonModel.js';
 import { diag } from '@opentelemetry/api';
 import {
   BatchSpanProcessor,
   initializeDefaultTracerProviderConfiguration,
-} from './models/tracerProviderModel';
+} from './models/tracerProviderModel.js';
 import {
   BatchLogRecordProcessor,
   initializeDefaultLoggerProviderConfiguration,
-} from './models/loggerProviderModel';
+} from './models/loggerProviderModel.js';
 
 /**
  * EnvironmentConfigProvider provides a configuration based on environment variables.

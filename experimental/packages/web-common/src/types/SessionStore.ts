@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Session } from './Session';
+import { Session } from './Session.js';
 
 export interface SessionStore {
   save(session: Session): Promise<void>;

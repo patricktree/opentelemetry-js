@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-export { JaegerRemoteSampler } from './JaegerRemoteSampler';
-export { StrategyType } from './types';
-export type { ProbabilisticSamplingOptions } from './types';
+export { JaegerRemoteSampler } from './JaegerRemoteSampler.js';
+export { StrategyType } from './types.js';
+export type { ProbabilisticSamplingOptions } from './types.js';

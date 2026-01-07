@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-export { registerInstrumentations } from './autoLoader';
-export { InstrumentationBase } from './platform/index';
-export { InstrumentationNodeModuleDefinition } from './instrumentationNodeModuleDefinition';
-export { InstrumentationNodeModuleFile } from './instrumentationNodeModuleFile';
+export { registerInstrumentations } from './autoLoader.js';
+export { InstrumentationBase } from './platform/index.js';
+export { InstrumentationNodeModuleDefinition } from './instrumentationNodeModuleDefinition.js';
+export { InstrumentationNodeModuleFile } from './instrumentationNodeModuleFile.js';
 export type {
   Instrumentation,
   InstrumentationConfig,
@@ -25,11 +25,11 @@ export type {
   InstrumentationModuleFile,
   ShimWrapped,
   SpanCustomizationHook,
-} from './types';
-export type { AutoLoaderOptions, AutoLoaderResult } from './types_internal';
+} from './types.js';
+export type { AutoLoaderOptions, AutoLoaderResult } from './types_internal.js';
 export {
   isWrapped,
   safeExecuteInTheMiddle,
   safeExecuteInTheMiddleAsync,
-} from './utils';
-export { SemconvStability, semconvStabilityFromStr } from './semconvStability';
+} from './utils.js';
+export { SemconvStability, semconvStabilityFromStr } from './semconvStability.js';

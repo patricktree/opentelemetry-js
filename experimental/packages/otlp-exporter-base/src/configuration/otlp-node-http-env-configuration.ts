@@ -17,12 +17,12 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { getStringFromEnv, parseKeyPairsIntoRecord } from '@opentelemetry/core';
 import { diag } from '@opentelemetry/api';
-import { getSharedConfigurationFromEnvironment } from './shared-env-configuration';
-import { wrapStaticHeadersInFunction } from './shared-configuration';
+import { getSharedConfigurationFromEnvironment } from './shared-env-configuration.js';
+import { wrapStaticHeadersInFunction } from './shared-configuration.js';
 import {
   OtlpNodeHttpConfiguration,
   httpAgentFactoryFromOptions,
-} from './otlp-node-http-configuration';
+} from './otlp-node-http-configuration.js';
 
 function getStaticHeadersFromEnv(
   signalIdentifier: string

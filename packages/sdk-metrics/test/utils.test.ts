@@ -21,7 +21,7 @@ import {
   callWithTimeout,
   hashAttributes,
   TimeoutError,
-} from '../src/utils';
+} from '../src/utils.js';
 import { Attributes } from '@opentelemetry/api';
 
 describe('utils', () => {

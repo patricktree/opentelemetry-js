@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export { httpAgentFactoryFromOptions } from './configuration/otlp-node-http-configuration';
-export { createOtlpHttpExportDelegate } from './otlp-http-export-delegate';
-export { getSharedConfigurationFromEnvironment } from './configuration/shared-env-configuration';
-export { convertLegacyHttpOptions } from './configuration/convert-legacy-node-http-options';
+export { httpAgentFactoryFromOptions } from './configuration/otlp-node-http-configuration.js';
+export { createOtlpHttpExportDelegate } from './otlp-http-export-delegate.js';
+export { getSharedConfigurationFromEnvironment } from './configuration/shared-env-configuration.js';
+export { convertLegacyHttpOptions } from './configuration/convert-legacy-node-http-options.js';

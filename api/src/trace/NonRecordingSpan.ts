@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { Exception } from '../common/Exception';
-import { TimeInput } from '../common/Time';
-import { SpanAttributes } from './attributes';
-import { INVALID_SPAN_CONTEXT } from './invalid-span-constants';
-import { Span } from './span';
-import { SpanContext } from './span_context';
-import { SpanStatus } from './status';
-import { Link } from './link';
+import { Exception } from '../common/Exception.js';
+import { TimeInput } from '../common/Time.js';
+import { SpanAttributes } from './attributes.js';
+import { INVALID_SPAN_CONTEXT } from './invalid-span-constants.js';
+import { Span } from './span.js';
+import { SpanContext } from './span_context.js';
+import { SpanStatus } from './status.js';
+import { Link } from './link.js';
 
 /**
  * The NonRecordingSpan is the default {@link Span} that is used when no Span

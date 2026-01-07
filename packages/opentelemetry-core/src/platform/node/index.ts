@@ -19,9 +19,9 @@ export {
   getBooleanFromEnv,
   getNumberFromEnv,
   getStringListFromEnv,
-} from './environment';
-export { _globalThis } from '../../common/globalThis';
-export { SDK_INFO } from './sdk-info';
+} from './environment.js';
+export { _globalThis } from '../../common/globalThis.js';
+export { SDK_INFO } from './sdk-info.js';
 
 /**
  * @deprecated Use performance directly.

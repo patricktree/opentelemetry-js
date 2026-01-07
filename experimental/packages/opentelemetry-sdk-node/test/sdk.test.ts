@@ -45,7 +45,7 @@ import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 import {
   assertServiceInstanceIdIsUUID,
   assertServiceResource,
-} from './util/resource-assertions';
+} from './util/resource-assertions.js';
 import {
   ConsoleSpanExporter,
   SimpleSpanProcessor,
@@ -57,7 +57,7 @@ import {
 } from '@opentelemetry/sdk-trace-base';
 import * as assert from 'assert';
 import * as Sinon from 'sinon';
-import { NodeSDK } from '../src';
+import { NodeSDK } from '../src/index.js';
 import {
   envDetector,
   processDetector,
@@ -82,7 +82,7 @@ import { OTLPTraceExporter as OTLPProtoTraceExporter } from '@opentelemetry/expo
 import { OTLPTraceExporter as OTLPGrpcTraceExporter } from '@opentelemetry/exporter-trace-otlp-grpc';
 import { ZipkinExporter } from '@opentelemetry/exporter-zipkin';
 
-import { ATTR_HOST_NAME, ATTR_PROCESS_PID } from './semconv';
+import { ATTR_HOST_NAME, ATTR_PROCESS_PID } from './semconv.js';
 
 function assertDefaultContextManagerRegistered() {
   assert.ok(

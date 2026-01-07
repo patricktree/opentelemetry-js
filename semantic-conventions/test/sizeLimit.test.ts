@@ -18,7 +18,7 @@ import * as child_process from 'child_process';
 import * as assert from 'assert';
 import * as path from 'path';
 import * as fs from 'fs';
-import { IAutoImports, getAutoImports } from './helpers/autoImports';
+import { IAutoImports, getAutoImports } from './helpers/autoImports.js';
 
 const rValues =
   /^\s*(Size|Loading time|Running time|Total time):[^\d]+([\d.]+\s*[\w]+).*$/gm;

@@ -15,10 +15,10 @@
  */
 
 import { InstrumentationScope } from '@opentelemetry/core';
-import { InstrumentDescriptor } from '../InstrumentDescriptor';
-import { InstrumentSelector } from './InstrumentSelector';
-import { MeterSelector } from './MeterSelector';
-import { View } from './View';
+import { InstrumentDescriptor } from '../InstrumentDescriptor.js';
+import { InstrumentSelector } from './InstrumentSelector.js';
+import { MeterSelector } from './MeterSelector.js';
+import { View } from './View.js';
 
 export class ViewRegistry {
   private _registeredViews: View[] = [];

@@ -25,7 +25,7 @@ import {
   MetricReader,
 } from '@opentelemetry/sdk-metrics';
 import * as sinon from 'sinon';
-import { PrometheusSerializer } from '../src';
+import { PrometheusSerializer } from '../src/index.js';
 import {
   mockedHrTimeMs,
   mockHrTime,
@@ -33,7 +33,7 @@ import {
   sdkName,
   sdkVersion,
   serviceName,
-} from './util';
+} from './util.js';
 import { resourceFromAttributes } from '@opentelemetry/resources';
 import { AggregationType } from '@opentelemetry/sdk-metrics';
 

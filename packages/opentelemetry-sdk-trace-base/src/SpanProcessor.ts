@@ -15,8 +15,8 @@
  */
 
 import { Context } from '@opentelemetry/api';
-import { ReadableSpan } from './export/ReadableSpan';
-import { Span } from './Span';
+import { ReadableSpan } from './export/ReadableSpan.js';
+import { Span } from './Span.js';
 
 /**
  * SpanProcessor is the interface Tracer SDK uses to allow synchronous hooks

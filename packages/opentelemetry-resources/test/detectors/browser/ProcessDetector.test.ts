@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 import * as sinon from 'sinon';
-import { processDetector } from '../../../src';
-import { describeBrowser } from '../../util';
-import { assertEmptyResource } from '../../util/resource-assertions';
-import { resourceFromDetectedResource } from '../../../src/ResourceImpl';
+import { processDetector } from '../../../src/index.js';
+import { describeBrowser } from '../../util.js';
+import { assertEmptyResource } from '../../util/resource-assertions.js';
+import { resourceFromDetectedResource } from '../../../src/ResourceImpl.js';
 
 describeBrowser('processDetector() on web browser', () => {
   afterEach(() => {

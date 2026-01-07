@@ -32,7 +32,7 @@ import {
 } from '@opentelemetry/instrumentation';
 import * as core from '@opentelemetry/core';
 import * as web from '@opentelemetry/sdk-trace-web';
-import { AttributeNames } from './enums/AttributeNames';
+import { AttributeNames } from './enums/AttributeNames.js';
 import {
   ATTR_HTTP_STATUS_CODE,
   ATTR_HTTP_HOST,
@@ -42,7 +42,7 @@ import {
   ATTR_HTTP_METHOD,
   ATTR_HTTP_REQUEST_CONTENT_LENGTH_UNCOMPRESSED,
   ATTR_HTTP_REQUEST_BODY_SIZE,
-} from './semconv';
+} from './semconv.js';
 import {
   ATTR_ERROR_TYPE,
   ATTR_HTTP_REQUEST_METHOD,
@@ -52,12 +52,12 @@ import {
   ATTR_SERVER_PORT,
   ATTR_URL_FULL,
 } from '@opentelemetry/semantic-conventions';
-import { FetchError, FetchResponse, SpanData } from './types';
+import { FetchError, FetchResponse, SpanData } from './types.js';
 import {
   getFetchBodyLength,
   normalizeHttpRequestMethod,
   serverPortFromUrl,
-} from './utils';
+} from './utils.js';
 import { VERSION } from './version';
 
 // how long to wait for observer to collect information about resources

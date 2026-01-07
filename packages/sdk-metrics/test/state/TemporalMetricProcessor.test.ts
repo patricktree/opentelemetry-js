@@ -17,17 +17,17 @@
 import * as api from '@opentelemetry/api';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { SumAggregator } from '../../src/aggregator';
-import { AggregationTemporality } from '../../src/export/AggregationTemporality';
-import { DataPointType } from '../../src/export/MetricData';
-import { DeltaMetricProcessor } from '../../src/state/DeltaMetricProcessor';
-import { MetricCollectorHandle } from '../../src/state/MetricCollector';
-import { TemporalMetricProcessor } from '../../src/state/TemporalMetricProcessor';
+import { SumAggregator } from '../../src/aggregator/index.js';
+import { AggregationTemporality } from '../../src/export/AggregationTemporality.js';
+import { DataPointType } from '../../src/export/MetricData.js';
+import { DeltaMetricProcessor } from '../../src/state/DeltaMetricProcessor.js';
+import { MetricCollectorHandle } from '../../src/state/MetricCollector.js';
+import { TemporalMetricProcessor } from '../../src/state/TemporalMetricProcessor.js';
 import {
   assertMetricData,
   assertDataPoint,
   defaultInstrumentDescriptor,
-} from '../util';
+} from '../util.js';
 
 const deltaCollector1: MetricCollectorHandle = {
   selectAggregationTemporality: () => AggregationTemporality.DELTA,

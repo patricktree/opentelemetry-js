@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-export { prepareSend } from './platform';
-export type { ExporterConfig } from './types';
-export { ZipkinExporter } from './zipkin';
+export { prepareSend } from './platform/index.js';
+export type { ExporterConfig } from './types.js';
+export { ZipkinExporter } from './zipkin.js';

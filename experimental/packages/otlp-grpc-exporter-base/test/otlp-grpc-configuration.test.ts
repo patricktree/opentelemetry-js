@@ -16,7 +16,7 @@
 import { diag } from '@opentelemetry/api';
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { validateAndNormalizeUrl } from '../src/configuration/otlp-grpc-configuration';
+import { validateAndNormalizeUrl } from '../src/configuration/otlp-grpc-configuration.js';
 
 describe('validateAndNormalizeUrl()', function () {
   const tests = [

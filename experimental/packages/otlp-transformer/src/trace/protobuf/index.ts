@@ -15,4 +15,4 @@
  */
 
 // IMPORTANT: exports added here are public
-export { ProtobufTraceSerializer } from './trace';
+export { ProtobufTraceSerializer } from './trace.js';

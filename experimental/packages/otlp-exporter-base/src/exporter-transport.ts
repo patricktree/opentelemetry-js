@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { ExportResponse } from './export-response';
+import { ExportResponse } from './export-response.js';
 
 export interface IExporterTransport {
   send(data: Uint8Array, timeoutMillis: number): Promise<ExportResponse>;

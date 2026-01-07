@@ -21,7 +21,7 @@ import {
   trace,
   Attributes,
 } from '@opentelemetry/api';
-import { Exemplar } from './Exemplar';
+import { Exemplar } from './Exemplar.js';
 
 /**
  * An interface for an exemplar reservoir of samples.

@@ -15,9 +15,9 @@
  */
 
 import { ExportResult } from '@opentelemetry/core';
-import { AggregationTemporality } from './AggregationTemporality';
-import { InstrumentType, ResourceMetrics } from './MetricData';
-import { AggregationOption } from '../view/AggregationOption';
+import { AggregationTemporality } from './AggregationTemporality.js';
+import { InstrumentType, ResourceMetrics } from './MetricData.js';
+import { AggregationOption } from '../view/AggregationOption.js';
 
 /**
  * An interface that allows different metric services to export recorded data

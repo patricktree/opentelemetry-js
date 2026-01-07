@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ISerializer } from '../../i-serializer';
+import { ISerializer } from '../../i-serializer.js';
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
-import { IExportTraceServiceResponse } from '../export-response';
-import { createExportTraceServiceRequest } from '../internal';
+import { IExportTraceServiceResponse } from '../export-response.js';
+import { createExportTraceServiceRequest } from '../internal.js';
 
 export const JsonTraceSerializer: ISerializer<
   ReadableSpan[],

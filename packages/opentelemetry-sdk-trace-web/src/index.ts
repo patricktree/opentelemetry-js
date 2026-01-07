@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-export { WebTracerProvider } from './WebTracerProvider';
-export type { WebTracerConfig } from './WebTracerProvider';
-export { StackContextManager } from './StackContextManager';
-export { PerformanceTimingNames } from './enums/PerformanceTimingNames';
+export { WebTracerProvider } from './WebTracerProvider.js';
+export type { WebTracerConfig } from './WebTracerProvider.js';
+export { StackContextManager } from './StackContextManager.js';
+export { PerformanceTimingNames } from './enums/PerformanceTimingNames.js';
 export type {
   PerformanceEntries,
   PerformanceLegacy,
   PerformanceResourceTimingInfo,
   PropagateTraceHeaderCorsUrls,
-} from './types';
+} from './types.js';
 export {
   addSpanNetworkEvent,
   addSpanNetworkEvents,
@@ -34,8 +34,8 @@ export {
   parseUrl,
   shouldPropagateTraceHeaders,
   sortResources,
-} from './utils';
-export type { URLLike } from './utils';
+} from './utils.js';
+export type { URLLike } from './utils.js';
 export {
   AlwaysOffSampler,
   AlwaysOnSampler,

@@ -43,7 +43,7 @@ import {
   ATTR_K8S_POD_NAME,
   ATTR_SERVICE_INSTANCE_ID,
   ATTR_SERVICE_NAMESPACE,
-} from '../src/semconv';
+} from '../src/semconv.js';
 import {
   assertCloudResource,
   assertContainerResource,
@@ -51,7 +51,7 @@ import {
   assertK8sResource,
   assertServiceResource,
   assertTelemetrySDKResource,
-} from './util/resource-assertions';
+} from './util/resource-assertions.js';
 
 describe('assertCloudResource', () => {
   it('requires one cloud label', () => {

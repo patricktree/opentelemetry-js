@@ -38,14 +38,14 @@ import {
   ATTR_HTTP_TARGET,
   ATTR_USER_AGENT_SYNTHETIC_TYPE,
   USER_AGENT_SYNTHETIC_TYPE_VALUE_BOT,
-} from '../../src/semconv';
-import { IgnoreMatcher, ParsedRequestOptions } from '../../src/internal-types';
-import * as utils from '../../src/utils';
+} from '../../src/semconv.js';
+import { IgnoreMatcher, ParsedRequestOptions } from '../../src/internal-types.js';
+import * as utils from '../../src/utils.js';
 import { RPCType, setRPCMetadata } from '@opentelemetry/core';
 import { AsyncHooksContextManager } from '@opentelemetry/context-async-hooks';
 import { SemconvStability } from '@opentelemetry/instrumentation';
-import { extractHostnameAndPort } from '../../src/utils';
-import { AttributeNames } from '../../src/enums/AttributeNames';
+import { extractHostnameAndPort } from '../../src/utils.js';
+import { AttributeNames } from '../../src/enums/AttributeNames.js';
 import { ParsedUrlQuery } from 'node:querystring';
 
 describe('Utility', () => {

@@ -27,17 +27,17 @@ import {
   resourceFromAttributes,
 } from '@opentelemetry/resources';
 import * as assert from 'assert';
-import { InstrumentDescriptor } from '../src/InstrumentDescriptor';
+import { InstrumentDescriptor } from '../src/InstrumentDescriptor.js';
 import {
   InstrumentType,
   MetricData,
   DataPoint,
   DataPointType,
   ScopeMetrics,
-} from '../src/export/MetricData';
+} from '../src/export/MetricData.js';
 import { HrTime } from '@opentelemetry/api';
-import { Histogram } from '../src/aggregator/types';
-import { AggregationTemporality } from '../src/export/AggregationTemporality';
+import { Histogram } from '../src/aggregator/types.js';
+import { AggregationTemporality } from '../src/export/AggregationTemporality.js';
 
 export type Measurement = {
   value: number;

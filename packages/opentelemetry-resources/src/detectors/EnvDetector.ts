@@ -16,8 +16,8 @@
 
 import { Attributes, diag } from '@opentelemetry/api';
 import { ATTR_SERVICE_NAME } from '@opentelemetry/semantic-conventions';
-import { ResourceDetectionConfig } from '../config';
-import { DetectedResource, ResourceDetector } from '../types';
+import { ResourceDetectionConfig } from '../config.js';
+import { DetectedResource, ResourceDetector } from '../types.js';
 import { getStringFromEnv } from '@opentelemetry/core';
 
 /**

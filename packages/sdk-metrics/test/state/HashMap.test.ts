@@ -16,8 +16,8 @@
 
 import * as assert from 'assert';
 import { Attributes } from '@opentelemetry/api';
-import { HashMap } from '../../src/state/HashMap';
-import { hashAttributes } from '../../src/utils';
+import { HashMap } from '../../src/state/HashMap.js';
+import { hashAttributes } from '../../src/utils.js';
 
 describe('HashMap', () => {
   describe('set & get', () => {

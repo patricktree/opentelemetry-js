@@ -25,10 +25,10 @@ import {
   ATTR_PROCESS_RUNTIME_DESCRIPTION,
   ATTR_PROCESS_RUNTIME_NAME,
   ATTR_PROCESS_RUNTIME_VERSION,
-} from '../../../semconv';
+} from '../../../semconv.js';
 import * as os from 'os';
-import { ResourceDetectionConfig } from '../../../config';
-import { DetectedResource, ResourceDetector } from '../../../types';
+import { ResourceDetectionConfig } from '../../../config.js';
+import { DetectedResource, ResourceDetector } from '../../../types.js';
 
 /**
  * ProcessDetector will be used to detect the resources related current process running

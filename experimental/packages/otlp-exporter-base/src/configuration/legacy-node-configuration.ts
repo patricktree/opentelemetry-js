@@ -18,8 +18,8 @@
 import type * as http from 'http';
 import type * as https from 'https';
 
-import type { OTLPExporterConfigBase } from './legacy-base-configuration';
-import type { HttpAgentFactory } from './otlp-node-http-configuration';
+import type { OTLPExporterConfigBase } from './legacy-base-configuration.js';
+import type { HttpAgentFactory } from './otlp-node-http-configuration.js';
 
 /**
  * Collector Exporter node base config

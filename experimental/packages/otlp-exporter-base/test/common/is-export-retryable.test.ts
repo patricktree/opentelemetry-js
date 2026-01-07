@@ -18,7 +18,7 @@ import * as assert from 'assert';
 import {
   isExportHTTPErrorRetryable,
   parseRetryAfterToMills,
-} from '../../src/is-export-retryable';
+} from '../../src/is-export-retryable.js';
 
 describe('parseRetryAfterToMills', function () {
   // now: 2023-01-20T00:00:00.000Z

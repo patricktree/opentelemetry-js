@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Sampler, SamplingDecision, SamplingResult } from '../../../src';
+import { Sampler, SamplingDecision, SamplingResult } from '../../../src/index.js';
 
 /** Sampler that always records but doesn't sample spans. */
 export class TestRecordOnlySampler implements Sampler {

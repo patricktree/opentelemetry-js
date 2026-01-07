@@ -16,9 +16,9 @@
 
 import { ContextManager, TextMapPropagator } from '@opentelemetry/api';
 import { Resource } from '@opentelemetry/resources';
-import { IdGenerator } from './IdGenerator';
-import { Sampler } from './Sampler';
-import { SpanProcessor } from './SpanProcessor';
+import { IdGenerator } from './IdGenerator.js';
+import { Sampler } from './Sampler.js';
+import { SpanProcessor } from './SpanProcessor.js';
 
 /**
  * TracerConfig provides an interface for configuring a Basic Tracer.

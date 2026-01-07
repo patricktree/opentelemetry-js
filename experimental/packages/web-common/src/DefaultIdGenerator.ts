@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { SessionIdGenerator } from './types/SessionIdGenerator';
+import { SessionIdGenerator } from './types/SessionIdGenerator.js';
 
 export class DefaultIdGenerator implements SessionIdGenerator {
   generateSessionId = getIdGenerator(16);

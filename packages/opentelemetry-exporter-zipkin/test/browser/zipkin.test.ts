@@ -21,13 +21,13 @@ import {
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { ZipkinExporter } from '../../src';
-import * as zipkinTypes from '../../src/types';
+import { ZipkinExporter } from '../../src/index.js';
+import * as zipkinTypes from '../../src/types.js';
 import {
   ensureHeadersContain,
   ensureSpanIsCorrect,
   mockedReadableSpan,
-} from '../helper';
+} from '../helper.js';
 
 const sendBeacon = navigator.sendBeacon;
 

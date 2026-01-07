@@ -18,10 +18,10 @@ import * as assert from 'assert';
 import {
   createAllowListAttributesProcessor,
   createNoopAttributesProcessor,
-} from '../../src/view/AttributesProcessor';
-import { InstrumentType, AggregationType } from '../../src';
-import { DEFAULT_AGGREGATION } from '../../src/view/Aggregation';
-import { View } from '../../src/view/View';
+} from '../../src/view/AttributesProcessor.js';
+import { InstrumentType, AggregationType } from '../../src/index.js';
+import { DEFAULT_AGGREGATION } from '../../src/view/Aggregation.js';
+import { View } from '../../src/view/View.js';
 
 describe('View', () => {
   describe('constructor', () => {

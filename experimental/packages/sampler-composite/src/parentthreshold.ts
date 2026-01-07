@@ -23,9 +23,9 @@ import {
   TraceFlags,
   trace,
 } from '@opentelemetry/api';
-import { ComposableSampler, SamplingIntent } from './types';
-import { parseOtelTraceState } from './tracestate';
-import { INVALID_THRESHOLD, isValidThreshold, MIN_THRESHOLD } from './util';
+import { ComposableSampler, SamplingIntent } from './types.js';
+import { parseOtelTraceState } from './tracestate.js';
+import { INVALID_THRESHOLD, isValidThreshold, MIN_THRESHOLD } from './util.js';
 
 class ComposableParentThresholdSampler implements ComposableSampler {
   private readonly description: string;

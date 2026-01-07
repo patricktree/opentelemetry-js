@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import type { ComposableSampler, SamplingIntent } from './types';
-import { INVALID_THRESHOLD } from './util';
+import type { ComposableSampler, SamplingIntent } from './types.js';
+import { INVALID_THRESHOLD } from './util.js';
 
 const intent: SamplingIntent = {
   threshold: INVALID_THRESHOLD,

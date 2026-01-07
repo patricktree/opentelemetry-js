@@ -22,7 +22,7 @@ import {
   LoggerProvider,
   ConsoleLogRecordExporter,
   SimpleLogRecordProcessor,
-} from './../../../src';
+} from './../../../src/index.js';
 
 /* eslint-disable no-console */
 describe('ConsoleLogRecordExporter', () => {

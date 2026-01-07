@@ -15,9 +15,9 @@
  */
 import * as os from 'os';
 import * as sinon from 'sinon';
-import { processDetector } from '../../../src';
-import { describeNode } from '../../util';
-import { assertResource } from '../../util/resource-assertions';
+import { processDetector } from '../../../src/index.js';
+import { describeNode } from '../../util.js';
+import { assertResource } from '../../util/resource-assertions.js';
 
 describeNode('processDetector() on Node.js', () => {
   afterEach(() => {

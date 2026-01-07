@@ -17,7 +17,7 @@
 import {
   InstrumentationModuleDefinition,
   InstrumentationModuleFile,
-} from './types';
+} from './types.js';
 
 export class InstrumentationNodeModuleDefinition
   implements InstrumentationModuleDefinition

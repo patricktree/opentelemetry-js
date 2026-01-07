@@ -17,9 +17,9 @@
 import { diag } from '@opentelemetry/api';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { detectResources, ResourceDetector } from '../src';
-import { isPromiseLike } from '../src/utils';
-import { describeNode } from './util';
+import { detectResources, ResourceDetector } from '../src/index.js';
+import { isPromiseLike } from '../src/utils.js';
+import { describeNode } from './util.js';
 
 describe('detectResources', () => {
   afterEach(() => {

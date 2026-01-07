@@ -15,7 +15,7 @@
  */
 
 import { Context, HrTime, Attributes } from '@opentelemetry/api';
-import { ExemplarFilter } from './ExemplarFilter';
+import { ExemplarFilter } from './ExemplarFilter.js';
 
 export class NeverSampleExemplarFilter implements ExemplarFilter {
   shouldSample(

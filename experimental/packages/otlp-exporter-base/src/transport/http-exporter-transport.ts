@@ -18,10 +18,10 @@
 // as they'd be imported before the http/https modules can be wrapped.
 import type * as https from 'https';
 import type * as http from 'http';
-import { ExportResponse } from '../export-response';
-import { IExporterTransport } from '../exporter-transport';
-import { sendWithHttp } from './http-transport-utils';
-import { NodeHttpRequestParameters } from './node-http-transport-types';
+import { ExportResponse } from '../export-response.js';
+import { IExporterTransport } from '../exporter-transport.js';
+import { sendWithHttp } from './http-transport-utils.js';
+import { NodeHttpRequestParameters } from './node-http-transport-types.js';
 
 interface Utils {
   agent: http.Agent | https.Agent;

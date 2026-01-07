@@ -24,7 +24,7 @@ import {
 } from '@opentelemetry/api';
 import { Resource } from '@opentelemetry/resources';
 import { InstrumentationScope } from '@opentelemetry/core';
-import { TimedEvent } from '../TimedEvent';
+import { TimedEvent } from '../TimedEvent.js';
 
 export interface ReadableSpan {
   readonly name: string;

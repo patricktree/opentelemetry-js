@@ -15,12 +15,12 @@
  */
 
 import * as root from '../../generated/root';
-import { ISerializer } from '../../i-serializer';
-import { ExportType } from '../../common/protobuf/protobuf-export-type';
-import { IExportTraceServiceRequest } from '../internal-types';
+import { ISerializer } from '../../i-serializer.js';
+import { ExportType } from '../../common/protobuf/protobuf-export-type.js';
+import { IExportTraceServiceRequest } from '../internal-types.js';
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
-import { createExportTraceServiceRequest } from '../internal';
-import { IExportTraceServiceResponse } from '../export-response';
+import { createExportTraceServiceRequest } from '../internal.js';
+import { IExportTraceServiceResponse } from '../export-response.js';
 
 const traceResponseType = root.opentelemetry.proto.collector.trace.v1
   .ExportTraceServiceResponse as ExportType<IExportTraceServiceResponse>;

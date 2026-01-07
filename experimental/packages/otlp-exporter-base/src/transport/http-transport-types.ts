@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { HeadersFactory } from '../configuration/otlp-http-configuration';
+import { HeadersFactory } from '../configuration/otlp-http-configuration.js';
 
 export interface HttpRequestParameters {
   url: string;

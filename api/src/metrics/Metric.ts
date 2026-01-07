@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { Attributes, AttributeValue } from '../common/Attributes';
-import { Context } from '../context/types';
-import { BatchObservableResult, ObservableResult } from './ObservableResult';
+import { Attributes, AttributeValue } from '../common/Attributes.js';
+import { Context } from '../context/types.js';
+import { BatchObservableResult, ObservableResult } from './ObservableResult.js';
 
 /**
  * Advisory options influencing aggregation configuration parameters.

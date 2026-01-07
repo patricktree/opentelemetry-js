@@ -19,7 +19,7 @@ import {
   isWrapped,
   safeExecuteInTheMiddle,
   safeExecuteInTheMiddleAsync,
-} from '../../src';
+} from '../../src/index.js';
 
 describe('isWrapped', function () {
   describe('when function is wrapped', function () {

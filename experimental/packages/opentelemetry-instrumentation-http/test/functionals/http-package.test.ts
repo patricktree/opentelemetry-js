@@ -23,9 +23,9 @@ import {
 } from '@opentelemetry/sdk-trace-base';
 import * as assert from 'assert';
 import * as path from 'path';
-import { HttpInstrumentation } from '../../src/http';
-import { assertSpan } from '../utils/assertSpan';
-import { DummyPropagation } from '../utils/DummyPropagation';
+import { HttpInstrumentation } from '../../src/http.js';
+import { assertSpan } from '../utils/assertSpan.js';
+import { DummyPropagation } from '../utils/DummyPropagation.js';
 
 const instrumentation = new HttpInstrumentation();
 instrumentation.enable();

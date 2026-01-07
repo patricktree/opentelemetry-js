@@ -20,10 +20,10 @@
  */
 
 // Deprecated. These are kept around for compatibility purposes
-export * from './trace';
-export * from './resource';
+export * from './trace/index.js';
+export * from './resource/index.js';
 
 // Use these instead
-export * from './stable_attributes';
-export * from './stable_metrics';
-export * from './stable_events';
+export * from './stable_attributes.js';
+export * from './stable_metrics.js';
+export * from './stable_events.js';

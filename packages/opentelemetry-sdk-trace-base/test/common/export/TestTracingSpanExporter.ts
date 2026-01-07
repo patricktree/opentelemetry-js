@@ -21,8 +21,8 @@ import {
   ReadableSpan,
   SpanProcessor,
   AlwaysOnSampler,
-} from '../../../src';
-import { Tracer } from '../../../src/Tracer';
+} from '../../../src/index.js';
+import { Tracer } from '../../../src/Tracer.js';
 
 /**
  * A test-only span exporter that naively simulates triggering instrumentation

@@ -20,7 +20,7 @@ import {
   InstrumentType,
   IMetricReader,
   PushMetricExporter,
-} from '../../src';
+} from '../../src/index.js';
 import * as assert from 'assert';
 
 const instrumentTypes = [

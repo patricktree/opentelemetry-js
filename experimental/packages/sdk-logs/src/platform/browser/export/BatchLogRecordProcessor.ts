@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import type { LogRecordExporter } from './../../../export/LogRecordExporter';
-import type { BatchLogRecordProcessorBrowserConfig } from '../../../types';
-import { BatchLogRecordProcessorBase } from '../../../export/BatchLogRecordProcessorBase';
+import type { LogRecordExporter } from './../../../export/LogRecordExporter.js';
+import type { BatchLogRecordProcessorBrowserConfig } from '../../../types.js';
+import { BatchLogRecordProcessorBase } from '../../../export/BatchLogRecordProcessorBase.js';
 
 export class BatchLogRecordProcessor extends BatchLogRecordProcessorBase<BatchLogRecordProcessorBrowserConfig> {
   private _visibilityChangeListener?: () => void;

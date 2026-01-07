@@ -25,10 +25,10 @@ import {
   callWithTimeout,
 } from '@opentelemetry/core';
 
-import type { BufferConfig } from '../types';
-import type { SdkLogRecord } from './SdkLogRecord';
-import type { LogRecordExporter } from './LogRecordExporter';
-import type { LogRecordProcessor } from '../LogRecordProcessor';
+import type { BufferConfig } from '../types.js';
+import type { SdkLogRecord } from './SdkLogRecord.js';
+import type { LogRecordExporter } from './LogRecordExporter.js';
+import type { LogRecordProcessor } from '../LogRecordProcessor.js';
 
 export abstract class BatchLogRecordProcessorBase<T extends BufferConfig>
   implements LogRecordProcessor

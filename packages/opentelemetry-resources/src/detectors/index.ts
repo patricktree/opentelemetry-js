@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-export { envDetector } from './EnvDetector';
+export { envDetector } from './EnvDetector.js';
 export {
   hostDetector,
   osDetector,
   processDetector,
   serviceInstanceIdDetector,
-} from './platform';
-export { noopDetector } from './NoopDetector';
+} from './platform/index.js';
+export { noopDetector } from './NoopDetector.js';

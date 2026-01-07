@@ -19,7 +19,7 @@ import {
   mapSpanContext,
   mapSpanKind,
   reverseMapSpanContext,
-} from '../src/trace-transform';
+} from '../src/trace-transform.js';
 
 import * as oc from '@opencensus/core';
 import { SpanKind } from '@opentelemetry/api';

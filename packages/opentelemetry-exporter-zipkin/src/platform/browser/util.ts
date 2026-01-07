@@ -20,7 +20,7 @@ import {
   ExportResultCode,
   globalErrorHandler,
 } from '@opentelemetry/core';
-import * as zipkinTypes from '../../types';
+import * as zipkinTypes from '../../types.js';
 
 /**
  * Prepares send function that will send spans to the remote Zipkin service.

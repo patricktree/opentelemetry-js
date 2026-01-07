@@ -67,7 +67,7 @@ import {
   ATTR_USER_AGENT_SYNTHETIC_TYPE,
   USER_AGENT_SYNTHETIC_TYPE_VALUE_BOT,
   USER_AGENT_SYNTHETIC_TYPE_VALUE_TEST,
-} from './semconv';
+} from './semconv.js';
 import {
   IncomingHttpHeaders,
   IncomingMessage,
@@ -79,13 +79,13 @@ import {
 import { getRPCMetadata, RPCType } from '@opentelemetry/core';
 import { SemconvStability } from '@opentelemetry/instrumentation';
 import * as url from 'url';
-import { AttributeNames } from './enums/AttributeNames';
-import { Err, IgnoreMatcher, ParsedRequestOptions } from './internal-types';
-import { SYNTHETIC_BOT_NAMES, SYNTHETIC_TEST_NAMES } from './internal-types';
+import { AttributeNames } from './enums/AttributeNames.js';
+import { Err, IgnoreMatcher, ParsedRequestOptions } from './internal-types.js';
+import { SYNTHETIC_BOT_NAMES, SYNTHETIC_TEST_NAMES } from './internal-types.js';
 import {
   DEFAULT_QUERY_STRINGS_TO_REDACT,
   STR_REDACTED,
-} from './internal-types';
+} from './internal-types.js';
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import forwardedParse = require('forwarded-parse');
 

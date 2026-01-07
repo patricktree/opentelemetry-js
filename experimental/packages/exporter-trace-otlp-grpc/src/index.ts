@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { OTLPTraceExporter } from './OTLPTraceExporter';
+export { OTLPTraceExporter } from './OTLPTraceExporter.js';

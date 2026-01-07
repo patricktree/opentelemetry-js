@@ -19,7 +19,7 @@ import {
   IncludeExclude,
   NameStringValuePair,
   OtlpHttpEncoding,
-} from './commonModel';
+} from './commonModel.js';
 
 export function initializeDefaultMeterProviderConfiguration(): MeterProvider {
   return {

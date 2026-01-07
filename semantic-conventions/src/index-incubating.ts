@@ -16,9 +16,9 @@
 
 // Incubating export also contains stable constants in order to maintain
 // backward compatibility between minor version releases
-export * from './stable_attributes';
-export * from './stable_metrics';
-export * from './stable_events';
-export * from './experimental_attributes';
-export * from './experimental_metrics';
-export * from './experimental_events';
+export * from './stable_attributes.js';
+export * from './stable_metrics.js';
+export * from './stable_events.js';
+export * from './experimental_attributes.js';
+export * from './experimental_metrics.js';
+export * from './experimental_events.js';

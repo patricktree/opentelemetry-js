@@ -22,9 +22,9 @@ import {
   AggregationType,
   InstrumentType,
   MeterProvider,
-} from '../../src';
-import { TestMetricReader } from '../export/TestMetricReader';
-import { IMetricReader } from '../../src/export/MetricReader';
+} from '../../src/index.js';
+import { TestMetricReader } from '../export/TestMetricReader.js';
+import { IMetricReader } from '../../src/export/MetricReader.js';
 
 describe('cumulative-exponential-histogram', () => {
   let clock: sinon.SinonFakeTimers;

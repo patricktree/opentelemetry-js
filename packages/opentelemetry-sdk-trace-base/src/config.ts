@@ -16,11 +16,11 @@
 
 import { diag } from '@opentelemetry/api';
 import { getNumberFromEnv, getStringFromEnv } from '@opentelemetry/core';
-import { Sampler } from './Sampler';
-import { AlwaysOffSampler } from './sampler/AlwaysOffSampler';
-import { AlwaysOnSampler } from './sampler/AlwaysOnSampler';
-import { ParentBasedSampler } from './sampler/ParentBasedSampler';
-import { TraceIdRatioBasedSampler } from './sampler/TraceIdRatioBasedSampler';
+import { Sampler } from './Sampler.js';
+import { AlwaysOffSampler } from './sampler/AlwaysOffSampler.js';
+import { AlwaysOnSampler } from './sampler/AlwaysOnSampler.js';
+import { ParentBasedSampler } from './sampler/ParentBasedSampler.js';
+import { TraceIdRatioBasedSampler } from './sampler/TraceIdRatioBasedSampler.js';
 
 const enum TracesSamplerValues {
   AlwaysOff = 'always_off',

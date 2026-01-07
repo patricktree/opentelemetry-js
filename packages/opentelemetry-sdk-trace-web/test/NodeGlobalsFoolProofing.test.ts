@@ -21,7 +21,7 @@ import {
   ProxyTracerProvider,
 } from '@opentelemetry/api';
 import * as assert from 'assert';
-import { StackContextManager, WebTracerProvider } from '../src';
+import { StackContextManager, WebTracerProvider } from '../src/index.js';
 import { resourceFromAttributes } from '@opentelemetry/resources';
 
 describe('Node Globals Foolproofing', function () {

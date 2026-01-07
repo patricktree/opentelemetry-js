@@ -16,7 +16,7 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { diag, DiagLogger, DiagLogLevel } from '../../../src';
+import { diag, DiagLogger, DiagLogLevel } from '../../../src/index.js';
 
 class SpyLogger implements DiagLogger {
   debug() {}

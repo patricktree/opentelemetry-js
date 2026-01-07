@@ -16,7 +16,7 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { BindOnceFuture } from '../../../src';
+import { BindOnceFuture } from '../../../src/index.js';
 
 describe('callback', () => {
   describe('BindOnceFuture', () => {

@@ -15,4 +15,4 @@
  */
 
 // IMPORTANT: exports added here are public
-export { JsonLogsSerializer } from './logs';
+export { JsonLogsSerializer } from './logs.js';

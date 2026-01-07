@@ -15,7 +15,7 @@
  */
 
 import { Attributes } from '@opentelemetry/api';
-import { hashAttributes } from '../utils';
+import { hashAttributes } from '../utils.js';
 
 export interface Hash<ValueType, HashCodeType> {
   (value: ValueType): HashCodeType;

@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { SugaredSpanOptions } from './SugaredOptions';
+import { SugaredSpanOptions } from './SugaredOptions.js';
 import {
   context as contextApi,
   Context,
   Span,
   SpanStatusCode,
   Tracer,
-} from '../../';
+} from '../../index.js';
 
 const defaultOnException = (e: Error, span: Span) => {
   span.recordException(e);

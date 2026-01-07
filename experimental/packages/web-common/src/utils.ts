@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-import { SessionProvider } from './types/SessionProvider';
+import { SessionProvider } from './types/SessionProvider.js';
 import { SpanProcessor } from '@opentelemetry/sdk-trace-base';
-import { SessionSpanProcessor } from './SessionSpanProcessor';
+import { SessionSpanProcessor } from './SessionSpanProcessor.js';
 import { LogRecordProcessor } from '@opentelemetry/sdk-logs';
-import { SessionLogRecordProcessor } from './SessionLogRecordProcessor';
-import { SessionManager, SessionManagerConfig } from './SessionManager';
-import { SessionIdGenerator } from './types/SessionIdGenerator';
-import { DefaultIdGenerator } from './DefaultIdGenerator';
-import { SessionStore } from './types/SessionStore';
-import { LocalStorageSessionStore } from './LocalStorageSessionStore';
+import { SessionLogRecordProcessor } from './SessionLogRecordProcessor.js';
+import { SessionManager, SessionManagerConfig } from './SessionManager.js';
+import { SessionIdGenerator } from './types/SessionIdGenerator.js';
+import { DefaultIdGenerator } from './DefaultIdGenerator.js';
+import { SessionStore } from './types/SessionStore.js';
+import { LocalStorageSessionStore } from './LocalStorageSessionStore.js';
 
 export function createSessionSpanProcessor(
   sessionProvider: SessionProvider

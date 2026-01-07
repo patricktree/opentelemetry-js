@@ -18,11 +18,11 @@ import * as assert from 'assert';
 import * as fs from 'fs';
 import * as sinon from 'sinon';
 
-import { getOtlpGrpcConfigurationFromEnv } from '../../src/configuration/otlp-grpc-env-configuration';
+import { getOtlpGrpcConfigurationFromEnv } from '../../src/configuration/otlp-grpc-env-configuration.js';
 import {
   createInsecureCredentials,
   createSslCredentials,
-} from '../../src/grpc-exporter-transport';
+} from '../../src/grpc-exporter-transport.js';
 import { diag } from '@opentelemetry/api';
 
 describe('getOtlpGrpcConfigurationFromEnvironment', function () {

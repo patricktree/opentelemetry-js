@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { createLoggingPartialSuccessResponseHandler } from '../../src/logging-response-handler';
+import { createLoggingPartialSuccessResponseHandler } from '../../src/logging-response-handler.js';
 import * as sinon from 'sinon';
 import { IExportTraceServiceResponse } from '@opentelemetry/otlp-transformer';
-import { registerMockDiagLogger } from './test-utils';
+import { registerMockDiagLogger } from './test-utils.js';
 
 describe('loggingResponseHandler', function () {
   afterEach(function () {

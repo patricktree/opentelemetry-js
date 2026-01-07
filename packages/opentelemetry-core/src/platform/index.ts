@@ -21,4 +21,4 @@ export {
   getStringFromEnv,
   getNumberFromEnv,
   getStringListFromEnv,
-} from './node';
+} from './node/index.js';

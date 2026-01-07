@@ -23,12 +23,12 @@ import {
   Histogram,
   InstrumentType,
   MeterProvider,
-} from '../src';
-import { InstrumentDescriptor } from '../src/InstrumentDescriptor';
+} from '../src/index.js';
+import { InstrumentDescriptor } from '../src/InstrumentDescriptor.js';
 import {
   TestDeltaMetricReader,
   TestMetricReader,
-} from './export/TestMetricReader';
+} from './export/TestMetricReader.js';
 import {
   assertDataPoint,
   assertMetricData,
@@ -36,9 +36,9 @@ import {
   commonValues,
   defaultInstrumentationScope,
   testResource,
-} from './util';
+} from './util.js';
 import { ObservableResult, ValueType } from '@opentelemetry/api';
-import { IMetricReader } from '../src/export/MetricReader';
+import { IMetricReader } from '../src/export/MetricReader.js';
 import { Resource } from '@opentelemetry/resources';
 
 describe('Instruments', () => {

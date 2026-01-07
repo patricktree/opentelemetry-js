@@ -19,7 +19,7 @@ import {
   OtlpFileExporter,
   OtlpGrpcExporter,
   OtlpHttpExporter,
-} from './commonModel';
+} from './commonModel.js';
 
 export function initializeDefaultLoggerProviderConfiguration(): LoggerProvider {
   return {

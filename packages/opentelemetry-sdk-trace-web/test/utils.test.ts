@@ -33,8 +33,8 @@ import {
   PerformanceEntries,
   shouldPropagateTraceHeaders,
   URLLike,
-} from '../src';
-import { PerformanceTimingNames as PTN } from '../src/enums/PerformanceTimingNames';
+} from '../src/index.js';
+import { PerformanceTimingNames as PTN } from '../src/enums/PerformanceTimingNames.js';
 
 const SECOND_TO_NANOSECONDS = 1e9;
 

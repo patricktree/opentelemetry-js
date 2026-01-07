@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { LoggerProvider } from './types/LoggerProvider';
-import { Logger } from './types/Logger';
-import { LoggerOptions } from './types/LoggerOptions';
-import { NoopLogger } from './NoopLogger';
+import { LoggerProvider } from './types/LoggerProvider.js';
+import { Logger } from './types/Logger.js';
+import { LoggerOptions } from './types/LoggerOptions.js';
+import { NoopLogger } from './NoopLogger.js';
 
 export class NoopLoggerProvider implements LoggerProvider {
   getLogger(

@@ -17,19 +17,19 @@
 import * as api from '@opentelemetry/api';
 import * as assert from 'assert';
 
-import { SumAggregator } from '../../src/aggregator';
-import { AggregationTemporality } from '../../src/export/AggregationTemporality';
-import { DataPointType } from '../../src/export/MetricData';
-import { MetricCollectorHandle } from '../../src/state/MetricCollector';
-import { SyncMetricStorage } from '../../src/state/SyncMetricStorage';
-import { createNoopAttributesProcessor } from '../../src/view/AttributesProcessor';
+import { SumAggregator } from '../../src/aggregator/index.js';
+import { AggregationTemporality } from '../../src/export/AggregationTemporality.js';
+import { DataPointType } from '../../src/export/MetricData.js';
+import { MetricCollectorHandle } from '../../src/state/MetricCollector.js';
+import { SyncMetricStorage } from '../../src/state/SyncMetricStorage.js';
+import { createNoopAttributesProcessor } from '../../src/view/AttributesProcessor.js';
 import {
   assertMetricData,
   assertDataPoint,
   commonAttributes,
   commonValues,
   defaultInstrumentDescriptor,
-} from '../util';
+} from '../util.js';
 
 const deltaCollector: MetricCollectorHandle = {
   selectAggregationTemporality: () => AggregationTemporality.DELTA,

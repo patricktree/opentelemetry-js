@@ -15,7 +15,7 @@
  */
 
 import { TracerProvider, MeterProvider } from '@opentelemetry/api';
-import { Instrumentation } from './types';
+import { Instrumentation } from './types.js';
 import { LoggerProvider } from '@opentelemetry/api-logs';
 
 /**

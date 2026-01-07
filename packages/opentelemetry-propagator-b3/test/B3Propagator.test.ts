@@ -24,7 +24,7 @@ import {
 } from '@opentelemetry/api';
 import { suppressTracing } from '@opentelemetry/core';
 import * as assert from 'assert';
-import { B3Propagator } from '../src/B3Propagator';
+import { B3Propagator } from '../src/B3Propagator.js';
 import {
   B3_CONTEXT_HEADER,
   X_B3_FLAGS,
@@ -32,8 +32,8 @@ import {
   X_B3_SAMPLED,
   X_B3_SPAN_ID,
   X_B3_TRACE_ID,
-} from '../src/constants';
-import { B3InjectEncoding } from '../src/types';
+} from '../src/constants.js';
+import { B3InjectEncoding } from '../src/types.js';
 
 describe('B3Propagator', () => {
   let propagator: B3Propagator;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { shimPropagation } from '../src/propagation';
+import { shimPropagation } from '../src/propagation.js';
 
 import * as oc from '@opencensus/core';
 import { propagation } from '@opentelemetry/api';

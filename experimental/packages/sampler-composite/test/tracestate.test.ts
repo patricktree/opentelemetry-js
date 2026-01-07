@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { serializeTraceState, parseOtelTraceState } from '../src/tracestate';
+import { serializeTraceState, parseOtelTraceState } from '../src/tracestate.js';
 import { TraceState } from '@opentelemetry/core';
 
 describe('OtelTraceState', () => {

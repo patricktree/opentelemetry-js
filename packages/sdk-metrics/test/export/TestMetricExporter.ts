@@ -19,7 +19,7 @@ import {
   AggregationTemporality,
   PushMetricExporter,
   ResourceMetrics,
-} from '../../src';
+} from '../../src/index.js';
 
 export class TestMetricExporter implements PushMetricExporter {
   resourceMetricsList: ResourceMetrics[] = [];

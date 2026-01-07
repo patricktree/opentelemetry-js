@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Session } from './types/Session';
-import { SessionStore } from './types/SessionStore';
+import { Session } from './types/Session.js';
+import { SessionStore } from './types/SessionStore.js';
 
 const SESSION_STORAGE_KEY = 'opentelemetry-session';
 

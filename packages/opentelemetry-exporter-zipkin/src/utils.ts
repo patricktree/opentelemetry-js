@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { GetHeaders } from './types';
+import { GetHeaders } from './types.js';
 
 export function prepareGetHeaders(
   getExportRequestHeaders: GetHeaders

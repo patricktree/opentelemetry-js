@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { ShimWrapped } from './types';
+import { ShimWrapped } from './types.js';
 
 /**
  * function to execute patched function and being able to catch errors

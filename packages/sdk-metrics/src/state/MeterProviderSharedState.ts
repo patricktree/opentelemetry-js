@@ -16,13 +16,13 @@
 
 import { InstrumentationScope } from '@opentelemetry/core';
 import { Resource } from '@opentelemetry/resources';
-import { instrumentationScopeId } from '../utils';
-import { ViewRegistry } from '../view/ViewRegistry';
-import { MeterSharedState } from './MeterSharedState';
-import { MetricCollector, MetricCollectorHandle } from './MetricCollector';
-import { toAggregation } from '../view/AggregationOption';
-import { Aggregation } from '../view/Aggregation';
-import { InstrumentType } from '../export/MetricData';
+import { instrumentationScopeId } from '../utils.js';
+import { ViewRegistry } from '../view/ViewRegistry.js';
+import { MeterSharedState } from './MeterSharedState.js';
+import { MetricCollector, MetricCollectorHandle } from './MetricCollector.js';
+import { toAggregation } from '../view/AggregationOption.js';
+import { Aggregation } from '../view/Aggregation.js';
+import { InstrumentType } from '../export/MetricData.js';
 
 /**
  * An internal record for shared meter provider states.

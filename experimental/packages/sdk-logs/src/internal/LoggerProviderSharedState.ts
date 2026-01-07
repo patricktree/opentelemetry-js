@@ -18,11 +18,11 @@ import { Logger } from '@opentelemetry/api-logs';
 import { SeverityNumber } from '@opentelemetry/api-logs';
 import { Resource } from '@opentelemetry/resources';
 import type { InstrumentationScope } from '@opentelemetry/core';
-import { LogRecordProcessor } from '../LogRecordProcessor';
-import { LogRecordLimits, LoggerConfig, LoggerConfigurator } from '../types';
-import { NoopLogRecordProcessor } from '../export/NoopLogRecordProcessor';
-import { MultiLogRecordProcessor } from '../MultiLogRecordProcessor';
-import { getInstrumentationScopeKey } from './utils';
+import { LogRecordProcessor } from '../LogRecordProcessor.js';
+import { LogRecordLimits, LoggerConfig, LoggerConfigurator } from '../types.js';
+import { NoopLogRecordProcessor } from '../export/NoopLogRecordProcessor.js';
+import { MultiLogRecordProcessor } from '../MultiLogRecordProcessor.js';
+import { getInstrumentationScopeKey } from './utils.js';
 
 const DEFAULT_LOGGER_CONFIG: Required<LoggerConfig> = {
   disabled: false,

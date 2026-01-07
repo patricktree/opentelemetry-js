@@ -22,8 +22,8 @@ import {
   TraceIdRatioBasedSampler,
 } from '@opentelemetry/sdk-trace-base';
 import * as axios from 'axios';
-import { PerOperationSampler } from './PerOperationSampler';
-import { SamplingStrategyResponse, StrategyType } from './types';
+import { PerOperationSampler } from './PerOperationSampler.js';
+import { SamplingStrategyResponse, StrategyType } from './types.js';
 
 interface JaegerRemoteSamplerOptions {
   /** Address of a service that implements the Remote Sampling API, such as Jaeger Collector or OpenTelemetry Collector */

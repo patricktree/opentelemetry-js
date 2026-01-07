@@ -42,7 +42,7 @@ import type * as http from 'http';
 import type * as https from 'https';
 import { Socket } from 'net';
 import * as url from 'url';
-import { HttpInstrumentationConfig } from './types';
+import { HttpInstrumentationConfig } from './types.js';
 import { VERSION } from './version';
 import {
   InstrumentationBase,
@@ -81,8 +81,8 @@ import {
   isValidOptionsType,
   parseResponseStatus,
   setSpanWithError,
-} from './utils';
-import { Err, Func, Http, HttpRequestArgs, Https } from './internal-types';
+} from './utils.js';
+import { Err, Func, Http, HttpRequestArgs, Https } from './internal-types.js';
 
 /**
  * `node:http` and `node:https` instrumentation for OpenTelemetry

@@ -20,17 +20,17 @@ import {
   IExportLogsServiceRequest,
   ILogRecord,
   IResourceLogs,
-} from './internal-types';
+} from './internal-types.js';
 import { Resource } from '@opentelemetry/resources';
-import { Encoder, getOtlpEncoder } from '../common/utils';
+import { Encoder, getOtlpEncoder } from '../common/utils.js';
 import {
   createInstrumentationScope,
   createResource,
   toAnyValue,
   toKeyValue,
-} from '../common/internal';
+} from '../common/internal.js';
 import { SeverityNumber } from '@opentelemetry/api-logs';
-import { OtlpEncodingOptions, IKeyValue } from '../common/internal-types';
+import { OtlpEncodingOptions, IKeyValue } from '../common/internal-types.js';
 import { LogAttributes } from '@opentelemetry/api-logs';
 
 export function createExportLogsServiceRequest(

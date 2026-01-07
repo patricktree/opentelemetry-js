@@ -30,7 +30,7 @@ import {
   JaegerPropagator,
   UBER_TRACE_ID_HEADER,
   UBER_BAGGAGE_HEADER_PREFIX,
-} from '../src/JaegerPropagator';
+} from '../src/JaegerPropagator.js';
 
 describe('JaegerPropagator', () => {
   const jaegerPropagator = new JaegerPropagator();

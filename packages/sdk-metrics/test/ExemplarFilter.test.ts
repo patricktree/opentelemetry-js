@@ -26,7 +26,7 @@ import {
   AlwaysSampleExemplarFilter,
   NeverSampleExemplarFilter,
   WithTraceExemplarFilter,
-} from '../src/exemplar/';
+} from '../src/exemplar/index.js';
 
 describe('ExemplarFilter', () => {
   const TRACE_ID = 'd4cda95b652f4a1592b449d5929fda1b';

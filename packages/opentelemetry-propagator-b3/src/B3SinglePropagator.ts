@@ -26,8 +26,8 @@ import {
   TraceFlags,
 } from '@opentelemetry/api';
 import { isTracingSuppressed } from '@opentelemetry/core';
-import { B3_DEBUG_FLAG_KEY } from './common';
-import { B3_CONTEXT_HEADER } from './constants';
+import { B3_DEBUG_FLAG_KEY } from './common.js';
+import { B3_CONTEXT_HEADER } from './constants.js';
 
 const B3_CONTEXT_REGEX =
   /((?:[0-9a-f]{16}){1,2})-([0-9a-f]{16})(?:-([01d](?![0-9a-f])))?(?:-([0-9a-f]{16}))?/;

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-export { OTLPMetricExporter } from './platform';
-export { AggregationTemporalityPreference } from './OTLPMetricExporterOptions';
-export type { OTLPMetricExporterOptions } from './OTLPMetricExporterOptions';
+export { OTLPMetricExporter } from './platform/index.js';
+export { AggregationTemporalityPreference } from './OTLPMetricExporterOptions.js';
+export type { OTLPMetricExporterOptions } from './OTLPMetricExporterOptions.js';
 export {
   CumulativeTemporalitySelector,
   DeltaTemporalitySelector,
   LowMemoryTemporalitySelector,
   OTLPMetricExporterBase,
-} from './OTLPMetricExporterBase';
+} from './OTLPMetricExporterBase.js';

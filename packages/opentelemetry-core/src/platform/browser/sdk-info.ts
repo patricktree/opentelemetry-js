@@ -21,7 +21,7 @@ import {
   TELEMETRY_SDK_LANGUAGE_VALUE_WEBJS,
   ATTR_TELEMETRY_SDK_VERSION,
 } from '@opentelemetry/semantic-conventions';
-import { ATTR_PROCESS_RUNTIME_NAME } from '../../semconv';
+import { ATTR_PROCESS_RUNTIME_NAME } from '../../semconv.js';
 
 /** Constants describing the SDK in use */
 export const SDK_INFO = {

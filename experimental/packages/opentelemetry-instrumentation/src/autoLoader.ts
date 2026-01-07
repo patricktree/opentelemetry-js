@@ -19,8 +19,8 @@ import { logs } from '@opentelemetry/api-logs';
 import {
   disableInstrumentations,
   enableInstrumentations,
-} from './autoLoaderUtils';
-import { AutoLoaderOptions } from './types_internal';
+} from './autoLoaderUtils.js';
+import { AutoLoaderOptions } from './types_internal.js';
 
 /**
  * It will register instrumentations and plugins

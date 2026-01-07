@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 import * as sinon from 'sinon';
-import { osDetector } from '../../../src';
-import { describeBrowser } from '../../util';
-import { assertEmptyResource } from '../../util/resource-assertions';
+import { osDetector } from '../../../src/index.js';
+import { describeBrowser } from '../../util.js';
+import { assertEmptyResource } from '../../util/resource-assertions.js';
 
 describeBrowser('osDetector() on web browser', () => {
   afterEach(() => {

@@ -16,7 +16,7 @@
 
 import type { InstrumentationScope } from '@opentelemetry/core';
 import { SeverityNumber } from '@opentelemetry/api-logs';
-import type { LoggerConfig, LoggerConfigurator } from '../types';
+import type { LoggerConfig, LoggerConfigurator } from '../types.js';
 
 /**
  * Default LoggerConfig used when no pattern matches

@@ -15,7 +15,7 @@
  */
 
 import { ExportResult } from '@opentelemetry/core';
-import { IOtlpExportDelegate } from './otlp-export-delegate';
+import { IOtlpExportDelegate } from './otlp-export-delegate.js';
 
 export class OTLPExporterBase<Internal> {
   private _delegate: IOtlpExportDelegate<Internal>;

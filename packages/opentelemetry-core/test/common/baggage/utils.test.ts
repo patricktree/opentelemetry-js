@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { parseKeyPairsIntoRecord } from '../../../src/baggage/utils';
+import { parseKeyPairsIntoRecord } from '../../../src/baggage/utils.js';
 
 describe('parseKeyPairsIntoRecord()', () => {
   it('returns an empty object when value is not a string', () => {

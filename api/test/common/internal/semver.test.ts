@@ -18,7 +18,7 @@ import * as assert from 'assert';
 import {
   isCompatible,
   _makeCompatibilityCheck,
-} from '../../../src/internal/semver';
+} from '../../../src/internal/semver.js';
 import { VERSION } from '../../../src/version';
 
 describe('semver', function () {

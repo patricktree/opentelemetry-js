@@ -18,7 +18,7 @@ import * as assert from 'assert';
 import * as sinon from 'sinon';
 import * as path from 'path';
 import type { OnRequireFn } from 'require-in-the-middle';
-import { RequireInTheMiddleSingleton } from '../../src/platform/node/RequireInTheMiddleSingleton';
+import { RequireInTheMiddleSingleton } from '../../src/platform/node/RequireInTheMiddleSingleton.js';
 
 const requireInTheMiddleSingleton = RequireInTheMiddleSingleton.getInstance();
 

@@ -31,11 +31,11 @@ import {
   InMemoryLogRecordExporter,
   LogRecordExporter,
   SimpleLogRecordProcessor,
-} from './../../../src';
-import { LoggerProviderSharedState } from '../../../src/internal/LoggerProviderSharedState';
-import { reconfigureLimits } from '../../../src/config';
-import { TestExporterWithDelay } from './TestExporterWithDelay';
-import { LogRecordImpl } from '../../../src/LogRecordImpl';
+} from './../../../src/index.js';
+import { LoggerProviderSharedState } from '../../../src/internal/LoggerProviderSharedState.js';
+import { reconfigureLimits } from '../../../src/config.js';
+import { TestExporterWithDelay } from './TestExporterWithDelay.js';
+import { LogRecordImpl } from '../../../src/LogRecordImpl.js';
 
 const setup = (exporter: LogRecordExporter, resource?: Resource) => {
   const sharedState = new LoggerProviderSharedState(

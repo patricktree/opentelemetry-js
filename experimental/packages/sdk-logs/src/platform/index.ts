@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { BatchLogRecordProcessor } from './node';
+export { BatchLogRecordProcessor } from './node/index.js';

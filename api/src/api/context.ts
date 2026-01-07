@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { NoopContextManager } from '../context/NoopContextManager';
-import { Context, ContextManager } from '../context/types';
+import { NoopContextManager } from '../context/NoopContextManager.js';
+import { Context, ContextManager } from '../context/types.js';
 import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
-import { DiagAPI } from './diag';
+} from '../internal/global-utils.js';
+import { DiagAPI } from './diag.js';
 
 const API_NAME = 'context';
 const NOOP_CONTEXT_MANAGER = new NoopContextManager();

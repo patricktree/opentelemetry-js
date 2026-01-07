@@ -39,14 +39,14 @@ import {
 } from '@opentelemetry/semantic-conventions';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { BasicTracerProvider, Span, SpanProcessor } from '../../src';
-import { SpanImpl } from '../../src/Span';
-import { invalidAttributes, validAttributes } from './util';
-import { Tracer } from '../../src/Tracer';
+import { BasicTracerProvider, Span, SpanProcessor } from '../../src/index.js';
+import { SpanImpl } from '../../src/Span.js';
+import { invalidAttributes, validAttributes } from './util.js';
+import { Tracer } from '../../src/Tracer.js';
 import {
   DEFAULT_ATTRIBUTE_COUNT_LIMIT,
   DEFAULT_ATTRIBUTE_VALUE_LENGTH_LIMIT,
-} from '../../src/utility';
+} from '../../src/utility.js';
 
 const performanceTimeOrigin: HrTime = [1, 1];
 

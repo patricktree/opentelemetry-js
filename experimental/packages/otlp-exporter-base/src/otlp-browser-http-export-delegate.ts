@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { OtlpHttpConfiguration } from './configuration/otlp-http-configuration';
+import { OtlpHttpConfiguration } from './configuration/otlp-http-configuration.js';
 import { ISerializer } from '@opentelemetry/otlp-transformer';
-import { IOtlpExportDelegate } from './otlp-export-delegate';
-import { createRetryingTransport } from './retrying-transport';
-import { createXhrTransport } from './transport/xhr-transport';
-import { createSendBeaconTransport } from './transport/send-beacon-transport';
-import { createOtlpNetworkExportDelegate } from './otlp-network-export-delegate';
-import { createFetchTransport } from './transport/fetch-transport';
+import { IOtlpExportDelegate } from './otlp-export-delegate.js';
+import { createRetryingTransport } from './retrying-transport.js';
+import { createXhrTransport } from './transport/xhr-transport.js';
+import { createSendBeaconTransport } from './transport/send-beacon-transport.js';
+import { createOtlpNetworkExportDelegate } from './otlp-network-export-delegate.js';
+import { createFetchTransport } from './transport/fetch-transport.js';
 
 /**
  * @deprecated use {@link createOtlpFetchExportDelegate}

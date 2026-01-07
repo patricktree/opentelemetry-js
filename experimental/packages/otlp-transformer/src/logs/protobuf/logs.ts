@@ -15,13 +15,13 @@
  */
 import * as root from '../../generated/root';
 
-import { IExportLogsServiceRequest } from '../internal-types';
-import { IExportLogsServiceResponse } from '../export-response';
+import { IExportLogsServiceRequest } from '../internal-types.js';
+import { IExportLogsServiceResponse } from '../export-response.js';
 
-import { createExportLogsServiceRequest } from '../internal';
+import { createExportLogsServiceRequest } from '../internal.js';
 import { ReadableLogRecord } from '@opentelemetry/sdk-logs';
-import { ExportType } from '../../common/protobuf/protobuf-export-type';
-import { ISerializer } from '../../i-serializer';
+import { ExportType } from '../../common/protobuf/protobuf-export-type.js';
+import { ISerializer } from '../../i-serializer.js';
 
 const logsResponseType = root.opentelemetry.proto.collector.logs.v1
   .ExportLogsServiceResponse as ExportType<IExportLogsServiceResponse>;

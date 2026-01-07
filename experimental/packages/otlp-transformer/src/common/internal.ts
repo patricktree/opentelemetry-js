@@ -18,7 +18,7 @@ import type {
   IInstrumentationScope,
   IKeyValue,
   Resource,
-} from './internal-types';
+} from './internal-types.js';
 import { Attributes } from '@opentelemetry/api';
 import { InstrumentationScope } from '@opentelemetry/core';
 import { Resource as ISdkResource } from '@opentelemetry/resources';

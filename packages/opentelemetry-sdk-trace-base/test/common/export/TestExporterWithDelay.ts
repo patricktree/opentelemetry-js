@@ -15,7 +15,7 @@
  */
 
 import { ExportResult } from '@opentelemetry/core';
-import { InMemorySpanExporter, ReadableSpan } from '../../../src';
+import { InMemorySpanExporter, ReadableSpan } from '../../../src/index.js';
 
 /**
  * A test-only exporter that delays during export to mimic a real exporter.

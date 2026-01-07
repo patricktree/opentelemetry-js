@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { GrpcInstrumentation } from '../src';
+import { GrpcInstrumentation } from '../src/index.js';
 
 const instrumentation = new GrpcInstrumentation();
 instrumentation.enable();
@@ -39,13 +39,13 @@ import {
 } from '@opentelemetry/api';
 import { W3CTraceContextPropagator } from '@opentelemetry/core';
 import { AsyncHooksContextManager } from '@opentelemetry/context-async-hooks';
-import { startServer } from './helper';
+import { startServer } from './helper.js';
 import {
   assertExportedSpans,
   assertNoSpansExported,
   SpanAssertionFunction,
   TestFunction,
-} from './protobuf-ts-utils';
+} from './protobuf-ts-utils.js';
 
 const memoryExporter = new InMemorySpanExporter();
 const PROTO_PATH = path.resolve(__dirname, './fixtures/grpc-test.proto');

@@ -16,20 +16,20 @@
 
 import * as assert from 'assert';
 
-import { SumAggregator } from '../../src/aggregator';
-import { AggregationTemporality } from '../../src/export/AggregationTemporality';
-import { DataPointType } from '../../src/export/MetricData';
-import { MetricCollectorHandle } from '../../src/state/MetricCollector';
-import { AsyncMetricStorage } from '../../src/state/AsyncMetricStorage';
-import { createNoopAttributesProcessor } from '../../src/view/AttributesProcessor';
-import { ObservableRegistry } from '../../src/state/ObservableRegistry';
+import { SumAggregator } from '../../src/aggregator/index.js';
+import { AggregationTemporality } from '../../src/export/AggregationTemporality.js';
+import { DataPointType } from '../../src/export/MetricData.js';
+import { MetricCollectorHandle } from '../../src/state/MetricCollector.js';
+import { AsyncMetricStorage } from '../../src/state/AsyncMetricStorage.js';
+import { createNoopAttributesProcessor } from '../../src/view/AttributesProcessor.js';
+import { ObservableRegistry } from '../../src/state/ObservableRegistry.js';
 import {
   assertMetricData,
   assertDataPoint,
   defaultInstrumentDescriptor,
   ObservableCallbackDelegate,
-} from '../util';
-import { ObservableInstrument } from '../../src/Instruments';
+} from '../util.js';
+import { ObservableInstrument } from '../../src/Instruments.js';
 import { HrTime } from '@opentelemetry/api';
 
 const deltaCollector: MetricCollectorHandle = {

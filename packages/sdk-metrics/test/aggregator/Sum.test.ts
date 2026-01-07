@@ -16,10 +16,10 @@
 
 import { HrTime } from '@opentelemetry/api';
 import * as assert from 'assert';
-import { AggregationTemporality } from '../../src';
-import { SumAccumulation, SumAggregator } from '../../src/aggregator';
-import { MetricData, DataPointType } from '../../src/export/MetricData';
-import { commonValues, defaultInstrumentDescriptor } from '../util';
+import { AggregationTemporality } from '../../src/index.js';
+import { SumAccumulation, SumAggregator } from '../../src/aggregator/index.js';
+import { MetricData, DataPointType } from '../../src/export/MetricData.js';
+import { commonValues, defaultInstrumentDescriptor } from '../util.js';
 
 describe('SumAggregator', () => {
   describe('createAccumulation', () => {

@@ -15,10 +15,10 @@
  */
 
 import * as assert from 'assert';
-import { installShim, uninstallShim } from '../src/shim';
-import { ShimTracer } from '../src';
+import { installShim, uninstallShim } from '../src/shim.js';
+import { ShimTracer } from '../src/index.js';
 import { CoreTracer as OrigCoreTracer } from '@opencensus/core';
-import { withTestTracerProvider } from './util';
+import { withTestTracerProvider } from './util.js';
 import { trace } from '@opentelemetry/api';
 
 describe('shim', () => {

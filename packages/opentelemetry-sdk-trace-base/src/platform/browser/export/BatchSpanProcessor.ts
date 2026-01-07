@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { BatchSpanProcessorBase } from '../../../export/BatchSpanProcessorBase';
-import { SpanExporter } from '../../../export/SpanExporter';
-import { BatchSpanProcessorBrowserConfig } from '../../../types';
+import { BatchSpanProcessorBase } from '../../../export/BatchSpanProcessorBase.js';
+import { SpanExporter } from '../../../export/SpanExporter.js';
+import { BatchSpanProcessorBrowserConfig } from '../../../types.js';
 import { globalErrorHandler } from '@opentelemetry/core';
 
 export class BatchSpanProcessor extends BatchSpanProcessorBase<BatchSpanProcessorBrowserConfig> {

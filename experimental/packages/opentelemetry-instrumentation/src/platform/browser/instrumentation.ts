@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { InstrumentationAbstract } from '../../instrumentation';
-import * as types from '../../types';
-import { InstrumentationConfig } from '../../types';
+import { InstrumentationAbstract } from '../../instrumentation.js';
+import * as types from '../../types.js';
+import { InstrumentationConfig } from '../../types.js';
 
 /**
  * Base abstract class for instrumenting web plugins

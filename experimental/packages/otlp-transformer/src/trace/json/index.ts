@@ -15,4 +15,4 @@
  */
 
 // IMPORTANT: exports added here are public
-export { JsonTraceSerializer } from './trace';
+export { JsonTraceSerializer } from './trace.js';

@@ -28,7 +28,7 @@ import {
 import {
   AggregationTemporalityPreference,
   OTLPMetricExporterOptions,
-} from './OTLPMetricExporterOptions';
+} from './OTLPMetricExporterOptions.js';
 import {
   IOtlpExportDelegate,
   OTLPExporterBase,

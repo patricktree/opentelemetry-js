@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Tracer } from './tracer';
-import { TracerOptions } from './tracer_options';
+import { Tracer } from './tracer.js';
+import { TracerOptions } from './tracer_options.js';
 
 /**
  * A registry for creating named {@link Tracer}s.

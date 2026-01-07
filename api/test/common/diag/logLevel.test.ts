@@ -15,10 +15,10 @@
  */
 
 import * as assert from 'assert';
-import { diag } from '../../../src';
-import { createLogLevelDiagLogger } from '../../../src/diag/internal/logLevelLogger';
-import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger';
-import { DiagLogger, DiagLogLevel } from '../../../src/diag/types';
+import { diag } from '../../../src/index.js';
+import { createLogLevelDiagLogger } from '../../../src/diag/internal/logLevelLogger.js';
+import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger.js';
+import { DiagLogger, DiagLogLevel } from '../../../src/diag/types.js';
 
 // Matches the previous Logger definition
 const incompleteLoggerFuncs = ['debug', 'info', 'warn', 'error'] as const;

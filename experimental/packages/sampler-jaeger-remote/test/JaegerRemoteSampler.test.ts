@@ -22,13 +22,13 @@ import {
   TraceIdRatioBasedSampler,
 } from '@opentelemetry/sdk-trace-base';
 import * as api from '@opentelemetry/api';
-import { JaegerRemoteSampler } from '../src';
+import { JaegerRemoteSampler } from '../src/index.js';
 import * as sinon from 'sinon';
 import * as assert from 'assert';
 import { SpanKind } from '@opentelemetry/api';
-import { SamplingStrategyResponse, StrategyType } from '../src/types';
-import { PerOperationSampler } from '../src/PerOperationSampler';
-import { randomSamplingProability } from './utils';
+import { SamplingStrategyResponse, StrategyType } from '../src/types.js';
+import { PerOperationSampler } from '../src/PerOperationSampler.js';
+import { randomSamplingProability } from './utils.js';
 import * as axios from 'axios';
 
 describe('JaegerRemoteSampler', () => {

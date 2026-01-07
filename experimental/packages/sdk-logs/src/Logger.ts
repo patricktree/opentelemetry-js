@@ -24,9 +24,9 @@ import {
   isSpanContextValid,
 } from '@opentelemetry/api';
 
-import { LogRecordImpl } from './LogRecordImpl';
-import { LoggerProviderSharedState } from './internal/LoggerProviderSharedState';
-import { LoggerConfig } from './types';
+import { LogRecordImpl } from './LogRecordImpl.js';
+import { LoggerProviderSharedState } from './internal/LoggerProviderSharedState.js';
+import { LoggerConfig } from './types.js';
 
 export class Logger implements logsAPI.Logger {
   public readonly instrumentationScope: InstrumentationScope;

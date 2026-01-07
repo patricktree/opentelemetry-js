@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { OTLPMetricExporter } from './node';
+export { OTLPMetricExporter } from './node/index.js';

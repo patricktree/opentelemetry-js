@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { CollectionResult, ResourceMetrics } from '../../src/export/MetricData';
-import { MetricProducer } from '../../src/export/MetricProducer';
-import { testResource } from '../util';
+import { CollectionResult, ResourceMetrics } from '../../src/export/MetricData.js';
+import { MetricProducer } from '../../src/export/MetricProducer.js';
+import { testResource } from '../util.js';
 
 export const emptyResourceMetrics = {
   resource: testResource,

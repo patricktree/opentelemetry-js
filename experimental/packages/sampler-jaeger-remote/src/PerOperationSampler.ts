@@ -20,7 +20,7 @@ import {
   SamplingResult,
   TraceIdRatioBasedSampler,
 } from '@opentelemetry/sdk-trace-base';
-import { PerOperationStrategy } from './types';
+import { PerOperationStrategy } from './types.js';
 
 interface PerOperationSamplerOptions {
   /** The default sampler to use in case span does not have a custom strategy. */

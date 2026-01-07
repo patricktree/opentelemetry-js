@@ -22,9 +22,9 @@ import {
   getPropagatorFromConfiguration,
   setupDefaultContextManager,
   setupPropagator,
-} from './utils';
+} from './utils.js';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
-import type { SDKOptions } from './types';
+import type { SDKOptions } from './types.js';
 
 /**
  * @experimental Function to start the OpenTelemetry Node SDK

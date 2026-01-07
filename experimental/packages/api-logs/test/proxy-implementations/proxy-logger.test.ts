@@ -16,9 +16,9 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { Logger, LoggerProvider, ProxyLoggerProvider } from '../../src';
-import { NoopLogger } from '../../src/NoopLogger';
-import { ProxyLogger } from '../../src/ProxyLogger';
+import { Logger, LoggerProvider, ProxyLoggerProvider } from '../../src/index.js';
+import { NoopLogger } from '../../src/NoopLogger.js';
+import { ProxyLogger } from '../../src/ProxyLogger.js';
 
 describe('ProxyLogger', () => {
   let provider: ProxyLoggerProvider;

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 import * as sinon from 'sinon';
-import { browserDetector } from '../src/BrowserDetector';
-import { assertEmptyResource, assertResource, describeBrowser } from './util';
+import { browserDetector } from '../src/BrowserDetector.js';
+import { assertEmptyResource, assertResource, describeBrowser } from './util.js';
 
 describeBrowser('browserDetector()', () => {
   afterEach(() => {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Counter, UpDownCounter, Histogram } from '../../../src';
+import { Counter, UpDownCounter, Histogram } from '../../../src/index.js';
 
 describe('Metric', function () {
   describe('Counter', function () {

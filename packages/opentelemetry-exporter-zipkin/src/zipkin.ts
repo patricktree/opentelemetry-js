@@ -21,15 +21,15 @@ import {
   getStringFromEnv,
 } from '@opentelemetry/core';
 import { SpanExporter, ReadableSpan } from '@opentelemetry/sdk-trace-base';
-import { prepareSend } from './platform/index';
-import * as zipkinTypes from './types';
+import { prepareSend } from './platform/index.js';
+import * as zipkinTypes from './types.js';
 import {
   toZipkinSpan,
   defaultStatusCodeTagName,
   defaultStatusErrorTagName,
-} from './transform';
+} from './transform.js';
 import { ATTR_SERVICE_NAME } from '@opentelemetry/semantic-conventions';
-import { prepareGetHeaders } from './utils';
+import { prepareGetHeaders } from './utils.js';
 
 /**
  * Zipkin Exporter

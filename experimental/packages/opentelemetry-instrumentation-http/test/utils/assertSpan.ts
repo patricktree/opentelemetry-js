@@ -38,12 +38,12 @@ import {
   ATTR_NET_PEER_IP,
   ATTR_NET_PEER_NAME,
   ATTR_NET_PEER_PORT,
-} from '../../src/semconv';
+} from '../../src/semconv.js';
 import * as assert from 'assert';
 import * as http from 'http';
-import * as utils from '../../src/utils';
-import { DummyPropagation } from './DummyPropagation';
-import { AttributeNames } from '../../src/enums/AttributeNames';
+import * as utils from '../../src/utils.js';
+import { DummyPropagation } from './DummyPropagation.js';
+import { AttributeNames } from '../../src/enums/AttributeNames.js';
 
 export const assertSpan = (
   span: ReadableSpan,

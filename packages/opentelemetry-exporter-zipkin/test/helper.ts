@@ -17,7 +17,7 @@
 import { TraceFlags, SpanStatusCode } from '@opentelemetry/api';
 import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
 import * as assert from 'assert';
-import { Span } from '../src/types';
+import { Span } from '../src/types.js';
 import { resourceFromAttributes } from '@opentelemetry/resources';
 
 export const mockedReadableSpan: ReadableSpan = {

@@ -19,10 +19,10 @@ import { NOOP_LOGGER } from '@opentelemetry/api-logs';
 import { defaultResource } from '@opentelemetry/resources';
 import { BindOnceFuture, merge } from '@opentelemetry/core';
 
-import type { LoggerProviderConfig } from './types';
-import { Logger } from './Logger';
-import { loadDefaultConfig, reconfigureLimits } from './config';
-import { LoggerProviderSharedState } from './internal/LoggerProviderSharedState';
+import type { LoggerProviderConfig } from './types.js';
+import { Logger } from './Logger.js';
+import { loadDefaultConfig, reconfigureLimits } from './config.js';
+import { LoggerProviderSharedState } from './internal/LoggerProviderSharedState.js';
 
 export const DEFAULT_LOGGER_NAME = 'unknown';
 

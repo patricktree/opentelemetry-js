@@ -124,7 +124,7 @@ export class GrpcExporterTransport implements IExporterTransport {
       const {
         createServiceClientConstructor,
         // eslint-disable-next-line @typescript-eslint/no-require-imports
-      } = require('./create-service-client-constructor');
+      } = require('./create-service-client-constructor.js');
 
       try {
         this._metadata = this._parameters.metadata();

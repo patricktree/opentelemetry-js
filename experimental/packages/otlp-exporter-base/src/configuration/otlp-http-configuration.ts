@@ -18,8 +18,8 @@ import {
   getSharedConfigurationDefaults,
   mergeOtlpSharedConfigurationWithDefaults,
   OtlpSharedConfiguration,
-} from './shared-configuration';
-import { validateAndNormalizeHeaders } from '../util';
+} from './shared-configuration.js';
+import { validateAndNormalizeHeaders } from '../util.js';
 
 export type HeadersFactory = () => Promise<Record<string, string>>;
 

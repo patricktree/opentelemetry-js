@@ -22,8 +22,8 @@ import { SamplingDecision } from '@opentelemetry/sdk-trace-base';
 import {
   createCompositeSampler,
   createComposableAlwaysOffSampler,
-} from '../src';
-import { traceIdGenerator } from './util';
+} from '../src/index.js';
+import { traceIdGenerator } from './util.js';
 
 describe('ComposableAlwaysOffSampler', () => {
   const composableSampler = createComposableAlwaysOffSampler();

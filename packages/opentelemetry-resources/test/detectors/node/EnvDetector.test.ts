@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import { envDetector } from '../../../src';
-import { resourceFromDetectedResource } from '../../../src/ResourceImpl';
-import { describeNode } from '../../util';
+import { envDetector } from '../../../src/index.js';
+import { resourceFromDetectedResource } from '../../../src/ResourceImpl.js';
+import { describeNode } from '../../util.js';
 import {
   assertEmptyResource,
   assertK8sResource,
-} from '../../util/resource-assertions';
+} from '../../util/resource-assertions.js';
 
 describeNode('envDetector() on Node.js', () => {
   describe('with valid env', () => {

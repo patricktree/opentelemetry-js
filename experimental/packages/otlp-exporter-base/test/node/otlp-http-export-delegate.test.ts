@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { createOtlpHttpExportDelegate } from '../../src/otlp-http-export-delegate';
+import { createOtlpHttpExportDelegate } from '../../src/otlp-http-export-delegate.js';
 import { ISerializer } from '@opentelemetry/otlp-transformer';
 import { ExportResultCode } from '@opentelemetry/core';
 

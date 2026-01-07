@@ -18,7 +18,7 @@ import {
   BasicTracerProvider,
   SDKRegistrationConfig,
 } from '@opentelemetry/sdk-trace-base';
-import { NodeTracerConfig } from './config';
+import { NodeTracerConfig } from './config.js';
 import {
   context,
   ContextManager,

@@ -25,8 +25,8 @@ import {
 import { ReadableSpan, SpanExporter } from '@opentelemetry/sdk-trace-base';
 import { Socket } from 'dgram';
 import { ATTR_SERVICE_NAME } from '@opentelemetry/semantic-conventions';
-import { spanToThrift } from './transform';
-import * as jaegerTypes from './types';
+import { spanToThrift } from './transform.js';
+import * as jaegerTypes from './types.js';
 
 /**
  * Format and sends span information to Jaeger Exporter.

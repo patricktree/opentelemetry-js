@@ -16,18 +16,18 @@
 
 import { ValueType } from '@opentelemetry/api';
 import * as assert from 'assert';
-import { InstrumentType } from '../src';
-import { ObservableInstrument } from '../src/Instruments';
+import { InstrumentType } from '../src/index.js';
+import { ObservableInstrument } from '../src/Instruments.js';
 import {
   BatchObservableResultImpl,
   ObservableResultImpl,
-} from '../src/ObservableResult';
-import { ObservableRegistry } from '../src/state/ObservableRegistry';
+} from '../src/ObservableResult.js';
+import { ObservableRegistry } from '../src/state/ObservableRegistry.js';
 import {
   commonAttributes,
   commonValues,
   defaultInstrumentDescriptor,
-} from './util';
+} from './util.js';
 
 describe('ObservableResultImpl', () => {
   describe('observe', () => {

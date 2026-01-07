@@ -26,14 +26,14 @@ import {
   TraceFlags,
 } from '@opentelemetry/api';
 import { isTracingSuppressed } from '@opentelemetry/core';
-import { B3_DEBUG_FLAG_KEY } from './common';
+import { B3_DEBUG_FLAG_KEY } from './common.js';
 import {
   X_B3_FLAGS,
   X_B3_PARENT_SPAN_ID,
   X_B3_SAMPLED,
   X_B3_SPAN_ID,
   X_B3_TRACE_ID,
-} from './constants';
+} from './constants.js';
 
 const VALID_SAMPLED_VALUES = new Set([true, 'true', 'True', '1', 1]);
 const VALID_UNSAMPLED_VALUES = new Set([false, 'false', 'False', '0', 0]);

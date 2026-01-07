@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { TraceState } from '../trace_state';
-import { validateKey, validateValue } from './tracestate-validators';
+import { TraceState } from '../trace_state.js';
+import { validateKey, validateValue } from './tracestate-validators.js';
 
 const MAX_TRACE_STATE_ITEMS = 32;
 const MAX_TRACE_STATE_LEN = 512;

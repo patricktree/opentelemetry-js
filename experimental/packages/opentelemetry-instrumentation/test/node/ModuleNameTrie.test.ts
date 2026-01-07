@@ -15,8 +15,8 @@
  */
 
 import * as assert from 'assert';
-import { Hooked } from '../../src/platform/node/RequireInTheMiddleSingleton';
-import { ModuleNameTrie } from '../../src/platform/node/ModuleNameTrie';
+import { Hooked } from '../../src/platform/node/RequireInTheMiddleSingleton.js';
+import { ModuleNameTrie } from '../../src/platform/node/ModuleNameTrie.js';
 
 describe('ModuleNameTrie', function () {
   describe('search', function () {

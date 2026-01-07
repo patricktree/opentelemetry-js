@@ -20,8 +20,8 @@ import {
   hrTimeToMicroseconds,
 } from '@opentelemetry/core';
 
-import type { ReadableLogRecord } from './ReadableLogRecord';
-import type { LogRecordExporter } from './LogRecordExporter';
+import type { ReadableLogRecord } from './ReadableLogRecord.js';
+import type { LogRecordExporter } from './LogRecordExporter.js';
 
 /**
  * This is implementation of {@link LogRecordExporter} that prints LogRecords to the

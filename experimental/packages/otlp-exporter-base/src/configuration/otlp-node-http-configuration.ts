@@ -17,7 +17,7 @@ import {
   getHttpConfigurationDefaults,
   mergeOtlpHttpConfigurationWithDefaults,
   OtlpHttpConfiguration,
-} from './otlp-http-configuration';
+} from './otlp-http-configuration.js';
 
 // NOTE: do not change these imports to be actual imports, otherwise they WILL break `@opentelemetry/instrumentation-http`
 import type * as http from 'http';

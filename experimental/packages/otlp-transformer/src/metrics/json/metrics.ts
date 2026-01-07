@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ISerializer } from '../../i-serializer';
+import { ISerializer } from '../../i-serializer.js';
 import { ResourceMetrics } from '@opentelemetry/sdk-metrics';
-import { createExportMetricsServiceRequest } from '../internal';
-import { IExportMetricsServiceResponse } from '../export-response';
+import { createExportMetricsServiceRequest } from '../internal.js';
+import { IExportMetricsServiceResponse } from '../export-response.js';
 
 export const JsonMetricsSerializer: ISerializer<
   ResourceMetrics,

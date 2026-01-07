@@ -18,7 +18,7 @@ import * as assert from 'assert';
 import {
   compressAndSend,
   sendWithHttp,
-} from '../../src/transport/http-transport-utils';
+} from '../../src/transport/http-transport-utils.js';
 import { VERSION } from '../../src/version';
 
 describe('compressAndSend', function () {

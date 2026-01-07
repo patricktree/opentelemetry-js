@@ -15,16 +15,16 @@
  */
 import * as metrics from '@opentelemetry/api';
 import { ExportResult } from '@opentelemetry/core';
-import { ConsoleMetricExporter } from '../../src/export/ConsoleMetricExporter';
-import { PeriodicExportingMetricReader } from '../../src/export/PeriodicExportingMetricReader';
-import { ResourceMetrics } from '../../src/export/MetricData';
-import { MeterProvider } from '../../src/MeterProvider';
-import { testResource } from '../util';
+import { ConsoleMetricExporter } from '../../src/export/ConsoleMetricExporter.js';
+import { PeriodicExportingMetricReader } from '../../src/export/PeriodicExportingMetricReader.js';
+import { ResourceMetrics } from '../../src/export/MetricData.js';
+import { MeterProvider } from '../../src/MeterProvider.js';
+import { testResource } from '../util.js';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { assertAggregationTemporalitySelector } from './utils';
-import { DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR } from '../../src/export/AggregationSelector';
-import { AggregationTemporality, InstrumentType } from '../../src';
+import { assertAggregationTemporalitySelector } from './utils.js';
+import { DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR } from '../../src/export/AggregationSelector.js';
+import { AggregationTemporality, InstrumentType } from '../../src/index.js';
 
 async function waitForNumberOfExports(
   exporter: sinon.SinonSpy<

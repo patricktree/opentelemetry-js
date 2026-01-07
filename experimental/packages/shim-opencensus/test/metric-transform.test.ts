@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { mapOcMetric } from '../src/metric-transform';
+import { mapOcMetric } from '../src/metric-transform.js';
 
 import * as oc from '@opencensus/core';
 import { ValueType } from '@opentelemetry/api';

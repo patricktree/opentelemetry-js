@@ -19,12 +19,12 @@ import * as assert from 'assert';
 import {
   getOtlpGrpcDefaultConfiguration,
   mergeOtlpGrpcConfigurationWithDefaults,
-} from '../../src/configuration/otlp-grpc-configuration';
+} from '../../src/configuration/otlp-grpc-configuration.js';
 import {
   createEmptyMetadata,
   createInsecureCredentials,
   createSslCredentials,
-} from '../../src/grpc-exporter-transport';
+} from '../../src/grpc-exporter-transport.js';
 import * as fs from 'fs';
 
 describe('mergeOtlpGrpcConfigurationWithDefaults', function () {

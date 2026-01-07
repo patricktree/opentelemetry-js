@@ -16,10 +16,10 @@
 
 import * as api from '@opentelemetry/api';
 import * as assert from 'assert';
-import { DropAggregator, SumAggregator } from '../../src/aggregator';
-import { DeltaMetricProcessor } from '../../src/state/DeltaMetricProcessor';
-import { AttributeHashMap } from '../../src/state/HashMap';
-import { commonAttributes, commonValues } from '../util';
+import { DropAggregator, SumAggregator } from '../../src/aggregator/index.js';
+import { DeltaMetricProcessor } from '../../src/state/DeltaMetricProcessor.js';
+import { AttributeHashMap } from '../../src/state/HashMap.js';
+import { commonAttributes, commonValues } from '../util.js';
 
 describe('DeltaMetricProcessor', () => {
   describe('record', () => {

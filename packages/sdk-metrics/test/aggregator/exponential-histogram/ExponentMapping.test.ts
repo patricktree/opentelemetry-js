@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ExponentMapping } from '../../../src/aggregator/exponential-histogram/mapping/ExponentMapping';
-import * as ieee754 from '../../../src/aggregator/exponential-histogram/mapping/ieee754';
+import { ExponentMapping } from '../../../src/aggregator/exponential-histogram/mapping/ExponentMapping.js';
+import * as ieee754 from '../../../src/aggregator/exponential-histogram/mapping/ieee754.js';
 import * as assert from 'assert';
 
 const MIN_SCALE = -10;

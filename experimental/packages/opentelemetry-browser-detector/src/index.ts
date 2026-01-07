@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export { browserDetector } from './BrowserDetector';
+export { browserDetector } from './BrowserDetector.js';

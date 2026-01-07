@@ -22,8 +22,8 @@ import {
   BatchObservableResult,
   Observable,
 } from '@opentelemetry/api';
-import { AttributeHashMap } from './state/HashMap';
-import { isObservableInstrument, ObservableInstrument } from './Instruments';
+import { AttributeHashMap } from './state/HashMap.js';
+import { isObservableInstrument, ObservableInstrument } from './Instruments.js';
 
 /**
  * The class implements {@link ObservableResult} interface.

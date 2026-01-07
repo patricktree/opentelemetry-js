@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { buildSamplerFromEnv, loadDefaultConfig } from './config';
-import { Sampler } from './Sampler';
-import { SpanLimits, TracerConfig, GeneralLimits } from './types';
+import { buildSamplerFromEnv, loadDefaultConfig } from './config.js';
+import { Sampler } from './Sampler.js';
+import { SpanLimits, TracerConfig, GeneralLimits } from './types.js';
 import { getNumberFromEnv } from '@opentelemetry/core';
 
 export const DEFAULT_ATTRIBUTE_COUNT_LIMIT = 128;

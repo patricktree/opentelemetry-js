@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { SpanContext } from './span_context';
-import { TraceFlags } from './trace_flags';
+import { SpanContext } from './span_context.js';
+import { TraceFlags } from './trace_flags.js';
 
 /**
  * @since 1.0.0

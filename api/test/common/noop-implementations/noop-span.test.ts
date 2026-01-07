@@ -20,8 +20,8 @@ import {
   INVALID_SPANID,
   INVALID_TRACEID,
   TraceFlags,
-} from '../../../src';
-import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan';
+} from '../../../src/index.js';
+import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan.js';
 
 describe('NonRecordingSpan', function () {
   it('do not crash', function () {

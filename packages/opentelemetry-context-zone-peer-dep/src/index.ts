@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export { ZoneContextManager } from './ZoneContextManager';
-export type { Func, TargetWithEvents } from './types';
+export { ZoneContextManager } from './ZoneContextManager.js';
+export type { Func, TargetWithEvents } from './types.js';

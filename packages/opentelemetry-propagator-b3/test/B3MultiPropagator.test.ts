@@ -24,15 +24,15 @@ import {
 import { ROOT_CONTEXT } from '@opentelemetry/api';
 import { suppressTracing } from '@opentelemetry/core';
 import * as assert from 'assert';
-import { B3MultiPropagator } from '../src/B3MultiPropagator';
+import { B3MultiPropagator } from '../src/B3MultiPropagator.js';
 import {
   X_B3_FLAGS,
   X_B3_PARENT_SPAN_ID,
   X_B3_SAMPLED,
   X_B3_SPAN_ID,
   X_B3_TRACE_ID,
-} from '../src/constants';
-import { B3_DEBUG_FLAG_KEY } from '../src/common';
+} from '../src/constants.js';
+import { B3_DEBUG_FLAG_KEY } from '../src/common.js';
 
 describe('B3MultiPropagator', () => {
   const b3Propagator = new B3MultiPropagator();

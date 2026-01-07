@@ -17,7 +17,7 @@
 import 'zone.js';
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { ZoneContextManager } from '../src';
+import { ZoneContextManager } from '../src/index.js';
 import { ROOT_CONTEXT, createContextKey } from '@opentelemetry/api';
 
 let clock: any;

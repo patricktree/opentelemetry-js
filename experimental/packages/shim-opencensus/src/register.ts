@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-import { installShim } from './shim';
+import { installShim } from './shim.js';
 
 installShim();

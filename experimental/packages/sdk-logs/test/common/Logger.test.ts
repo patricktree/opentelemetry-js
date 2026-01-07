@@ -16,18 +16,18 @@
 
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { LoggerProvider, createLoggerConfigurator } from '../../src';
-import { NoopLogRecordProcessor } from '../../src/export/NoopLogRecordProcessor';
-import { LogRecordImpl } from '../../src/LogRecordImpl';
+import { LoggerProvider, createLoggerConfigurator } from '../../src/index.js';
+import { NoopLogRecordProcessor } from '../../src/export/NoopLogRecordProcessor.js';
+import { LogRecordImpl } from '../../src/LogRecordImpl.js';
 import { ROOT_CONTEXT, TraceFlags, context, trace } from '@opentelemetry/api';
 import {
   LogRecord as ApiLogRecord,
   SeverityNumber,
 } from '@opentelemetry/api-logs';
-import { Logger } from '../../src/Logger';
-import { InMemoryLogRecordExporter } from '../../src/export/InMemoryLogRecordExporter';
-import { SimpleLogRecordProcessor } from '../../src/export/SimpleLogRecordProcessor';
-import { LoggerProviderSharedState } from '../../src/internal/LoggerProviderSharedState';
+import { Logger } from '../../src/Logger.js';
+import { InMemoryLogRecordExporter } from '../../src/export/InMemoryLogRecordExporter.js';
+import { SimpleLogRecordProcessor } from '../../src/export/SimpleLogRecordProcessor.js';
+import { LoggerProviderSharedState } from '../../src/internal/LoggerProviderSharedState.js';
 
 const setup = () => {
   const logProcessor = new NoopLogRecordProcessor();

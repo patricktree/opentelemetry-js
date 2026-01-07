@@ -15,7 +15,7 @@
  */
 
 import * as api from '@opentelemetry/api';
-import { otperformance as performance } from '../platform';
+import { otperformance as performance } from '../platform/index.js';
 
 const NANOSECOND_DIGITS = 9;
 const NANOSECOND_DIGITS_IN_MILLIS = 6;

@@ -21,18 +21,18 @@ import {
   DataPointType,
   HistogramMetricData,
   DataPoint,
-} from '../src';
+} from '../src/index.js';
 import {
   assertScopeMetrics,
   assertMetricData,
   assertPartialDeepStrictEqual,
   testResource,
-} from './util';
-import { TestMetricReader } from './export/TestMetricReader';
+} from './util.js';
+import { TestMetricReader } from './export/TestMetricReader.js';
 import * as sinon from 'sinon';
-import { Meter } from '../src/Meter';
-import { createAllowListAttributesProcessor } from '../src/view/AttributesProcessor';
-import { AggregationType } from '../src/view/AggregationOption';
+import { Meter } from '../src/Meter.js';
+import { createAllowListAttributesProcessor } from '../src/view/AttributesProcessor.js';
+import { AggregationType } from '../src/view/AggregationOption.js';
 import {
   defaultResource,
   resourceFromAttributes,

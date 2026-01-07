@@ -18,14 +18,14 @@ import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
-import { ProxyTracerProvider } from '../trace/ProxyTracerProvider';
+} from '../internal/global-utils.js';
+import { ProxyTracerProvider } from '../trace/ProxyTracerProvider.js';
 import {
   isSpanContextValid,
   wrapSpanContext,
-} from '../trace/spancontext-utils';
-import { Tracer } from '../trace/tracer';
-import { TracerProvider } from '../trace/tracer_provider';
+} from '../trace/spancontext-utils.js';
+import { Tracer } from '../trace/tracer.js';
+import { TracerProvider } from '../trace/tracer_provider.js';
 import {
   deleteSpan,
   getActiveSpan,
@@ -33,8 +33,8 @@ import {
   getSpanContext,
   setSpan,
   setSpanContext,
-} from '../trace/context-utils';
-import { DiagAPI } from './diag';
+} from '../trace/context-utils.js';
+import { DiagAPI } from './diag.js';
 
 const API_NAME = 'trace';
 

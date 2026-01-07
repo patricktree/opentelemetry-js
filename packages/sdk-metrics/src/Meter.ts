@@ -27,7 +27,7 @@ import {
   BatchObservableCallback,
   Observable,
 } from '@opentelemetry/api';
-import { createInstrumentDescriptor } from './InstrumentDescriptor';
+import { createInstrumentDescriptor } from './InstrumentDescriptor.js';
 import {
   CounterInstrument,
   GaugeInstrument,
@@ -36,9 +36,9 @@ import {
   ObservableGaugeInstrument,
   ObservableUpDownCounterInstrument,
   UpDownCounterInstrument,
-} from './Instruments';
-import { MeterSharedState } from './state/MeterSharedState';
-import { InstrumentType } from './export/MetricData';
+} from './Instruments.js';
+import { MeterSharedState } from './state/MeterSharedState.js';
+import { InstrumentType } from './export/MetricData.js';
 
 /**
  * This class implements the {@link IMeter} interface.
