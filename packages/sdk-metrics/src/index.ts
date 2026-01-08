@@ -45,7 +45,10 @@ export type {
 export type { PushMetricExporter } from './export/MetricExporter.js';
 
 export { MetricReader } from './export/MetricReader.js';
-export type { IMetricReader, MetricReaderOptions } from './export/MetricReader.js';
+export type {
+  IMetricReader,
+  MetricReaderOptions,
+} from './export/MetricReader.js';
 
 export { PeriodicExportingMetricReader } from './export/PeriodicExportingMetricReader.js';
 export type { PeriodicExportingMetricReaderOptions } from './export/PeriodicExportingMetricReader.js';

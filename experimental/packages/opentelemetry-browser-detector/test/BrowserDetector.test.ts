@@ -15,7 +15,11 @@
  */
 import * as sinon from 'sinon';
 import { browserDetector } from '../src/BrowserDetector.js';
-import { assertEmptyResource, assertResource, describeBrowser } from './util.js';
+import {
+  assertEmptyResource,
+  assertResource,
+  describeBrowser,
+} from './util.js';
 
 describeBrowser('browserDetector()', () => {
   afterEach(() => {

@@ -89,7 +89,10 @@ export type { Link } from './trace/link.js';
 export { ProxyTracer, type TracerDelegator } from './trace/ProxyTracer.js';
 export { ProxyTracerProvider } from './trace/ProxyTracerProvider.js';
 export type { Sampler } from './trace/Sampler.js';
-export { SamplingDecision, type SamplingResult } from './trace/SamplingResult.js';
+export {
+  SamplingDecision,
+  type SamplingResult,
+} from './trace/SamplingResult.js';
 export type { SpanContext } from './trace/span_context.js';
 export { SpanKind } from './trace/span_kind.js';
 export type { Span } from './trace/span.js';

@@ -23,7 +23,10 @@ import {
 } from '@opentelemetry/api';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { InstrumentationBase, registerInstrumentations } from '../../src/index.js';
+import {
+  InstrumentationBase,
+  registerInstrumentations,
+} from '../../src/index.js';
 import { Logger, LoggerOptions, LoggerProvider } from '@opentelemetry/api-logs';
 
 class DummyTracerProvider implements TracerProvider {

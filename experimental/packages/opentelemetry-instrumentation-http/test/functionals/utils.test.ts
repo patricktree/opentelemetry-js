@@ -39,7 +39,10 @@ import {
   ATTR_USER_AGENT_SYNTHETIC_TYPE,
   USER_AGENT_SYNTHETIC_TYPE_VALUE_BOT,
 } from '../../src/semconv.js';
-import { IgnoreMatcher, ParsedRequestOptions } from '../../src/internal-types.js';
+import {
+  IgnoreMatcher,
+  ParsedRequestOptions,
+} from '../../src/internal-types.js';
 import * as utils from '../../src/utils.js';
 import { RPCType, setRPCMetadata } from '@opentelemetry/core';
 import { AsyncHooksContextManager } from '@opentelemetry/context-async-hooks';

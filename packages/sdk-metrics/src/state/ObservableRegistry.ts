@@ -21,7 +21,10 @@ import {
   Observable,
   ObservableCallback,
 } from '@opentelemetry/api';
-import { isObservableInstrument, ObservableInstrument } from '../Instruments.js';
+import {
+  isObservableInstrument,
+  ObservableInstrument,
+} from '../Instruments.js';
 import {
   BatchObservableResultImpl,
   ObservableResultImpl,

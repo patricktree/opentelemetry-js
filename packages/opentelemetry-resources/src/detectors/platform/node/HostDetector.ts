@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 
-import { ATTR_HOST_ARCH, ATTR_HOST_ID, ATTR_HOST_NAME } from '../../../semconv.js';
+import {
+  ATTR_HOST_ARCH,
+  ATTR_HOST_ID,
+  ATTR_HOST_NAME,
+} from '../../../semconv.js';
 import { arch, hostname } from 'os';
 import { ResourceDetectionConfig } from '../../../config.js';
 import {

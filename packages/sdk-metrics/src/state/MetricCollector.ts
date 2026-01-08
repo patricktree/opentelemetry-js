@@ -21,7 +21,10 @@ import {
   InstrumentType,
   ScopeMetrics,
 } from '../export/MetricData.js';
-import { MetricCollectOptions, MetricProducer } from '../export/MetricProducer.js';
+import {
+  MetricCollectOptions,
+  MetricProducer,
+} from '../export/MetricProducer.js';
 import { IMetricReader } from '../export/MetricReader.js';
 import { ForceFlushOptions, ShutdownOptions } from '../types.js';
 import { MeterProviderSharedState } from './MeterProviderSharedState.js';

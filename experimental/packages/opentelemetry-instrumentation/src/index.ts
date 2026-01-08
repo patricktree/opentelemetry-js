@@ -32,4 +32,7 @@ export {
   safeExecuteInTheMiddle,
   safeExecuteInTheMiddleAsync,
 } from './utils.js';
-export { SemconvStability, semconvStabilityFromStr } from './semconvStability.js';
+export {
+  SemconvStability,
+  semconvStabilityFromStr,
+} from './semconvStability.js';

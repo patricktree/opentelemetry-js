@@ -16,7 +16,10 @@
 
 import { AggregationTemporality } from './AggregationTemporality.js';
 import { InstrumentType } from './MetricData.js';
-import { AggregationOption, AggregationType } from '../view/AggregationOption.js';
+import {
+  AggregationOption,
+  AggregationType,
+} from '../view/AggregationOption.js';
 
 /**
  * Aggregation selector based on metric instrument types.

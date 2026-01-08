@@ -17,7 +17,10 @@
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 import { MeterProvider } from '../../src/MeterProvider.js';
-import { emptyResourceMetrics, TestMetricProducer } from './TestMetricProducer.js';
+import {
+  emptyResourceMetrics,
+  TestMetricProducer,
+} from './TestMetricProducer.js';
 import { TestMetricReader } from './TestMetricReader.js';
 import {
   AggregationTemporality,
