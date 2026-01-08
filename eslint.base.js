@@ -54,6 +54,7 @@ module.exports = {
         "@typescript-eslint/parameter-properties": "error",
         "no-restricted-syntax": ["error", "ExportAllDeclaration"],
         "prefer-rest-params": "off",
+        "n/file-extension-in-import": ["error", "always"]
       }
     },
     {
