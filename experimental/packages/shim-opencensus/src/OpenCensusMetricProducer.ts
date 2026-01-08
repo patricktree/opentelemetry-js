@@ -24,7 +24,7 @@ import {
   ScopeMetrics,
 } from '@opentelemetry/sdk-metrics';
 import { mapOcMetric } from './metric-transform.js';
-import { VERSION } from './version';
+import { VERSION } from './version.js';
 
 const SCOPE = {
   name: '@opentelemetry/shim-opencensus',

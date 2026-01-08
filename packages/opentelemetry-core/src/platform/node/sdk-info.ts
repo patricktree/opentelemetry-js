@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { VERSION } from '../../version';
+import { VERSION } from '../../version.js';
 import {
   ATTR_TELEMETRY_SDK_NAME,
   ATTR_TELEMETRY_SDK_LANGUAGE,

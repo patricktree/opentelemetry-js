@@ -58,7 +58,7 @@ import {
   normalizeHttpRequestMethod,
   serverPortFromUrl,
 } from './utils.js';
-import { VERSION } from './version';
+import { VERSION } from './version.js';
 
 // how long to wait for observer to collect information about resources
 // this is needed as event "load" is called before observer

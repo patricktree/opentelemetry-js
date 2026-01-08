@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import * as root from '../../generated/root';
+import * as root from '../../generated/root.js';
 import { ISerializer } from '../../i-serializer.js';
 import { ExportType } from '../../common/protobuf/protobuf-export-type.js';
 import { IExportTraceServiceRequest } from '../internal-types.js';

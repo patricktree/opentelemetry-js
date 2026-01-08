@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import * as root from '../../generated/root';
+import * as root from '../../generated/root.js';
 
 import { IExportLogsServiceRequest } from '../internal-types.js';
 import { IExportLogsServiceResponse } from '../export-response.js';

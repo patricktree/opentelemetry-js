@@ -19,7 +19,7 @@ import { Hook } from 'require-in-the-middle';
 import * as oc from '@opencensus/core';
 
 import { ShimTracer } from './ShimTracer.js';
-import { VERSION } from './version';
+import { VERSION } from './version.js';
 
 type CoreTracerConstructor = new (
   ...args: ConstructorParameters<typeof oc.CoreTracer>

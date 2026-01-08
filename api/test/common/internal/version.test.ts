@@ -15,7 +15,7 @@
  */
 
 import * as assert from 'assert';
-import { VERSION } from '../../../src/version';
+import { VERSION } from '../../../src/version.js';
 
 describe('version', function () {
   it('should have generated VERSION.ts', function () {

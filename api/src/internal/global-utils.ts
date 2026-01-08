@@ -19,7 +19,7 @@ import { ContextManager } from '../context/types.js';
 import { DiagLogger } from '../diag/types.js';
 import { TextMapPropagator } from '../propagation/TextMapPropagator.js';
 import type { TracerProvider } from '../trace/tracer_provider.js';
-import { VERSION } from '../version';
+import { VERSION } from '../version.js';
 import { isCompatible } from './semver.js';
 
 const major = VERSION.split('.')[0];

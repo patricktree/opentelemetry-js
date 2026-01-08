@@ -62,7 +62,7 @@ import {
   serverPortFromUrl,
   getXHRBodyLength,
 } from './utils.js';
-import { VERSION } from './version';
+import { VERSION } from './version.js';
 import { AttributeNames } from './enums/AttributeNames.js';
 
 // how long to wait for observer to collect information about resources

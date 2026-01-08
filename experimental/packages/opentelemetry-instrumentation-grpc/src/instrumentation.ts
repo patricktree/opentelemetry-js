@@ -93,7 +93,7 @@ import {
   _methodIsIgnored,
 } from './utils.js';
 import { AttributeValues } from './enums/AttributeValues.js';
-import { VERSION } from './version';
+import { VERSION } from './version.js';
 
 export class GrpcInstrumentation extends InstrumentationBase<GrpcInstrumentationConfig> {
   private _metadataCapture: metadataCaptureType;

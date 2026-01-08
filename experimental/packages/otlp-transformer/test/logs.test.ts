@@ -20,7 +20,7 @@ import * as assert from 'assert';
 import { ReadableLogRecord } from '@opentelemetry/sdk-logs';
 import { SeverityNumber } from '@opentelemetry/api-logs';
 import { toBase64 } from './utils.js';
-import * as root from '../src/generated/root';
+import * as root from '../src/generated/root.js';
 import { OtlpEncodingOptions } from '../src/common/internal-types.js';
 import {
   ESeverityNumber,

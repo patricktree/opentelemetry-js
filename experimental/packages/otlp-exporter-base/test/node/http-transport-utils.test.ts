@@ -19,7 +19,7 @@ import {
   compressAndSend,
   sendWithHttp,
 } from '../../src/transport/http-transport-utils.js';
-import { VERSION } from '../../src/version';
+import { VERSION } from '../../src/version.js';
 
 describe('compressAndSend', function () {
   it('compressAndSend on destroyed request should handle error', function (done) {

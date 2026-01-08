@@ -43,7 +43,7 @@ import type * as https from 'https';
 import { Socket } from 'net';
 import * as url from 'url';
 import { HttpInstrumentationConfig } from './types.js';
-import { VERSION } from './version';
+import { VERSION } from './version.js';
 import {
   InstrumentationBase,
   InstrumentationNodeModuleDefinition,

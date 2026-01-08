@@ -33,7 +33,7 @@ import {
   _toZipkinTags,
 } from '../../src/transform.js';
 import * as zipkinTypes from '../../src/types.js';
-import { VERSION } from '../../src/version';
+import { VERSION } from '../../src/version.js';
 
 const resource = {
   attributes: {
