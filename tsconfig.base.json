@@ -31,6 +31,10 @@
       "dom.iterable"
     ]
   },
+  "ts-node": {
+    /* use experimentalResolver to enable mapping .js → .ts for Node16/NodeNext module resolution */
+    "experimentalResolver": true
+  },
   "exclude": [
     "node_modules"
   ]
